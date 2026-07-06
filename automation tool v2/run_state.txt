@@ -1,0 +1,4 @@
+project_title: Pracqs - Sheet1
+project_url: https://chatgpt.com/g/g-p-6a46be575db08191bfc0d0d49b74a8b8/project
+csv_path: /Users/matthewcyntje/Automation Tool/automation tool v2/Input/Pracqs - Sheet1.csv
+output_folder: /Users/matthewcyntje/Automation Tool/automation tool v2/Output

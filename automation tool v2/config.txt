@@ -1,0 +1,6 @@
+# Automation Tool Config
+# Edit the two paths below to point to your Input and Output folders.
+# Keep each setting on its own line, formatted exactly as key: value
+
+input_folder: /Users/matthewcyntje/Automation Tool/automation tool v2/Input
+output_folder: /Users/matthewcyntje/Automation Tool/automation tool v2/Output
