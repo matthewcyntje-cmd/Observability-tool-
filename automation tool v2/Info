@@ -1,0 +1,106 @@
+Working Setup: ChatGPT Query Automation Tool
+How the two-script pipeline works, what you need to run it, and how to reconfigure it on a new machine.
+What This Tool Does
+This is a two-file automation pipeline that submits a list of queries into a ChatGPT project and saves the responses to a CSV. It automatically creates the ChatGPT project if it doesn't already exist (or reuses it if it does), sets project-only memory, pastes standard instructions, then runs every query in your input file through that project and writes the results back out.
+
+projcreate.py: finds or creates the ChatGPT project, sets memory and instructions, saves a state file
+querycapture.py: reads that state file, runs every query through the project, writes the output CSV
+
+The Two Files
+projcreate.py
+Run this first. It does the following, in order:
+
+Reads config.txt to find your Input and Output folder paths
+Looks in the Input folder and grabs whatever single CSV is sitting there
+Derives a project title from that CSV's filename (strips the .csv extension)
+Kills only leftover Chrome processes tied to the automation profile (not your regular browsing windows), then relaunches Chrome fresh with a remote debugging port open, using a dedicated automation profile folder
+Checks ChatGPT's Projects page for a project matching that title
+If found: clicks into it and reuses it as-is
+If not found: creates a new project, sets memory to Project-only, pastes the standard instructions block, and saves
+Writes a file called run_state.txt with the project URL, the input CSV path, and the output folder path
+Automatically kicks off querycapture.py right after it finishes
+
+querycapture.py
+This runs automatically after projcreate.py, or can be run on its own if run_state.txt already exists from a previous projcreate.py run. It does the following:
+
+Reads run_state.txt to get the project URL, input CSV path, and output folder
+Reads every query out of the input CSV
+For each query: opens a new tab, navigates to the project, types the query, submits it, and waits for the response
+Waits up to 180 seconds for the response to finish (detected by the RESPONSEHASENDED sentinel). If nothing comes back in that window, it closes the tab, opens a fresh one, and retries the same query, up to 3 attempts total before giving up on that query and moving to the next one
+Writes each query and response pair to the output CSV immediately after it completes, not batched at the end
+Once every query has been attempted, appends a final row with the total run time
+If every query succeeded, deletes the original CSV from the Input folder. If anything failed or timed out, the input CSV is left alone so you can retry without losing your query list
+
+What You Need Before Running This
+
+Google Chrome installed
+Python 3 with Playwright installed (pip install playwright, then playwright install)
+A config.txt file in the same folder as both scripts (see Config section below)
+An Input folder containing exactly one CSV file, with queries listed one per row under a header row
+An Output folder where results will be written (created automatically if it doesn't exist)
+Logged into ChatGPT at least once inside the automation Chrome profile (see Chrome Profile section below)
+
+How to Run It
+From Terminal, navigate to the folder containing both scripts, then run:
+cd "/path/to/your/automation-tool-folder"
+python3 projcreate.py
+That single command handles everything: restarting the automation Chrome instance, finding or creating the project, and then automatically running querycapture.py right after. You don't need to run querycapture.py separately unless you're re-running just the query step on its own.
+Keeping the Automation Window Out of Your Way (Desktop/Space Switching)
+Since the automation window is a real, visible Chrome window, it can pop to the front of your screen and interrupt whatever you're doing, especially each time it opens a new tab for the next query. macOS doesn't offer a reliable way to make this fully automatic, so this step is manual, but quick:
+
+Right after the automation Chrome window opens, swipe up with three or four fingers on your trackpad (or press Control + Up Arrow) to open Mission Control
+Click the "+" near the top right to create a new, empty Desktop/Space
+Drag the automation Chrome window's thumbnail into that new Space
+Press Escape or click elsewhere to return to your original Desktop
+Swipe left/right with three fingers (or Control + Left/Right Arrow) any time you want to check on it
+
+Since a full Chrome relaunch can reset the window back onto your main Desktop, you may need to redo this drag once per script run, not per query. If you'd rather skip this step entirely, just leave the window as-is and treat the occasional pop-up as a minor interruption. The important thing is: never close the window during a run, minimizing or moving it is fine, closing it will break the script's connection.
+Input Format
+Drop exactly one CSV into the Input folder before running. The CSV should have:
+
+A header row (first row is skipped, so it can be anything, like "Query")
+One query per row after that, in the first column
+
+The project's name inside ChatGPT will be automatically set to match the CSV's filename (minus the .csv extension). For example, "PostTap Queries.csv" creates or reuses a ChatGPT project literally named "PostTap Queries."
+Output Format
+A new CSV appears in the Output folder, named after the input file with _output appended. For example, "PostTap Queries.csv" produces "PostTap Queries_output.csv."
+
+Column 1: the original query text
+Column 2: the full response text, with the RESPONSEHASENDED sentinel stripped out
+Last row: a blank row followed by "Total run time" and the elapsed time for the whole run (formatted as Xm Ys)
+
+The original input CSV is deleted from the Input folder automatically, but only if every single query completed successfully. If any query failed after all retries, the input CSV stays put so nothing is lost.
+The Config File (config.txt)
+This file lives in the same folder as the two scripts and tells the tool where your Input and Output folders are. It looks like this:
+input_folder: /path/to/your/Input
+output_folder: /path/to/your/Output
+Lines starting with # are comments and are ignored. Each setting must be on its own separate line, formatted exactly as key: value. If this file is missing or a key is empty, the script will tell you exactly which key is missing rather than failing silently.
+What Happens to Chrome Every Run
+
+Every time projcreate.py runs, it kills only Chrome processes tied to the automation's dedicated profile folder, your regular Chrome windows and browsing session are left alone
+It then relaunches Chrome fresh with a remote debugging port open, pointed at that same dedicated profile folder
+If a stale lock file from a previous crashed session is present, the script removes it automatically to force a clean launch
+You should not need to close your regular Chrome tabs before running this anymore
+
+Chrome Profile and Login (One-Time Setup)
+The automation uses a separate, persistent Chrome profile folder (not your regular Chrome profile), so your regular browsing history and logins are untouched.
+
+The very first time you run this on a machine, Chrome will open to a blank, logged-out profile
+You need to manually log into ChatGPT in that window, once
+After that first login, the profile remembers your session. Every future run skips the login step entirely, since it's reusing that same saved profile folder
+If you ever get logged out unexpectedly, just log back in manually once in that automation Chrome window, no code changes needed
+
+Setting This Up on a New Machine or With a Different Path
+
+Update config.txt with the new machine's Input and Output folder paths
+Update the CHROME_PROFILE_DIR constant near the top of projcreate.py to a real folder path on the new machine (this is where the persistent login gets saved)
+Confirm CHROME_PATH still points to where Google Chrome is installed on that machine (default Mac path is usually correct as-is)
+Run projcreate.py once, log into ChatGPT manually when Chrome opens, and everything else runs the same as before
+
+Known Limitations
+
+Only works with exactly one CSV in the Input folder at a time. If there are zero or multiple, the script stops and tells you to fix it before continuing
+Requires a visible, running Chrome window; it cannot run fully hidden or headless, since ChatGPT's Cloudflare bot protection blocks headless/automated browsers
+The automation window cannot be reliably auto-minimized or auto-moved to a separate Desktop/Space; macOS doesn't expose a clean way to do this, so keeping it out of your way is a manual step (see above)
+Live web search accuracy depends on ChatGPT actually searching every time; instructions explicitly tell it to always search, but there's no way to independently verify from outside the chat that it did
+If a query fails after all 3 retry attempts, that query is skipped and the input CSV is preserved so you can investigate and rerun
