@@ -1,0 +1,81 @@
+# ChatGPT Query Automation Tool - V1
+
+## What This Does
+This script automates the process of submitting a list of queries to a ChatGPT project, capturing the responses, and writing them to a CSV file. It replaces the manual process of opening ChatGPT, typing each query, waiting for the response, and copying it out by hand.
+
+## How It Works
+
+### Prerequisites
+Before running the script, two things must be done manually:
+1. Launch Chrome with the remote debugging port open so Playwright can connect to it
+2. Make sure you are logged into ChatGPT in that Chrome window
+
+### Chrome Launch Command
+Run this in Terminal before starting the script every time:
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-debug
+
+### Running The Script
+Navigate to the project folder in terminal and run:
+python3 automation.py
+
+---
+
+## Code Breakdown
+
+### Configuration Variables
+QUERIES_FILE = "/path/to/Test 3 - Sheet1.csv"
+OUTPUT_FILE = "/path/to/responses.csv"
+PROJECT_URL = "https://chatgpt.com/g/g-p-[id]/project"
+SENTINEL = "RESPONSEHASENDED"
+
+These four variables are the only things that need to change between experiments. QUERIES_FILE is where the script reads queries from. OUTPUT_FILE is where responses get written. PROJECT_URL is the direct URL of the ChatGPT project to run queries inside. SENTINEL is the string the script listens for to know a response is finished generating.
+
+### Section 1: load_queries()
+Reads the query CSV file and returns an ordered list of queries. Skips the header row and any blank rows. Each query gets an index number and the original text.
+
+### Section 2: Browser Connection
+browser = p.chromium.connect_over_cdp("http://127.0.0.1:9222")
+context = browser.contexts[0]
+
+Connects Playwright to the already running Chrome browser via the remote debugging port. This is how we avoid bot detection: we are not launching a new browser, we are attaching to a real one that is already logged in.
+
+### Section 3: Output CSV Setup
+Creates the output CSV file at the start of the run and writes the header row. This happens once before the query loop begins.
+
+### Section 4: Query Loop
+For each query in the list the script does four things:
+
+Opens a fresh tab and navigates to the project URL. Using the direct project URL guarantees every query starts from the project overview rather than landing inside a previous chat.
+
+Submits the query. Finds the prompt textarea by its ID, fills it with the query text, and hits Enter.
+
+Waits for RESPONSEHASENDED. Polls the page every 3 seconds looking for the sentinel string. Once found, grabs the last assistant message and strips the sentinel out of it. Has a 180 second timeout as a fallback so the script never hangs forever on one query.
+
+Writes to CSV immediately. After each response is captured it gets written to the output CSV right away. This means if the script crashes midway through you still have all responses up to that point.
+
+---
+
+## Key Design Decisions
+
+Why connect to an existing Chrome instead of launching a new one
+ChatGPT uses Cloudflare bot detection which blocks Playwright's built-in Chromium browser. Connecting to a real Chrome instance that is already logged in bypasses this entirely.
+
+Why use a sentinel string
+Response generation time is unpredictable. A fixed timer would either cut off long responses or waste time on short ones. The sentinel RESPONSEHASENDED is added to the ChatGPT project instructions so every response ends with it, giving the script a reliable signal that generation is complete.
+
+Why write to CSV after each query
+If the script crashes on query 15 of 20 you keep the first 14 responses. Writing everything at the end would lose all of it.
+
+Why use the direct project URL
+Navigating via the sidebar caused the script to land inside the most recent chat after the first query rather than the project overview. The direct URL always lands on the project overview with a fresh input.
+
+---
+
+## What Is Hardcoded In V1
+- Query file path
+- Output file path
+- Project URL
+- Sentinel string
+
+## What Changes In V2
+All four hardcoded values become user inputs at runtime. The script will also automate project creation so the user never has to manually create the ChatGPT project, set memory settings, or paste instructions.

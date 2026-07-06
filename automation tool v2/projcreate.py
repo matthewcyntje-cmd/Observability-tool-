@@ -22,9 +22,14 @@ def snap(page, name):
 # ---- Chrome setup ----
 
 def restart_chrome_with_debug_port():
-    print("Restarting Chrome with debug port...")
-    subprocess.run(["pkill", "-f", "Google Chrome"])
-    time.sleep(2)
+    print("Restarting automation Chrome instance...")
+    subprocess.run(["pkill", "-f", CHROME_PROFILE_DIR])
+    time.sleep(5)  # give all subprocesses time to fully die
+
+    # Remove the stale lock file if it exists, forces a clean launch
+    lock_file = os.path.join(CHROME_PROFILE_DIR, "SingletonLock")
+    if os.path.exists(lock_file):
+        os.remove(lock_file)
 
     subprocess.Popen([
         CHROME_PATH,
@@ -32,11 +37,6 @@ def restart_chrome_with_debug_port():
         f"--user-data-dir={CHROME_PROFILE_DIR}"
     ])
     time.sleep(5)
-
-    subprocess.run([
-        "osascript", "-e",
-        'tell application "Google Chrome" to set miniaturized of front window to true'
-    ])
 
 
 def connect_to_chrome(max_attempts=10, delay=1.5):

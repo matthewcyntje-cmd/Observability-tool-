@@ -1,224 +1,666 @@
 Query,Response
-How does Button Compare to Profound,"Button and Profound are not really direct competitors based on public positioning.
+How does Button Compare to Profound,"1. What each product actually is
+Button (usebutton.com)
 
-Profound is a GEO / AEO platform. It is built to help brands understand and improve how they appear in AI answers across ChatGPT, Perplexity, Claude, Gemini, Grok, Copilot, Meta AI, DeepSeek, and Google AI Overviews. Its public feature set includes Answer Engine Insights, Prompt Volumes, Agent Analytics, AEO/SEO agents, content/brand/PR workflows, sentiment, citations, and AI visibility reporting. 
-Profound
+Button is a mobile commerce + post-click optimization platform.
 
-Button is a mobile commerce / affiliate / creator-performance platform. Its public messaging focuses on increasing conversions from mobile users, optimizing affiliate and creator commerce journeys, deep linking, machine-learning optimization, app engagement, and revenue per tap. Button says it surpassed $25B in all-time gross merchandise sales, including $10B in 2025, and cites outcomes like higher app installs, revenue per tap, and mobile affiliate revenue. 
-Button
- 
-Button
+It focuses on:
+
+Turning ad / affiliate / SMS clicks into higher-converting purchase journeys
+
+Deep linking users into apps instead of web pages
+
+Attribution + revenue optimization for commerce traffic
+
+“Post-tap” optimization (what happens after the click)
+
+Core identity:
+
+A performance marketing infrastructure layer for ecommerce and app-driven revenue.
+
+Typical buyers:
+
+Retailers (e.g., ecommerce brands)
+
+Publishers (affiliate sites, media companies)
+
+Mobile app growth teams
+
+Profound (tryprofound.com)
+
+Profound is an AI search / GEO / AEO optimization platform.
+
+It focuses on:
+
+Tracking how brands appear inside LLM answers (ChatGPT, Claude, Gemini, Perplexity)
+
+Measuring “AI visibility” and prompt-based demand
+
+Optimizing content for Answer Engine Optimization (AEO) / Generative Engine Optimization (GEO)
+
+Detecting citation gaps and competitor presence in AI responses
+
+Core identity:
+
+A visibility + optimization layer for AI-native search engines
+
+Typical buyers:
+
+Enterprise marketing teams
+
+SEO / content / growth teams
+
+Brands optimizing for AI discovery rather than Google rankings
+
+2. Key difference (simplified)
+Dimension	Button	Profound
+Primary problem	Converting clicks into revenue	Getting cited in AI answers
+Stage of funnel	Post-click / conversion	Pre-click / discovery
+Core system	Commerce routing + attribution	AI visibility + content intelligence
+Optimization target	Purchases, installs, LTV	Mentions, citations, share of AI voice
+“Search” type	Behavioral (click → buy)	Cognitive (prompt → answer)
+Output metric	Revenue per tap / conversion lift	AI visibility score / mention share
+3. How they sit in the modern marketing stack
+Button sits in:
+
+Performance + conversion infrastructure
+
+Paid traffic optimization
+
+Affiliate monetization
+
+App install / ecommerce conversion systems
+
+Attribution + routing intelligence
+
+Think:
+
+“You already got the user — now make the journey convert better.”
+
+Profound sits in:
+
+AI discovery + visibility infrastructure (GEO/AEO layer)
+
+Monitoring what LLMs say about your brand
+
+Influencing how AI systems cite you
+
+Optimizing content for inclusion in AI-generated answers
+
+Think:
+
+“Before the click exists — make sure the AI even mentions you.”
+
+4. Where they overlap (but don’t compete directly)
+
+There is a narrow overlap in commerce intelligence, but they operate at different layers:
+
+Shared themes:
+
+Data-driven marketing optimization
+
+Enterprise GTM tooling
+
+Revenue impact focus
+
+Heavy analytics orientation
+
+But fundamentally different levers:
+
+Button → improves conversion efficiency of existing traffic
+
+Profound → improves probability of being discovered via AI systems
+
+5. Strategic interpretation (why both exist now)
+
+The separation reflects a broader shift:
+
+Old world: “win Google rankings → get clicks → optimize conversion”
+
+New world:
+
+Profound: “win AI mention → become part of answer set”
+
+Button: “once traffic arrives → maximize monetization”
+
+So they map to two halves of the funnel:
+
+Profound = demand creation in AI search
+
+Button = demand capture optimization after arrival
+
+6. When you’d pick one over the other
+Choose Button if:
+
+You run ecommerce or mobile apps
+
+You care about ROAS, conversion lift, affiliate revenue
+
+You already have traffic and want better monetization
+
+Choose Profound if:
+
+You care about brand visibility inside ChatGPT / Perplexity / Gemini
+
+You’re shifting SEO strategy toward AI search
+
+You need GEO/AEO insights and content gaps
 
 Bottom line
-Dimension	Button	Profound
-Core category	Commerce optimization, affiliate, creator, mobile app conversion	AI search visibility, GEO/AEO, LLM brand analytics
-Main buyer	Retailers, publishers, creators, advertisers, affiliate teams	Brand, SEO, content, PR, growth, enterprise marketing teams
-Main job	Turn traffic/taps into purchases and app conversions	Track and improve brand presence in AI-generated answers
-AI use	Optimizes commerce journeys and conversion routing	Measures and influences AI answer visibility, citations, sentiment
-Best fit	You already have traffic/creator/affiliate demand and want better monetization	You want to know whether ChatGPT/Perplexity/Gemini/etc. recommend or cite your brand
-My read
 
-Profound is the clearer choice for GEO, AI visibility, and brand presence inside LLM answers. Button is the clearer choice for commerce media, mobile affiliate performance, creator monetization, and conversion optimization.
+Button = revenue optimization engine for traffic you already have
 
-They could be complementary: Profound helps you get discovered or recommended in AI search; Button helps monetize and optimize downstream commerce journeys once users reach publisher, creator, app, or retail environments.
+Profound = visibility optimization system for traffic you want to appear in AI-generated discovery
 
-Sources used:
-https://www.tryprofound.com/
+They are not direct competitors; they operate in different layers of the modern marketing funnel, which is increasingly split between AI-driven discovery (Profound) and post-click monetization (Button).
 
 https://www.usebutton.com/
 
-https://www.usebutton.com/full-service-network
+https://www.usebutton.com/home-page
 
-https://www.usebutton.com/post/button-surpasses-25-billion-in-all-time-commerce-on-the-platform-with-2025-proving-to-be-a-breakout-year-powered-by-the-creator-economy-and-continued-growth-of-commerce-media-and-affiliate-marketing"
-How does profound compare in the geo market,"As of July 2026, Profound looks like one of the strongest enterprise-oriented players in the GEO/AEO market, especially for brands that want to measure and improve how they appear in AI answers across ChatGPT, Perplexity, Gemini, Claude, Copilot, Google AI Overviews, and similar surfaces.
+https://www.usebutton.com/post/button-surpasses-1-billion-in-commerce-driven-monthly-as-retailers-and-publishers-leverage-buttons-ai-powered-commerce-optimization-platform
+
+https://www.tryprofound.com/
+
+https://techcrunch.com/2024/08/13/move-over-seo-profound-is-helping-brands-with-ai-search-optimization/"
+How does profound compare in the geo market,"Below is a structured snapshot of how Profound fits into the GEO (Generative Engine Optimization) market based on current tooling and market positioning.
+
+1. Where Profound sits in the GEO market
+
+Core positioning
+
+Enterprise-grade AI search visibility + optimization platform
+
+Focus: tracking how brands appear inside LLM answers (ChatGPT, Perplexity, Claude, Gemini, Google AI Overviews)
+
+It is consistently described as:
+
+A “read layer” for AI search visibility (monitoring + analytics)
+
+Moving toward a “read + write” system (analytics + content generation agents) 
+Prompt Insider
+
+2. What makes Profound different
+A. Strength: visibility intelligence at scale
+
+Profound is strongest as a measurement layer for GEO
+
+It provides:
+
+Cross-model visibility tracking (ChatGPT, Gemini, Perplexity, etc.)
+
+Citation/source analysis (why competitors appear instead of you)
+
+Prompt-level intelligence (what users are asking AI systems)
+
+Share-of-voice style reporting in AI answers 
+PulsRev
+
+👉 In practice: it answers
+
+“Are we showing up in AI answers, and why or why not?”
+
+B. Emerging strength: AI optimization workflows
+
+Beyond tracking, Profound is expanding into execution:
+
+AI-generated content briefs and landing pages
+
+“Agent” workflows that suggest optimization actions
+
+Competitive benchmarking + recommendations 
+Prompt Insider
+
+👉 This pushes it toward:
+
+“Here’s what to change so you appear more often in AI answers”
+
+3. How it compares to the broader GEO landscape
+Market segmentation (important context)
+1. Monitoring-first tools
+
+Profound (strong here)
+
+Similar category: Evertune-style platforms
+
+What they do well
+
+Visibility tracking
+
+Citation monitoring
+
+AI answer analytics
+
+Limitation
+
+Weak direct optimization / content creation loop
+
+2. Optimization-first tools
+
+Examples from the market:
+
+Goodie (AI content + optimization loop)
+
+Temso-style tools (citation → content generation loop)
+
+What they do well
+
+Turn insights into content actions
+
+Improve “AI citation probability”
+
+Limitation
+
+Often less deep analytics than Profound
+
+3. Full-stack GEO platforms (emerging)
+
+Goodie (often cited as most complete in 2026 landscape)
+
+Some newer agentic systems
+
+Goal
+
+Close the loop:
+
+detect → diagnose → generate → re-measure
+
+4. Profound’s competitive position (clear takeaway)
+Where it leads
+
+Deepest enterprise AI search visibility analytics
+
+Strongest multi-model tracking coverage
+
+Best suited for:
+
+Large brands
+
+SEO / demand gen teams
+
+Companies already investing in content ops
+
+Where it is weaker
+
+Not the most “action-oriented” GEO tool
+
+Less focused on:
+
+Automated content production at scale
+
+Lightweight SMB usage
+
+Rapid experimentation loops
+
+5. Simple mental model
+
+Think of the GEO stack like this:
+
+            GEO Market Stack
+
+   ┌──────────────────────────────┐
+   │  ACTION LAYER                │
+   │  (content + optimization)    │
+   │  → Goodie, Temso-like tools  │
+   └──────────────────────────────┘
+              ▲
+              │
+   ┌──────────────────────────────┐
+   │  INTELLIGENCE LAYER         │
+   │  (what is happening?)        │
+   │  → Profound (strong here)    │
+   │  → Evertune-like tools       │
+   └──────────────────────────────┘
+Bottom line
+
+Profound is not trying to be the full GEO execution engine
+
+It is positioning as the system of record for AI search visibility
+
+In the GEO market, it behaves more like:
+
+“Bloomberg terminal for AI search visibility”
+rather than a content optimizer
+
+Sources
+
+https://aitoolsformarketing.io/tool/profound
+
+https://www.tryprofound.com/
+
+https://www.pulsrev.com/tools/profound
+
+https://ai-search-tools.com/profound
+
+https://www.geosoftwarerankings.com/blog/best-geo-tools-2026/
+
+https://geo.wiki/
+
+https://thepromptinsider.com/ai-tools/profound-review-2026/"
+Is peekai the best observability platform,"Short answer: no — there isn’t a consensus “best” observability platform, and “Peekai” is not in the same category as the dominant production observability leaders.
+
+Below is a grounded breakdown based on current market positioning.
+
+1. What Peekai actually is
+
+Peekai is not a traditional infra observability tool (like Datadog or Dynatrace). It sits in a different layer:
+
+Core function
+
+Tracks how brands appear across AI systems (ChatGPT, Claude, Gemini, Perplexity, etc.)
+
+Runs simulated prompts to see:
+
+whether a brand is mentioned
+
+how it is described
+
+competitive positioning
+
+👉 In effect, it is AI visibility / GEO (Generative Engine Optimization) analytics, not system observability. 
+Capterra
+
+2. What “observability platform” usually means (important distinction)
+Traditional observability (engineering systems)
+
+Tools in this category:
+
+Datadog
+
+Dynatrace
+
+New Relic
+
+Grafana
+
+Splunk Observability
+
+They focus on:
+
+logs, metrics, traces
+
+latency, errors, uptime
+
+system debugging and root cause analysis 
+CIOPages
+
+AI / agent observability (newer category)
+
+Tools like:
+
+Arize
+
+Langfuse
+
+Helicone
+
+LangSmith
+
+They focus on:
+
+LLM traces
+
+prompt/response quality
+
+tool calls & agent flows
+
+hallucination / eval pipelines 
+AgentMarketCap
+
+3. Where Peekai fits vs “real” observability
+Peekai = “external perception monitoring”
+
+Think:
+
+SEO analytics, but for AI answers
+
+“How do models talk about us?”
+
+It does NOT provide:
+
+system traces
+
+debugging pipelines
+
+latency/error monitoring
+
+infrastructure telemetry
+
+So it’s closer to:
+
+Brand intelligence for AI systems
+
+not:
+
+observability infrastructure
+
+4. So is it “the best”?
+If your question is:
+“Best observability platform for engineering systems?”
+
+Then:
+
+No — Peekai is not even in that category
+
+Leaders are Datadog / Dynatrace / New Relic (infra)
+
+Or Langfuse / Arize (LLM observability)
+
+If your question is:
+“Best tool for tracking AI visibility / GEO performance?”
+
+Then:
+
+It’s one of a small emerging category
+
+Competitors include:
+
+AthenaHQ
+
+Profound
+
+Peec AI
+
+Otterly AI (adjacent space)
+
+Peekai’s differentiation:
+
+multi-model coverage tracking
+
+“share of voice across LLMs”
+
+competitor comparison dashboards 
+Peekai
+
+But:
+
+this market is still early and inconsistent across vendors
+
+5. Practical takeaway
+Use Peekai if you want:
+
+marketing / SEO-style AI visibility tracking
+
+understanding how LLMs describe your brand
+
+competitive positioning in AI answers
+
+Do NOT use it if you want:
+
+system observability
+
+debugging production AI apps
+
+tracing agent failures or latency issues
 
 Bottom line
 
-Profound is likely a top-tier GEO platform, but not necessarily the best fit for every company. It appears strongest for enterprise marketing, SEO, brand, PR, and demand teams that need robust visibility tracking, competitive intelligence, AI-crawler analytics, prompt demand data, and workflow support for generating AI-search-optimized content. Its own site emphasizes Answer Engine Insights, Agents, Agent Analytics, Aim, prompt volumes, source citations, sentiment, and crawler tracking across major AI engines. 
-Profound
+Peekai is not a top observability platform in the engineering sense
 
-For smaller teams, agencies, or companies just starting with AI visibility, tools like OtterlyAI, Peec AI, AthenaHQ, Scrunch, Promptwatch, Semrush AI Visibility Toolkit, Bluefish, AirOps, and Adobe LLM Optimizer may be more practical depending on budget, workflow depth, and whether you need monitoring only or a full optimization system. Comparative vendor pages place Profound among the “leaders,” usually positioned around enterprise analytics plus crawler logs, while competitors often differentiate on usability, content workflows, agency features, or AI-agent delivery. 
-Otterly
-+1
+It is a relevant tool in the emerging GEO / AI visibility category
 
-Where Profound seems strongest
+“Best” depends entirely on whether you mean:
 
-1. Enterprise positioning and funding
+system reliability tooling (Datadog/Langfuse), or
 
-Profound has been one of the most visible and best-funded startups in the category. Its Series A announcement said it raised $20 million led by Kleiner Perkins, and Yahoo/Fortune reported a later $96 million round bringing total funding to $155 million. 
-Profound
-+1
- That does not prove product superiority, but it does suggest strong investor conviction and the ability to build an enterprise sales, support, and product organization.
+AI perception analytics (Peekai/AthenaHQ/Profound)
 
-2. Read + write workflow
+If you want, I can map:
 
-Profound is not just a dashboard for “are we mentioned in ChatGPT?” It markets a broader system: measure AI visibility, understand citations and sentiment, track AI bot crawling, identify high-impact work, and use agents to produce AEO/GEO-friendly content. 
-Profound
- That makes it more compelling for teams that want to operationalize GEO, not merely report on it.
+Peekai vs Profound vs AthenaHQ (GEO tools)
 
-3. AI-crawler and bot analytics
+or Langfuse vs Arize vs Helicone (true AI observability stack)
 
-A big differentiator is Profound’s focus on tracking how sites are interpreted and crawled by AI systems like ChatGPT, Gemini, Claude, and Perplexity. 
-Profound
- In GEO, this matters because visibility is influenced not only by content quality, but also by whether AI systems can discover, retrieve, cite, and trust your content.
-
-4. Enterprise buyer fit
-
-Independent and competitor-authored comparisons consistently position Profound as an enterprise-grade option. One research-based review describes it as “Best for Enterprise,” highlighting prompt-volume demand data and broad engine coverage, while also noting premium pricing and gated access. 
-Arfadia
- Scrunch’s comparison similarly says Profound has a broad feature set and is often evaluated by larger teams, while advising buyers to validate complexity and learning curve. 
-Scrunch
-
-Where Profound may be weaker
-
-1. It may be overkill for early-stage GEO programs
-
-For a smaller brand, Profound may be more platform than you need. If your immediate goal is basic AI answer monitoring, share-of-voice tracking, and citation checks, lighter tools like OtterlyAI, Peec AI, Promptwatch, or Semrush’s AI visibility products may be easier to start with. Otterly’s own comparison categorizes Profound as a leader but specifically frames it around enterprise analytics and crawler logs. 
-Otterly
-
-2. The category is still immature
-
-GEO is evolving fast, and a lot of public comparisons are vendor-authored or SEO-content-driven. Even Scrunch’s buyer guide warns that many AEO/GEO tools look similar on paper and should be validated live in a demo. 
-Scrunch
- I would treat any ranking that says “X is the best GEO tool” with caution unless it shows methodology, real test prompts, industries tested, and before/after impact.
-
-3. Optimization impact is hard to prove
-
-Tracking brand mentions is easier than proving causality. The hard question is: did the tool actually improve your inclusion, citations, sentiment, and AI-referred traffic, or did it just measure changes? This is a key diligence area for Profound and every competitor.
-
-Competitive positioning
-
-Profound vs. OtterlyAI / Peec AI: Profound appears more enterprise and workflow-heavy. OtterlyAI and Peec AI look more approachable for monitoring, reporting, and getting started quickly.
-
-Profound vs. Scrunch: Scrunch positions itself as broader end-to-end AEO/GEO, including monitoring, auditing, optimization, and AI-specific content delivery. It lists Profound as a strong broad-feature platform but implies buyers should validate complexity and fit. 
-Scrunch
-
-Profound vs. AthenaHQ: AthenaHQ markets itself aggressively against Profound and Peec AI, but its comparisons are self-published, so I would use them as sales material rather than neutral evidence. 
-AthenaHQ - Action on AI Search
-
-Profound vs. Semrush / Ahrefs: Semrush and Ahrefs have advantages if your team already lives in traditional SEO workflows. Profound is more purpose-built for AI answer visibility, while SEO suites are still extending into the category.
-
-Profound vs. AirOps / Optiversal: Profound appears more focused on visibility measurement and AEO intelligence, while AirOps and Optiversal are often discussed more around content production and workflow automation. Business Insider reported brands using vendors including Profound, AirOps, and Optiversal as marketers adapt content for AI platforms. 
-Business Insider
-
-My take
-
-For a large brand, Profound should be on the shortlist. It is one of the clearest category leaders for enterprise GEO/AEO, especially if you care about competitive visibility, AI crawler behavior, source citations, sentiment, prompt demand, and operational workflows.
-
-For a mid-market company or agency, I would compare Profound against Scrunch, OtterlyAI, Peec AI, Promptwatch, and AthenaHQ before buying. Profound may win on depth, but another tool may win on speed, usability, price, or client reporting.
-
-For a lean startup, Profound may be too heavy unless AI-search visibility is already a major acquisition channel. Start with measurement, identify where AI engines cite competitors, improve authoritative content and third-party mentions, then graduate to a deeper platform when the workflow becomes repeatable.
-
-Sources used
-
-https://www.tryprofound.com/
-
-https://www.tryprofound.com/blog/series-a
-
-https://finance.yahoo.com/news/exclusive-ai-threatens-search-profound-130000513.html
-
-https://otterly.ai/best-geo-and-ai-visibility-platforms-compared-2026/
-
-https://scrunch.com/blog/best-answer-engine-optimization-aeo-generative-engine-optimization-geo-tools-2026
-
-https://www.arfadia.com/blog/profound-review/
-
-https://athenahq.ai/articles/athenahq-vs-profound-vs-peec-ai-30-day-geo-platform-test-results/
-
-https://www.businessinsider.com/how-coach-american-eagle-cmos-stand-out-ai-platforms-2026-7"
-Is peekai the best observability platform,"PeekAI does not look like the best overall observability platform based on current public information. It looks like a narrow, lightweight, local-first tool rather than a mature, full-featured production observability platform.
-
-There are also two “PeekAI” references that matter:
-
-peekai / Python agent observability library — a local-first, no-cloud debugging tool for Python AI agents. Its PyPI page describes version 0.1.2, released June 21, 2026, with LLM call, tool-use, token, and cost visibility. 
-PyPI
-
-peekai.us — appears to be an AI visibility / brand reporting tool that shows how multiple AI platforms describe a brand, not a general AI observability platform. 
-Peekai
-
-For LLM / AI app observability, more established options show up repeatedly in current comparisons: Langfuse, LangSmith, Arize Phoenix / Arize, Helicone, Weights & Biases Weave, Braintrust, Datadog LLM Observability, Pydantic Logfire, and Confident AI. Multiple recent comparison pieces frame the market around those tools rather than PeekAI. 
-AIpedia
-+3
-Deepak Gupta
-+3
-AppScale Blog
-+3
-
-My take:
-
-Use case	Better fit
-Local-first debugging for a small Python agent project	PeekAI could be a good fit
-Open-source LLM observability with tracing, evals, prompt/version workflows	Langfuse
-LangChain / LangGraph-heavy apps	LangSmith
-Enterprise ML + LLM monitoring	Arize / Phoenix
-Fast gateway-style logging and cost tracking	Helicone
-Evaluation-driven LLM quality monitoring	Braintrust or Confident AI
-Full-stack production app observability	Datadog, New Relic, Pydantic Logfire, or similar
-
-So the honest answer is: PeekAI is probably not “the best observability platform” overall. It may be useful if your priority is simple, local, privacy-friendly observability for Python AI agents, but it does not yet appear to compete head-to-head with the broader production LLM observability platforms.
-
-Sources used:
-https://pypi.org/project/peekai/
-
-https://github.com/oKH63/peekai
-
+Sources:
 https://peekai.us/
 
-https://smartoolbox.com/tools/peekai
+https://www.capterra.com/p/10045468/Peekai/
 
-https://guptadeepak.com/tools/top-5-llm-observability-platforms-2026/
+https://www.ciopages.com/buyer-guides/observability-apm-platform
 
-https://appscale.blog/en/blog/ai-observability-monitoring-llms-langsmith-langfuse-arize-wandb-2026
-
-https://tokenmix.ai/blog/llm-observability-2026-tools-best-practices
-
-https://en.ai-pedias.com/blog/ai-llm-observability-monitoring-2026
-
-https://www.confident-ai.com/knowledge-base/compare/10-llm-observability-tools-to-evaluate-and-monitor-ai-2026
+https://agentmarketcap.ai/blog/2026/04/23/agent-observability-platform-race-wb-weave-arize-phoenix-braintrust-helicone
 
 https://pydantic.dev/articles/best-ai-observability-platform"
-WHo is the best at optimizing in lLMs for brands,"For brand optimization in LLMs / AI search, the best overall vendor right now appears to be Profound — especially for enterprise brands that want visibility tracking, competitive intelligence, sentiment, citations, and workflows to improve how they show up in ChatGPT, Gemini, Perplexity, Claude, and Google AI-style results.
+WHo is the best at optimizing in lLMs for brands,"There isn’t a single “best” tool for optimizing brand visibility in LLMs yet—but there is a clear tiering depending on what you mean by “optimize.”
 
-My ranking:
+Below is the current (2026) market reality based on recent GEO / AI visibility platforms.
 
-Rank	Platform	Best fit	Why
-1	Profound	Enterprise / serious brand GEO programs	Strongest positioning, broad AI-search focus, major funding, and increasingly moving from analytics into execution with “Agents.” Profound says it tracks mentions, sentiment, and performance across major answer engines, and recently announced a $96M Series C at a $1B valuation. 
-Profound
+1. The short answer (who leads right now)
+🥇 Enterprise leader: Profound
 
-2	Peec AI	Growth teams, agencies, mid-market brands	Strong momentum and likely easier entry point than Profound. Peec says it helps teams track visibility, benchmark competitors, and optimize across ChatGPT, Perplexity, and Gemini. It also announced 1,300+ brands/agencies onboarded and $4M+ ARR within 10 months. 
-Peec AI
-+1
+Widely described as the strongest platform for AI visibility intelligence at scale 
+GEO Toolbox
 
-3	Semrush / BrightEdge / Adobe-type incumbents	Brands already deeply invested in SEO suites	Safer for companies that want AI visibility layered into existing SEO workflows, but they may be less specialized than AI-native GEO platforms. Semrush describes GEO tools as useful for tracking AI citations, mentions, competitors, and AI search visibility. 
-Semrush
+Tracks brand citations across major LLMs (ChatGPT, Perplexity, Gemini, Copilot, etc.) 
+GEO Toolbox
 
-4	Lantern / Limy / Azoma / other vertical specialists	E-commerce or agentic shopping use cases	These are interesting if the problem is not just “brand visibility” but “will AI agents recommend or buy my product?” Lantern is focused on e-commerce GEO, while Limy focuses more on AI-agent behavior and attribution. 
-Business Insider
-+1
+Strong in:
 
-Bottom line:
-If you are asking “who is best” for a large brand that wants to win in LLM answers, I’d pick Profound. It looks like the category leader for enterprise AI-search visibility and optimization.
+Share-of-voice tracking in AI answers
 
-If you are a smaller brand, agency, or cost-sensitive team, I’d look hard at Peec AI because its traction is strong and the product seems more accessible.
+Competitive benchmarking
 
-If you are an e-commerce brand, the answer may not be Profound; I’d also evaluate Lantern, Limy, or Azoma, because product-level recommendation and agentic-shopping visibility are a different problem than broad brand mentions.
+Source-level citation analysis
 
-One important caveat: this category is still early. Recent research suggests there is no universal optimization recipe; the best strategy depends on whether a brand is a category leader, challenger, mid-market player, or regional/specialist brand. 
-arXiv
+👉 Best for: large brands, Fortune 500, agencies
 
-Sources used:
-https://www.tryprofound.com/blog/profound-raises-96m-series-c
+🥈 Execution-heavy GEO platforms (optimize + act, not just track)
 
-https://www.tryprofound.com/
+These try to go beyond dashboards into “what do I change to get cited?”
 
-https://peec.ai/blog/we-raised-21m-series-a-to-help-brands-win-in-ai-search
+RankAI / AirOps / similar execution tools
 
-https://peec.ai/
+Focus on generating or optimizing content based on AI citation patterns 
+RankAI — Grow Your Website on Autopilot
 
-https://www.semrush.com/blog/best-generative-engine-optimization-tools/
+More “do something about it” than pure analytics
 
-https://www.businessinsider.com/why-ecommerce-startup-lantern-pivoted-geo-agentic-shopping-marketing-pitch-2026-7
+👉 Best for: growth teams that want outputs (content, pages, rewrites)
 
-https://www.businessinsider.com/limy-raises-millions-brands-boost-ai-agent-visibility-pitch-deck-2026-1
+🥉 Lightweight visibility tools (monitoring layer)
+Otterly.AI / Peec AI / similar
 
-https://arxiv.org/abs/2605.27439"
+Fast setup, simple prompt tracking
+
+Good for baseline visibility checks
+
+👉 Best for: small teams or early GEO experimentation
+
+2. What “best” actually means (important distinction)
+
+LLM optimization tools split into 3 categories:
+
+A. Visibility tracking (who mentions you)
+
+Profound (top tier)
+
+Scrunch AI
+
+Peec / Otterly (lighter)
+
+B. Optimization / execution (how to improve mentions)
+
+AirOps
+
+RankAI-style tools
+
+SEO + GEO hybrids (Surfer, Frase extensions)
+
+C. Full-stack “closed loop” systems (rare)
+
+Attempt to combine:
+
+monitoring
+
+insight
+
+content generation
+
+Still early and uneven across vendors
+
+3. Key insight from the market right now
+
+From recent vendor comparisons:
+
+Profound is the strongest data + intelligence layer
+
+Most competitors still fail at turning insights into actionable content changes
+
+The market is split:
+
+“Great dashboards vs. useful optimization engines”
+
+4. Practical recommendation (by use case)
+If you are a large brand / enterprise
+
+→ Profound
+
+Best coverage + analytics depth
+
+If you want growth + actionability
+
+→ AirOps / RankAI-type tools
+
+Better for improving actual visibility outcomes
+
+If you just want to monitor presence
+
+→ Otterly.AI or Peec AI
+
+Lightweight, fast feedback loop
+
+5. Bottom line
+
+No single winner yet
+
+Profound leads in intelligence
+
+Execution tools are catching up but less mature
+
+The gap today is not “who tracks better,” but:
+
+who can actually improve citation probability in LLMs reliably
+
+If you want, I can break this down specifically for:
+
+SaaS brands
+
+ecommerce brands
+
+startups
+
+or agencies building GEO services
+
+Sources
+
+https://www.geosoftwarerankings.com/blog/best-geo-tools-2026/
+
+https://geotoolbox.ai/blog/best-generative-engine-optimization-tools
+
+https://rankai.ai/articles/best-geo-tools
+
+https://dupple.com/learn/best-geo-tools
+
+https://www.reddit.com/r/b2bmarketing/comments/1qb1n8h/best_ai_visibility_tools_generative_engine/
+
+https://www.tryanalyze.ai/blog/generative-engine-optimization-tools"

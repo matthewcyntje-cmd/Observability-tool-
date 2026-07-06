@@ -1,10 +1,18 @@
 import os
 import csv
 import time
+import subprocess
 from playwright.sync_api import sync_playwright
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 SENTINEL = "RESPONSEHASENDED"
+
+
+def minimize_chrome():
+    subprocess.run([
+        "osascript", "-e",
+        'tell application "Google Chrome" to set miniaturized of window 1 to true'
+    ])
 
 
 def load_run_state():
@@ -52,6 +60,8 @@ def load_queries(csv_path):
 
 
 def run_automation():
+    run_start_time = time.time()
+
     state = load_run_state()
     project_url = state["project_url"]
     csv_path = state["csv_path"]
@@ -78,47 +88,59 @@ def run_automation():
         for query in queries:
             print(f"\n--- Query {query['index']}: {query['text']} ---")
 
-            chatgpt_page = context.new_page()
-            chatgpt_page.set_viewport_size({"width": 1920, "height": 1080})
-            chatgpt_page.goto(project_url)
-            chatgpt_page.wait_for_load_state("networkidle")
-            time.sleep(4)
-
-            try:
-                textarea = chatgpt_page.locator("#prompt-textarea").first
-                textarea.click()
-                time.sleep(1)
-                textarea.fill(query['text'])
-                time.sleep(0.5)
-                chatgpt_page.keyboard.press("Enter")
-                print("Query submitted, waiting for response...")
-            except Exception as e:
-                print(f"Could not submit query: {e}")
-                chatgpt_page.close()
-                all_succeeded = False
-                continue
-
-            max_wait = 180
-            start_time = time.time()
+            MAX_RETRIES = 3
             response_text = None
+            attempt = 1
 
-            while time.time() - start_time < max_wait:
+            while attempt <= MAX_RETRIES and response_text is None:
+                print(f"Attempt {attempt}/{MAX_RETRIES} for query {query['index']}")
+
+                chatgpt_page = context.new_page()
+                chatgpt_page.set_viewport_size({"width": 1920, "height": 1080})
+                minimize_chrome()
+
                 try:
-                    page_content = chatgpt_page.inner_text("body")
-                    if SENTINEL in page_content:
-                        messages = chatgpt_page.locator("[data-message-author-role='assistant']").all()
-                        if messages:
-                            last_message = messages[-1].inner_text()
-                            response_text = last_message.replace(SENTINEL, "").strip()
-                            print(f"Response captured ({len(response_text)} chars)")
-                        break
-                except:
-                    pass
-                time.sleep(3)
+                    chatgpt_page.goto(project_url)
+                    chatgpt_page.wait_for_load_state("networkidle")
+                    time.sleep(4)
+
+                    textarea = chatgpt_page.locator("#prompt-textarea").first
+                    textarea.click()
+                    time.sleep(1)
+                    textarea.fill(query['text'])
+                    time.sleep(0.5)
+                    chatgpt_page.keyboard.press("Enter")
+                    print("Query submitted, waiting for response...")
+
+                    max_wait = 180
+                    start_time = time.time()
+
+                    while time.time() - start_time < max_wait:
+                        try:
+                            page_content = chatgpt_page.inner_text("body")
+                            if SENTINEL in page_content:
+                                messages = chatgpt_page.locator("[data-message-author-role='assistant']").all()
+                                if messages:
+                                    last_message = messages[-1].inner_text()
+                                    response_text = last_message.replace(SENTINEL, "").strip()
+                                    print(f"Response captured ({len(response_text)} chars)")
+                                break
+                        except:
+                            pass
+                        time.sleep(3)
+
+                except Exception as e:
+                    print(f"Attempt {attempt} failed to load or submit: {e}")
+
+                chatgpt_page.close()
+
+                if response_text is None:
+                    print(f"No response within {max_wait}s on attempt {attempt}, retrying from project page...")
+                    attempt += 1
+                    time.sleep(2)
 
             if not response_text:
-                print(f"Timeout on query {query['index']}, skipping")
-                chatgpt_page.close()
+                print(f"Query {query['index']} failed after {MAX_RETRIES} attempts, skipping")
                 all_succeeded = False
                 continue
 
@@ -127,10 +149,21 @@ def run_automation():
                 writer.writerow([query['text'], response_text])
             print(f"Written to CSV: query {query['index']}")
 
-            chatgpt_page.close()
             time.sleep(2)
 
+        run_end_time = time.time()
+        elapsed_seconds = run_end_time - run_start_time
+        minutes = int(elapsed_seconds // 60)
+        seconds = int(elapsed_seconds % 60)
+        elapsed_str = f"{minutes}m {seconds}s"
+
+        with open(output_file, 'a', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow([])
+            writer.writerow(["Total run time", elapsed_str])
+
         print(f"\nAll queries complete! Check {output_file}")
+        print(f"Total run time: {elapsed_str}")
 
         if all_succeeded:
             os.remove(csv_path)
