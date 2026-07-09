@@ -1,0 +1,67 @@
+=== DESCRIPTORS ===
+phrase,frequency,pct_of_responses
+commerce optimization platform,4,16.666666666666664
+legitimate,3,12.5
+commerce optimization layer,3,12.5
+AI-powered commerce optimization platform,2,8.333333333333332
+a mobile experience platform,1,4.166666666666666
+professional-grade platform,1,4.166666666666666
+optimization layer,1,4.166666666666666
+optimization and routing layer,1,4.166666666666666
+mobile commerce technology company,1,4.166666666666666
+mobile commerce platform,1,4.166666666666666
+mobile commerce optimization platform,1,4.166666666666666
+marketing/commerce technology vendor,1,4.166666666666666
+Marketing tool,1,4.166666666666666
+marketing technology platform,1,4.166666666666666
+marketing / commerce optimization tool,1,4.166666666666666
+legitimate company,1,4.166666666666666
+custom-priced performance/commerce optimization platform,1,4.166666666666666
+enterprise/growth platform,1,4.166666666666666
+Affiliate / creator marketing infrastructure,1,4.166666666666666
+custom / enterprise pricing,1,4.166666666666666
+
+=== FIGURES ===
+figure,context,raw_frequency,dominance_pct
+$25B,all-time commerce on the platform,4,40.0
+$2.9B,2025 app gross merchandise sales,2,20.0
+$100B+,total commerce driven,2,20.0
+2014,year Button began operating,2,20.0
+$1 billion,2024 monthly commerce driven through the platform,1,10.0
+200%,impact.com + Button apps revenue vs. web journeys,1,10.0
+"5,000+",apps optimized,1,10.0
+42%,sales-per-tap lift,1,10.0
+40%,2025 platform update higher mobile affiliate revenue,1,10.0
+38%,conversion lift,1,10.0
+
+=== FIGURES SUMMARY ===
+metric,value
+pct_responses_with_zero_qualifying_figures,58.333333333333336
+
+=== SOURCES ===
+domain,frequency
+usebutton.com,24
+prnewswire.com,10
+psgequity.com,6
+accelerationpartners.com,6
+impact.com,4
+trustradius.com,4
+posttap.com,3
+cbinsights.com,3
+norwest.com,3
+cj.com,2
+martechrecord.com,2
+craft.co,1
+forrester.com,1
+martech360.com,1
+awin.com,1
+pitchbook.com,1
+buttonandbrew.com,1
+rakutenadvertising.com,1
+scam-detector.com,1
+tracxn.com,1
+
+=== SOURCES SUMMARY ===
+metric,value
+pct_responses_with_zero_identifiable_sources,0.0
+
