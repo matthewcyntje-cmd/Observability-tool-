@@ -49,18 +49,50 @@ def wait_with_modal_check(page, ms, poll_ms=1000):
         dismiss_rate_limit_modal(page)
 
 
-def safe_click(locator, **kwargs):
-    """Dismiss the rate-limit modal immediately before clicking, since it can
-    cover the target element and intercept the click."""
-    dismiss_rate_limit_modal(locator.page)
-    locator.click(**kwargs)
+def safe_action(page, action_fn, max_attempts=10, retry_pause_ms=300):
+    """Runs a dismiss check immediately before every attempt at a page
+    action, retrying if the action itself gets blocked by the modal.
+
+    The modal can appear mid-action. Handing Playwright's own actions the
+    full default 30s timeout means a blocked action just retries internally
+    against the blocked element for the whole 30s with no chance for us to
+    dismiss anything, then throws. action_fn should be a zero-arg callable
+    that performs one action with its own short timeout where applicable
+    (e.g. lambda: locator.click(timeout=3000)), so a blocked action fails
+    fast and we can dismiss the modal and retry ourselves.
+    """
+    last_err = None
+    for _ in range(max_attempts):
+        dismiss_rate_limit_modal(page)
+        try:
+            return action_fn()
+        except Exception as e:
+            last_err = e
+            dismiss_rate_limit_modal(page)
+            page.wait_for_timeout(retry_pause_ms)
+    raise last_err
 
 
-def safe_fill(locator, text, **kwargs):
-    """Dismiss the rate-limit modal immediately before filling, since it can
-    cover the target element and intercept the input."""
-    dismiss_rate_limit_modal(locator.page)
-    locator.fill(text, **kwargs)
+def safe_click(locator, timeout=3000, max_attempts=10, retry_pause_ms=300):
+    """Click a locator, recovering from the rate-limit modal if it intercepts
+    the click."""
+    return safe_action(
+        locator.page,
+        lambda: locator.click(timeout=timeout),
+        max_attempts=max_attempts,
+        retry_pause_ms=retry_pause_ms,
+    )
+
+
+def safe_fill(locator, text, timeout=3000, max_attempts=10, retry_pause_ms=300):
+    """Fill a locator, recovering from the rate-limit modal the same way
+    safe_click does."""
+    return safe_action(
+        locator.page,
+        lambda: locator.fill(text, timeout=timeout),
+        max_attempts=max_attempts,
+        retry_pause_ms=retry_pause_ms,
+    )
 
 
 # ---- Chrome setup ----

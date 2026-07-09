@@ -29,6 +29,52 @@ def dismiss_rate_limit_modal(page):
     return False
 
 
+def safe_action(page, action_fn, max_attempts=10, retry_pause_ms=300):
+    """Runs a dismiss check immediately before every attempt at a page
+    action, retrying if the action itself gets blocked by the modal.
+
+    The modal can appear mid-action. Handing Playwright's own actions the
+    full default 30s timeout means a blocked action just retries internally
+    against the blocked element for the whole 30s with no chance for us to
+    dismiss anything, then throws. action_fn should be a zero-arg callable
+    that performs one action with its own short timeout where applicable
+    (e.g. lambda: locator.click(timeout=3000)), so a blocked action fails
+    fast and we can dismiss the modal and retry ourselves.
+    """
+    last_err = None
+    for _ in range(max_attempts):
+        dismiss_rate_limit_modal(page)
+        try:
+            return action_fn()
+        except Exception as e:
+            last_err = e
+            dismiss_rate_limit_modal(page)
+            page.wait_for_timeout(retry_pause_ms)
+    raise last_err
+
+
+def safe_click(locator, timeout=3000, max_attempts=10, retry_pause_ms=300):
+    """Click a locator, recovering from the rate-limit modal if it intercepts
+    the click."""
+    return safe_action(
+        locator.page,
+        lambda: locator.click(timeout=timeout),
+        max_attempts=max_attempts,
+        retry_pause_ms=retry_pause_ms,
+    )
+
+
+def safe_fill(locator, text, timeout=3000, max_attempts=10, retry_pause_ms=300):
+    """Fill a locator, recovering from the rate-limit modal the same way
+    safe_click does."""
+    return safe_action(
+        locator.page,
+        lambda: locator.fill(text, timeout=timeout),
+        max_attempts=max_attempts,
+        retry_pause_ms=retry_pause_ms,
+    )
+
+
 def load_run_state():
     state_path = os.path.join(SCRIPT_DIR, "run_state.txt")
     if not os.path.exists(state_path):
@@ -83,7 +129,7 @@ def start_new_chat(page, project_title):
     dismiss_rate_limit_modal(page)
     new_chat_link = page.get_by_role("link", name=f"Open {project_title} project")
     if new_chat_link.count() > 0:
-        new_chat_link.first.click()
+        safe_click(new_chat_link.first)
         page.wait_for_timeout(1000)
         dismiss_rate_limit_modal(page)
 
@@ -184,11 +230,11 @@ def run_automation():
                     start_new_chat(chatgpt_page, project_title)
 
                     textarea = chatgpt_page.locator("#prompt-textarea").first
-                    textarea.click()
+                    safe_click(textarea)
                     sleep_with_modal_check(chatgpt_page, 1)
-                    textarea.fill(query['text'])
+                    safe_fill(textarea, query['text'])
                     sleep_with_modal_check(chatgpt_page, 0.5)
-                    chatgpt_page.keyboard.press("Enter")
+                    safe_action(chatgpt_page, lambda: chatgpt_page.keyboard.press("Enter"))
                     print("Query submitted, waiting for response...")
 
                     max_wait = 75
@@ -206,7 +252,10 @@ def run_automation():
                     attempt += 1
                     sleep_with_modal_check(chatgpt_page, 2)
 
-            start_new_chat(chatgpt_page, project_title)
+            try:
+                start_new_chat(chatgpt_page, project_title)
+            except Exception as e:
+                print(f"Warning: failed to reset to a new chat after query {query['index']}: {e}")
 
             if not response_text:
                 print(f"Query {query['index']} failed after {MAX_RETRIES} attempts, skipping")

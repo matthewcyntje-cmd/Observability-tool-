@@ -1,4 +1,4 @@
 project_title: Button qs Brand focus 5 - Sheet1
-project_url: https://chatgpt.com/g/g-p-6a4fbf31432481918e41ed70e26d0b3b/project
+project_url: https://chatgpt.com/g/g-p-6a4fc534b9a4819199fd55d49525d1c3/project
 csv_path: /Users/matthewcyntje/Automation Tool/automation tool v2/Input/Button qs Brand focus 5 - Sheet1.csv
 output_folder: /Users/matthewcyntje/Automation Tool/automation tool v2/Output
