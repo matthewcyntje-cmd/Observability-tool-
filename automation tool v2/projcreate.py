@@ -19,6 +19,50 @@ def snap(page, name):
     print(f"Saved debug screenshot: {path}")
 
 
+def dismiss_rate_limit_modal(page):
+    """Clicks 'Got it' if the rate limit modal appears. Returns True if it fired.
+
+    This modal dims and covers the whole screen, so it can intercept clicks
+    aimed at anything underneath it - check for it before every interaction,
+    not just during waits.
+    """
+    try:
+        got_it_button = page.get_by_role("button", name="Got it")
+        if got_it_button.is_visible(timeout=2000):
+            got_it_button.click()
+            print("Dismissed 'Too many requests' modal.")
+            return True
+    except Exception:
+        pass
+    return False
+
+
+def wait_with_modal_check(page, ms, poll_ms=1000):
+    """Drop-in replacement for page.wait_for_timeout() that dismisses the
+    rate-limit modal if it appears at any point during the wait."""
+    dismiss_rate_limit_modal(page)
+    remaining = ms
+    while remaining > 0:
+        chunk = min(poll_ms, remaining)
+        page.wait_for_timeout(chunk)
+        remaining -= chunk
+        dismiss_rate_limit_modal(page)
+
+
+def safe_click(locator, **kwargs):
+    """Dismiss the rate-limit modal immediately before clicking, since it can
+    cover the target element and intercept the click."""
+    dismiss_rate_limit_modal(locator.page)
+    locator.click(**kwargs)
+
+
+def safe_fill(locator, text, **kwargs):
+    """Dismiss the rate-limit modal immediately before filling, since it can
+    cover the target element and intercept the input."""
+    dismiss_rate_limit_modal(locator.page)
+    locator.fill(text, **kwargs)
+
+
 # ---- Chrome setup ----
 
 def restart_chrome_with_debug_port():
@@ -106,13 +150,13 @@ def derive_project_title(csv_path):
 
 def find_existing_project(page, project_title):
     page.goto("https://chatgpt.com/projects")
-    page.wait_for_timeout(2000)
+    wait_with_modal_check(page, 2000)
     snap(page, "01_projects_page")
 
     project_row = page.get_by_text(project_title, exact=True)
     if project_row.count() > 0:
-        project_row.first.click()
-        page.wait_for_timeout(2000)
+        safe_click(project_row.first)
+        wait_with_modal_check(page, 2000)
         snap(page, "02_found_existing_project")
         return page.url
     return None
@@ -120,63 +164,67 @@ def find_existing_project(page, project_title):
 
 def paste_instructions(page, project_title, instructions_text):
     page.goto("https://chatgpt.com/projects")
-    page.wait_for_timeout(2000)
+    wait_with_modal_check(page, 2000)
 
     # Hover the project row first so the options button actually renders
+    dismiss_rate_limit_modal(page)
     row = page.get_by_text(project_title, exact=True)
     row.hover()
-    page.wait_for_timeout(500)
+    wait_with_modal_check(page, 500)
     snap(page, "09b_after_hover")
 
     options_button = page.locator(f"button[aria-label='Open project options for {project_title}']")
     options_button.wait_for(state="visible", timeout=10000)
-    options_button.click()
-    page.wait_for_timeout(500)
+    safe_click(options_button)
+    wait_with_modal_check(page, 500)
     snap(page, "10_project_options_open")
 
-    page.get_by_text("Project settings").click()
-    page.wait_for_timeout(1000)
+    safe_click(page.get_by_text("Project settings"))
+    wait_with_modal_check(page, 1000)
     snap(page, "11_project_settings_modal")
 
-    page.get_by_placeholder(
-        "e.g. \u201cRespond in Spanish. Reference the latest JavaScript documentation. Keep answers short and focused.\u201d"
-    ).fill(instructions_text)
-    page.wait_for_timeout(500)
+    safe_fill(
+        page.get_by_placeholder(
+            "e.g. \u201cRespond in Spanish. Reference the latest JavaScript documentation. Keep answers short and focused.\u201d"
+        ),
+        instructions_text,
+    )
+    wait_with_modal_check(page, 500)
     snap(page, "12_instructions_typed")
 
-    page.get_by_role("button", name="Save").click()
-    page.wait_for_timeout(1000)
+    safe_click(page.get_by_role("button", name="Save"))
+    wait_with_modal_check(page, 1000)
     snap(page, "13_instructions_saved")
 def create_new_project(page, project_title, instructions_text):
     page.goto("https://chatgpt.com/projects")
-    page.wait_for_timeout(2000)
+    wait_with_modal_check(page, 2000)
     snap(page, "03_before_new_click")
 
-    page.get_by_role("button", name="New", exact=True).click()
-    page.wait_for_timeout(1000)
+    safe_click(page.get_by_role("button", name="New", exact=True))
+    wait_with_modal_check(page, 1000)
     snap(page, "04_after_new_click")
 
-    page.get_by_placeholder("Copenhagen Trip").fill(project_title)
+    safe_fill(page.get_by_placeholder("Copenhagen Trip"), project_title)
     snap(page, "05_name_typed")
 
-    page.locator("button[aria-label='Project settings']").click()
-    page.wait_for_timeout(500)
+    safe_click(page.locator("button[aria-label='Project settings']"))
+    wait_with_modal_check(page, 500)
     snap(page, "06_memory_dropdown_open")
 
-    page.get_by_text("Project-only").click()
-    page.wait_for_timeout(500)
+    safe_click(page.get_by_text("Project-only"))
+    wait_with_modal_check(page, 500)
     snap(page, "07_project_only_selected")
 
-    page.get_by_role("button", name="Create project").click()
-    page.wait_for_timeout(2000)
+    safe_click(page.get_by_role("button", name="Create project"))
+    wait_with_modal_check(page, 2000)
     snap(page, "08_after_create_click")
 
     paste_instructions(page, project_title, instructions_text)
 
     page.goto("https://chatgpt.com/projects")
-    page.wait_for_timeout(2000)
-    page.get_by_text(project_title, exact=True).first.click()
-    page.wait_for_timeout(2000)
+    wait_with_modal_check(page, 2000)
+    safe_click(page.get_by_text(project_title, exact=True).first)
+    wait_with_modal_check(page, 2000)
     snap(page, "09_inside_new_project")
 
     return page.url
