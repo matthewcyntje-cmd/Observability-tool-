@@ -16,6 +16,19 @@ def minimize_chrome():
     ])
 
 
+def dismiss_rate_limit_modal(page):
+    """Clicks 'Got it' if the rate limit modal appears. Returns True if it fired."""
+    try:
+        got_it_button = page.get_by_role("button", name="Got it")
+        if got_it_button.is_visible(timeout=2000):
+            got_it_button.click()
+            print("Dismissed 'Too many requests' modal.")
+            return True
+    except Exception:
+        pass
+    return False
+
+
 def load_run_state():
     state_path = os.path.join(SCRIPT_DIR, "run_state.txt")
     if not os.path.exists(state_path):
@@ -71,6 +84,41 @@ def start_new_chat(page, project_title):
     if new_chat_link.count() > 0:
         new_chat_link.first.click()
         page.wait_for_timeout(1000)
+
+
+def check_response_ready(page):
+    """Single-tick check for a completed response.
+
+    Returns (done, text). done=True once the sentinel appears in the page;
+    text is the captured response, or None if the sentinel appeared without
+    a matching assistant message yet.
+    """
+    try:
+        page_content = page.inner_text("body")
+        if SENTINEL in page_content:
+            messages = page.locator("[data-message-author-role='assistant']").all()
+            if messages:
+                last_message = messages[-1].inner_text()
+                text = last_message.replace(SENTINEL, "").strip()
+                return True, text
+            return True, None
+    except Exception:
+        pass
+    return False, None
+
+
+def wait_for_response_with_modal_check(page, max_wait=180, check_interval=3):
+    """Polls for a completed response, dismissing the rate-limit modal if it
+    appears at any point during the wait (not just once after submission)."""
+    elapsed = 0
+    while elapsed < max_wait:
+        dismiss_rate_limit_modal(page)
+        done, text = check_response_ready(page)
+        if done:
+            return text
+        time.sleep(check_interval)
+        elapsed += check_interval
+    return None
 
 
 def run_automation():
@@ -129,21 +177,11 @@ def run_automation():
                     print("Query submitted, waiting for response...")
 
                     max_wait = 180
-                    start_time = time.time()
-
-                    while time.time() - start_time < max_wait:
-                        try:
-                            page_content = chatgpt_page.inner_text("body")
-                            if SENTINEL in page_content:
-                                messages = chatgpt_page.locator("[data-message-author-role='assistant']").all()
-                                if messages:
-                                    last_message = messages[-1].inner_text()
-                                    response_text = last_message.replace(SENTINEL, "").strip()
-                                    print(f"Response captured ({len(response_text)} chars)")
-                                break
-                        except:
-                            pass
-                        time.sleep(3)
+                    response_text = wait_for_response_with_modal_check(
+                        chatgpt_page, max_wait=max_wait, check_interval=3
+                    )
+                    if response_text is not None:
+                        print(f"Response captured ({len(response_text)} chars)")
 
                 except Exception as e:
                     print(f"Attempt {attempt} failed to submit or capture: {e}")

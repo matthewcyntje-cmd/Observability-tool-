@@ -1,4 +1,4 @@
-project_title: Copy of Button qs Brand focus 2 - Sheet1
-project_url: https://chatgpt.com/g/g-p-6a4faefdfd0481919fd10968b657d67b/project
-csv_path: /Users/matthewcyntje/Automation Tool/automation tool v2/Input/Copy of Button qs Brand focus 2 - Sheet1.csv
+project_title: BQ 3 - Sheet1
+project_url: https://chatgpt.com/g/g-p-6a4fb5dc47848191afdb00ca50fc2e62/project
+csv_path: /Users/matthewcyntje/Automation Tool/automation tool v2/Input/BQ 3 - Sheet1.csv
 output_folder: /Users/matthewcyntje/Automation Tool/automation tool v2/Output
