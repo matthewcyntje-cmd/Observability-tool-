@@ -6,7 +6,7 @@ from playwright.sync_api import sync_playwright
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 SENTINEL = "RESPONSEHASENDED"
-QUERY_DELAY_SECONDS = 15
+QUERY_DELAY_SECONDS = 7
 
 
 def minimize_chrome():
@@ -80,10 +80,12 @@ def start_new_chat(page, project_title):
     active conversation; if we're already at the project's empty compose
     view, there's nothing to click.
     """
+    dismiss_rate_limit_modal(page)
     new_chat_link = page.get_by_role("link", name=f"Open {project_title} project")
     if new_chat_link.count() > 0:
         new_chat_link.first.click()
         page.wait_for_timeout(1000)
+        dismiss_rate_limit_modal(page)
 
 
 def check_response_ready(page):
@@ -121,6 +123,19 @@ def wait_for_response_with_modal_check(page, max_wait=180, check_interval=3):
     return None
 
 
+def sleep_with_modal_check(page, seconds, poll_interval=1.0):
+    """Drop-in replacement for time.sleep() that dismisses the rate-limit
+    modal if it appears at any point during the wait, instead of only
+    checking once before or after."""
+    elapsed = 0.0
+    while elapsed < seconds:
+        dismiss_rate_limit_modal(page)
+        step = min(poll_interval, seconds - elapsed)
+        time.sleep(step)
+        elapsed += step
+    dismiss_rate_limit_modal(page)
+
+
 def run_automation():
     run_start_time = time.time()
 
@@ -153,7 +168,7 @@ def run_automation():
         minimize_chrome()
         chatgpt_page.goto(project_url)
         chatgpt_page.wait_for_load_state("networkidle")
-        time.sleep(4)
+        sleep_with_modal_check(chatgpt_page, 4)
 
         for query in queries:
             print(f"\n--- Query {query['index']}: {query['text']} ---")
@@ -170,13 +185,13 @@ def run_automation():
 
                     textarea = chatgpt_page.locator("#prompt-textarea").first
                     textarea.click()
-                    time.sleep(1)
+                    sleep_with_modal_check(chatgpt_page, 1)
                     textarea.fill(query['text'])
-                    time.sleep(0.5)
+                    sleep_with_modal_check(chatgpt_page, 0.5)
                     chatgpt_page.keyboard.press("Enter")
                     print("Query submitted, waiting for response...")
 
-                    max_wait = 180
+                    max_wait = 75
                     response_text = wait_for_response_with_modal_check(
                         chatgpt_page, max_wait=max_wait, check_interval=3
                     )
@@ -189,7 +204,7 @@ def run_automation():
                 if response_text is None:
                     print(f"No response within {max_wait}s on attempt {attempt}, starting a new chat and retrying...")
                     attempt += 1
-                    time.sleep(2)
+                    sleep_with_modal_check(chatgpt_page, 2)
 
             start_new_chat(chatgpt_page, project_title)
 
@@ -203,7 +218,7 @@ def run_automation():
                 writer.writerow([query['text'], response_text])
             print(f"Written to CSV: query {query['index']}")
 
-            time.sleep(QUERY_DELAY_SECONDS)
+            sleep_with_modal_check(chatgpt_page, QUERY_DELAY_SECONDS)
 
         chatgpt_page.close()
 

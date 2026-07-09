@@ -1,4 +1,4 @@
-project_title: BQ 3 - Sheet1
-project_url: https://chatgpt.com/g/g-p-6a4fb5dc47848191afdb00ca50fc2e62/project
-csv_path: /Users/matthewcyntje/Automation Tool/automation tool v2/Input/BQ 3 - Sheet1.csv
+project_title: BFQ4 - Sheet1
+project_url: https://chatgpt.com/g/g-p-6a4fbafb05d481919b650aaeb2f2d520/project
+csv_path: /Users/matthewcyntje/Automation Tool/automation tool v2/Input/BFQ4 - Sheet1.csv
 output_folder: /Users/matthewcyntje/Automation Tool/automation tool v2/Output
