@@ -6,6 +6,7 @@ from playwright.sync_api import sync_playwright
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 SENTINEL = "RESPONSEHASENDED"
+QUERY_DELAY_SECONDS = 15
 
 
 def minimize_chrome():
@@ -31,7 +32,7 @@ def load_run_state():
             key, value = line.split(":", 1)
             state[key.strip()] = value.strip()
 
-    required = ["project_url", "csv_path", "output_folder"]
+    required = ["project_title", "project_url", "csv_path", "output_folder"]
     missing = [k for k in required if k not in state or not state[k]]
     if missing:
         raise Exception(f"run_state.txt is missing: {missing}")
@@ -59,10 +60,24 @@ def load_queries(csv_path):
     return queries
 
 
+def start_new_chat(page, project_title):
+    """Return to the project's fresh compose view without reloading the page.
+
+    The breadcrumb link back to the project only renders while inside an
+    active conversation; if we're already at the project's empty compose
+    view, there's nothing to click.
+    """
+    new_chat_link = page.get_by_role("link", name=f"Open {project_title} project")
+    if new_chat_link.count() > 0:
+        new_chat_link.first.click()
+        page.wait_for_timeout(1000)
+
+
 def run_automation():
     run_start_time = time.time()
 
     state = load_run_state()
+    project_title = state["project_title"]
     project_url = state["project_url"]
     csv_path = state["csv_path"]
     output_folder = state["output_folder"]
@@ -85,6 +100,13 @@ def run_automation():
 
         all_succeeded = True
 
+        chatgpt_page = context.new_page()
+        chatgpt_page.set_viewport_size({"width": 1920, "height": 1080})
+        minimize_chrome()
+        chatgpt_page.goto(project_url)
+        chatgpt_page.wait_for_load_state("networkidle")
+        time.sleep(4)
+
         for query in queries:
             print(f"\n--- Query {query['index']}: {query['text']} ---")
 
@@ -95,14 +117,8 @@ def run_automation():
             while attempt <= MAX_RETRIES and response_text is None:
                 print(f"Attempt {attempt}/{MAX_RETRIES} for query {query['index']}")
 
-                chatgpt_page = context.new_page()
-                chatgpt_page.set_viewport_size({"width": 1920, "height": 1080})
-                minimize_chrome()
-
                 try:
-                    chatgpt_page.goto(project_url)
-                    chatgpt_page.wait_for_load_state("networkidle")
-                    time.sleep(4)
+                    start_new_chat(chatgpt_page, project_title)
 
                     textarea = chatgpt_page.locator("#prompt-textarea").first
                     textarea.click()
@@ -130,14 +146,14 @@ def run_automation():
                         time.sleep(3)
 
                 except Exception as e:
-                    print(f"Attempt {attempt} failed to load or submit: {e}")
-
-                chatgpt_page.close()
+                    print(f"Attempt {attempt} failed to submit or capture: {e}")
 
                 if response_text is None:
-                    print(f"No response within {max_wait}s on attempt {attempt}, retrying from project page...")
+                    print(f"No response within {max_wait}s on attempt {attempt}, starting a new chat and retrying...")
                     attempt += 1
                     time.sleep(2)
+
+            start_new_chat(chatgpt_page, project_title)
 
             if not response_text:
                 print(f"Query {query['index']} failed after {MAX_RETRIES} attempts, skipping")
@@ -149,7 +165,9 @@ def run_automation():
                 writer.writerow([query['text'], response_text])
             print(f"Written to CSV: query {query['index']}")
 
-            time.sleep(2)
+            time.sleep(QUERY_DELAY_SECONDS)
+
+        chatgpt_page.close()
 
         run_end_time = time.time()
         elapsed_seconds = run_end_time - run_start_time
