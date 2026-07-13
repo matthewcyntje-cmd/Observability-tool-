@@ -1,67 +1,67 @@
 === DESCRIPTORS ===
 phrase,frequency,pct_of_responses
-commerce optimization platform,4,16.666666666666664
-legitimate,3,12.5
-commerce optimization layer,3,12.5
-AI-powered commerce optimization platform,2,8.333333333333332
-a mobile experience platform,1,4.166666666666666
-professional-grade platform,1,4.166666666666666
-optimization layer,1,4.166666666666666
-optimization and routing layer,1,4.166666666666666
-mobile commerce technology company,1,4.166666666666666
-mobile commerce platform,1,4.166666666666666
-mobile commerce optimization platform,1,4.166666666666666
-marketing/commerce technology vendor,1,4.166666666666666
-Marketing tool,1,4.166666666666666
-marketing technology platform,1,4.166666666666666
-marketing / commerce optimization tool,1,4.166666666666666
-legitimate company,1,4.166666666666666
-custom-priced performance/commerce optimization platform,1,4.166666666666666
-enterprise/growth platform,1,4.166666666666666
-Affiliate / creator marketing infrastructure,1,4.166666666666666
-custom / enterprise pricing,1,4.166666666666666
+mobile commerce technology platform,4,3.7037037037037033
+founded in 2014,4,3.7037037037037033
+used by companies,4,3.7037037037037033
+legitimate,3,2.7777777777777777
+helps send,3,2.7777777777777777
+customers include creators publishers,3,2.7777777777777777
+helps connect,2,1.8518518518518516
+used to make mobile ecommerce links work better,2,1.8518518518518516
+used in ecommerce to improve mobile shopping conversion especially when traffic comes from affiliates creators publishers ads or partner links,2,1.8518518518518516
+routes shoppers to the best destination: the brand’s app if installed the app store if not or a mobile web checkout path,2,1.8518518518518516
+b2b software for mobile commerce attribution deep linking,2,1.8518518518518516
+helps turn partner traffic into app opens installs,2,1.8518518518518516
+intelligence layer between a mobile click,2,1.8518518518518516
+helps brands retailers publishers,2,1.8518518518518516
+helps brands publishers,2,1.8518518518518516
+looks legitimate,2,1.8518518518518516
+commerce optimization platform,2,1.8518518518518516
+make mobile ecommerce links work better,2,1.8518518518518516
+mobile commerce optimization platform,2,1.8518518518518516
+describes its platform as using ai,2,1.8518518518518516
 
 === FIGURES ===
-figure,context,raw_frequency,dominance_pct
-$25B,all-time commerce on the platform,4,40.0
-$2.9B,2025 app gross merchandise sales,2,20.0
-$100B+,total commerce driven,2,20.0
-2014,year Button began operating,2,20.0
-$1 billion,2024 monthly commerce driven through the platform,1,10.0
-200%,impact.com + Button apps revenue vs. web journeys,1,10.0
-"5,000+",apps optimized,1,10.0
-42%,sales-per-tap lift,1,10.0
-40%,2025 platform update higher mobile affiliate revenue,1,10.0
-38%,conversion lift,1,10.0
+figure,referent,raw_frequency,dominance_pct
+2014,Button was founded in,5,17.857142857142858
+$25B,all-time commerce,2,7.142857142857142
+22M,app installs,2,7.142857142857142
+165%,increase in total mobile affiliate revenue,2,7.142857142857142
+2026,As of,2,7.142857142857142
+38%,conversion lift,2,7.142857142857142
+$25B,all-time commerce on the platform,2,7.142857142857142
+14.4B,shopping journeys,2,7.142857142857142
+42%,sales-per-tap lift,2,7.142857142857142
+$100B+,total commerce driven,2,7.142857142857142
 
 === FIGURES SUMMARY ===
 metric,value
-pct_responses_with_zero_qualifying_figures,58.333333333333336
+pct_responses_with_zero_qualifying_figures,74.07407407407408
 
 === SOURCES ===
 domain,frequency
-usebutton.com,24
-prnewswire.com,10
-psgequity.com,6
-accelerationpartners.com,6
-impact.com,4
-trustradius.com,4
-posttap.com,3
-cbinsights.com,3
-norwest.com,3
-cj.com,2
-martechrecord.com,2
-craft.co,1
-forrester.com,1
-martech360.com,1
-awin.com,1
-pitchbook.com,1
-buttonandbrew.com,1
-rakutenadvertising.com,1
-scam-detector.com,1
-tracxn.com,1
+usebutton.com,91
+prnewswire.com,37
+norwest.com,18
+accelerationpartners.com,15
+impact.com,15
+cbinsights.com,10
+posttap.com,9
+psgequity.com,8
+trustradius.com,7
+awin.com,6
+martech360.com,6
+tracxn.com,5
+g2.com,3
+theorg.com,3
+pitchbook.com,3
+martechrecord.com,3
+f6s.com,3
+cj.com,3
+forrester.com,2
+globenewswire.com,2
 
 === SOURCES SUMMARY ===
 metric,value
-pct_responses_with_zero_identifiable_sources,0.0
+pct_responses_with_zero_identifiable_sources,13.88888888888889
 

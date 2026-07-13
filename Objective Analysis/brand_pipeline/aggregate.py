@@ -22,6 +22,10 @@ def normalize_figure_key(value):
     return key
 
 
+def normalize_referent_key(referent):
+    return re.sub(r"\s+", " ", (referent or "").strip().lower())
+
+
 def extract_domain(source):
     s = source.strip()
     if not s:
@@ -87,18 +91,20 @@ def aggregate_figures(records, total_rows):
         seen_in_row = {}
         for fig in rec.get("figures", []):
             value = (fig.get("value") or "").strip()
-            context = (fig.get("context") or "").strip()
+            referent = (fig.get("referent") or "").strip()
             if not value:
                 continue
-            key = normalize_figure_key(value)
+            # Group by (value, referent) together - different referents are
+            # different metrics even if the number coincidentally matches.
+            key = (normalize_figure_key(value), normalize_referent_key(referent))
             if key not in seen_in_row:
-                seen_in_row[key] = (value, context)
-        for key, (value, context) in seen_in_row.items():
-            entries.append({"row_index": rec["row_index"], "key": key, "value": value, "context": context})
+                seen_in_row[key] = (value, referent)
+        for key, (value, referent) in seen_in_row.items():
+            entries.append({"row_index": rec["row_index"], "key": key, "value": value, "referent": referent})
 
     zero_figure_pct = 100.0
     if not entries:
-        empty = pd.DataFrame(columns=["figure", "context", "raw_frequency", "dominance_pct"])
+        empty = pd.DataFrame(columns=["figure", "referent", "raw_frequency", "dominance_pct"])
         return empty, zero_figure_pct
 
     df = pd.DataFrame(entries)
@@ -107,12 +113,12 @@ def aggregate_figures(records, total_rows):
 
     raw_freq = df.groupby("key")["row_index"].nunique().rename("raw_frequency")
     canonical_value = df.groupby("key")["value"].agg(_mode).rename("figure")
-    canonical_context = df.groupby("key")["context"].agg(_mode).rename("context")
+    canonical_referent = df.groupby("key")["referent"].agg(_mode).rename("referent")
 
-    result = pd.concat([canonical_value, canonical_context, raw_freq], axis=1).reset_index(drop=True)
+    result = pd.concat([canonical_value, canonical_referent, raw_freq], axis=1).reset_index(drop=True)
     result["dominance_pct"] = result["raw_frequency"] / rows_with_any_figure * 100
     result = result.sort_values("raw_frequency", ascending=False).head(10).reset_index(drop=True)
-    return result[["figure", "context", "raw_frequency", "dominance_pct"]], zero_figure_pct
+    return result[["figure", "referent", "raw_frequency", "dominance_pct"]], zero_figure_pct
 
 
 def aggregate_sources(records, total_rows):

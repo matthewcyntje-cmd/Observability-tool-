@@ -9,7 +9,7 @@ rows = load_rows("Brand/Input/Button qs Brand focus - Sheet1_output.csv")
 EXTRACTIONS = [
     {
         "descriptors": ["commerce optimization platform", "AI-powered commerce optimization platform"],
-        "figures": [{"value": "$1 billion", "context": "2024 monthly commerce driven through the platform"}],
+        "figures": [{"value": "$1 billion", "referent": "2024 monthly commerce driven through the platform"}],
         "sources": [
             "https://www.usebutton.com/",
             "https://www.usebutton.com/post/button-surpasses-1-billion-in-commerce-driven-monthly-as-retailers-and-publishers-leverage-buttons-ai-powered-commerce-optimization-platform",
@@ -18,7 +18,7 @@ EXTRACTIONS = [
         ],
     },
     {
-        "descriptors": ["commerce optimization layer"],
+        "descriptors": ["commerce optimization layer", "used in ecommerce", "Improve attribution"],
         "figures": [],
         "sources": [
             "https://www.usebutton.com/",
@@ -33,11 +33,11 @@ EXTRACTIONS = [
     {
         "descriptors": ["optimization and routing layer"],
         "figures": [
-            {"value": "$100B+", "context": "total commerce driven"},
-            {"value": "14.4B", "context": "shopping journeys"},
-            {"value": "22M", "context": "app installs"},
-            {"value": "38%", "context": "conversion lift"},
-            {"value": "42%", "context": "sales-per-tap lift"},
+            {"value": "$100B+", "referent": "total commerce driven"},
+            {"value": "14.4B", "referent": "shopping journeys"},
+            {"value": "22M", "referent": "app installs"},
+            {"value": "38%", "referent": "conversion lift"},
+            {"value": "42%", "referent": "sales-per-tap lift"},
         ],
         "sources": [
             "https://www.usebutton.com/",
@@ -80,8 +80,8 @@ EXTRACTIONS = [
     {
         "descriptors": [],
         "figures": [
-            {"value": "$1B", "context": "monthly commerce driven"},
-            {"value": "$25B", "context": "all-time commerce on the platform"},
+            {"value": "$1B", "referent": "monthly commerce driven"},
+            {"value": "$25B", "referent": "all-time commerce on the platform"},
         ],
         "sources": [
             "https://www.usebutton.com/",
@@ -116,7 +116,7 @@ EXTRACTIONS = [
         ],
     },
     {
-        "descriptors": ["AI-powered commerce optimization technology", "AI-powered tool", "commerce optimization layer"],
+        "descriptors": ["AI-powered commerce optimization technology", "AI-powered tool", "commerce optimization layer", "no-code approach"],
         "figures": [],
         "sources": [
             "https://www.usebutton.com/post/button-surpasses-25-billion-in-all-time-commerce-on-the-platform-with-2025-proving-to-be-a-breakout-year-powered-by-the-creator-economy-and-continued-growth-of-commerce-media-and-affiliate-marketing",
@@ -136,7 +136,7 @@ EXTRACTIONS = [
         ],
     },
     {
-        "descriptors": ["custom-priced performance/commerce optimization platform"],
+        "descriptors": ["custom-priced performance/commerce optimization platform", "tailored commerce optimization"],
         "figures": [],
         "sources": [
             "https://www.usebutton.com/",
@@ -150,8 +150,8 @@ EXTRACTIONS = [
     {
         "descriptors": ["custom / enterprise pricing", "professional-grade platform"],
         "figures": [
-            {"value": "$100B+", "context": "total commerce driven"},
-            {"value": "5,000+", "context": "apps optimized"},
+            {"value": "$100B+", "referent": "total commerce driven"},
+            {"value": "5,000+", "referent": "apps optimized"},
         ],
         "sources": [
             "https://www.usebutton.com/",
@@ -184,8 +184,8 @@ EXTRACTIONS = [
     {
         "descriptors": ["commerce optimization platform"],
         "figures": [
-            {"value": "$25B", "context": "all-time commerce"},
-            {"value": "$2.9B", "context": "2025 app gross merchandise sales"},
+            {"value": "$25B", "referent": "all-time commerce"},
+            {"value": "$2.9B", "referent": "2025 app gross merchandise sales"},
         ],
         "sources": [
             "https://www.usebutton.com/",
@@ -239,8 +239,8 @@ EXTRACTIONS = [
             "credible",
         ],
         "figures": [
-            {"value": "2014", "context": "year Button began operating"},
-            {"value": "$25B+", "context": "all-time commerce (2025 announcement)"},
+            {"value": "2014", "referent": "year Button began operating"},
+            {"value": "$25B+", "referent": "all-time commerce (2025 announcement)"},
         ],
         "sources": [
             "https://www.usebutton.com/",
@@ -255,8 +255,8 @@ EXTRACTIONS = [
     {
         "descriptors": [],
         "figures": [
-            {"value": "2014", "context": "year Button was founded"},
-            {"value": "12 years", "context": "how long Button has been operating as of July 2026"},
+            {"value": "2014", "referent": "year Button was founded"},
+            {"value": "12 years", "referent": "how long Button has been operating as of July 2026"},
         ],
         "sources": [
             "https://www.usebutton.com/post/button-raises-30-million-in-series-c-funding-to-build-the-future-of-mobile-commerce",
@@ -267,8 +267,8 @@ EXTRACTIONS = [
     {
         "descriptors": [],
         "figures": [
-            {"value": "2x", "context": "Uber affiliate-program revenue increase via PostTap App"},
-            {"value": "165%", "context": "Sam's Club total mobile affiliate revenue increase"},
+            {"value": "2x", "referent": "Uber affiliate-program revenue increase via PostTap App"},
+            {"value": "165%", "referent": "Sam's Club total mobile affiliate revenue increase"},
         ],
         "sources": [
             "https://www.usebutton.com/",
@@ -288,13 +288,13 @@ EXTRACTIONS = [
     {
         "descriptors": [],
         "figures": [
-            {"value": "1.3M", "context": "Awin + Button app installs"},
-            {"value": "2.7x", "context": "Awin + Button in-app conversion rate vs. mobile web"},
-            {"value": "110%", "context": "Awin + Button higher revenue per tap in app"},
-            {"value": "200%", "context": "impact.com + Button apps revenue vs. web journeys"},
-            {"value": "175%", "context": "2025 platform update increase in app installs"},
-            {"value": "55%", "context": "2025 platform update increase in app-to-app sales"},
-            {"value": "40%", "context": "2025 platform update higher mobile affiliate revenue"},
+            {"value": "1.3M", "referent": "app installs"},
+            {"value": "2.7x", "referent": "in-app conversion rate vs. mobile web"},
+            {"value": "110%", "referent": "higher revenue per tap in app"},
+            {"value": "200%", "referent": "revenue of web journeys"},
+            {"value": "175%", "referent": "increase in app installs"},
+            {"value": "55%", "referent": "increase in app-to-app sales"},
+            {"value": "40%", "referent": "higher mobile affiliate revenue"},
         ],
         "sources": [
             "https://www.usebutton.com/",
@@ -328,8 +328,8 @@ EXTRACTIONS = [
     {
         "descriptors": ["mobile commerce optimization platform", "enterprise/growth platform", "conversion and attribution layer"],
         "figures": [
-            {"value": "$25B", "context": "all-time commerce on the platform"},
-            {"value": "$2.9B", "context": "2025 app GMS"},
+            {"value": "$25B", "referent": "all-time commerce on the platform"},
+            {"value": "$2.9B", "referent": "2025 app GMS"},
         ],
         "sources": [
             "https://www.usebutton.com/",
