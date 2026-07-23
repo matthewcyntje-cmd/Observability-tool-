@@ -239,11 +239,11 @@ def create_new_project(page, project_title, instructions_text):
     safe_fill(page.get_by_placeholder("Copenhagen Trip"), project_title)
     snap(page, "05_name_typed")
 
-    safe_click(page.locator("button[aria-label='Project settings']"))
+    safe_click(page.get_by_role("button", name="Default memory"))
     wait_with_modal_check(page, 500)
     snap(page, "06_memory_dropdown_open")
 
-    safe_click(page.get_by_text("Project-only"))
+    safe_click(page.get_by_text("Project-only memory", exact=True))
     wait_with_modal_check(page, 500)
     snap(page, "07_project_only_selected")
 
