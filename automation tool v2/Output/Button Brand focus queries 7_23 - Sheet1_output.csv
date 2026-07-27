@@ -1,0 +1,3765 @@
+Query,Response
+What is Button and what does Button do?,"Assuming you mean Button (usebutton.com):
+
+What is Button?
+
+Button is a mobile commerce technology platform that helps retailers, publishers, creators, affiliates, and advertisers turn mobile traffic into purchases and measurable revenue.
+
+Its core purpose is to fix the friction that occurs when someone taps a product or affiliate link on a phone but lands on the wrong webpage, loses their shopping context, or cannot be properly attributed to the referring partner. 
+Button
++1
+
+What does Button do?
+
+Button sits between a marketing link and the retailer’s shopping experience. When a consumer taps a link, Button can:
+
+Route the shopper to the best destination, such as the correct product page inside a retailer’s app rather than a slower mobile website.
+
+Use AI and contextual signals—including browser, app, device, and operating system—to choose the journey most likely to convert.
+
+Track purchases and attribution, so retailers know which creator, publisher, ad, or affiliate generated the sale.
+
+Improve conversion rates and revenue by reducing broken links, unnecessary redirects, and mobile checkout friction.
+
+Help publishers and creators monetize traffic through affiliate commissions, product ads, and other commerce-media opportunities. 
+Button
++1
+
+Simple example
+
+A creator posts a link to a pair of shoes. Without Button, the link might open the retailer’s homepage in a mobile browser. With Button, it can open the exact shoes directly in the retailer’s app, preserve attribution to the creator, and record the resulting purchase.
+
+In business terms, Button provides deep linking, commerce optimization, partner attribution, affiliate infrastructure, and retail-media tools. The company reports that its platform has facilitated more than $25 billion in commerce, including $10 billion during 2025. 
+Button
+
+Sources:
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/product-listing-ads
+
+https://www.usebutton.com/post/large-retailer-wins-and-growth-in-the-creator-economy-drive-button-to-surpass-10-billion-in-mobile-commerce-driven-in-2023
+
+https://www.usebutton.com/post/button-surpasses-25-billion-in-all-time-commerce-on-the-platform-with-2025-proving-to-be-a-breakout-year-powered-by-the-creator-economy-and-continued-growth-of-commerce-media-and-affiliate-marketing
+
+https://www.norwest.com/?case_studies=button-win-win-win-mobile-commerce-solution"
+What is Button used for in ecommerce?,"Button is used in ecommerce to improve mobile shopping journeys—especially traffic coming from affiliate links, creators, publishers, ads, and social media.
+
+When a shopper taps a product link, Button can:
+
+Route them to the best destination, such as the retailer’s app, a specific product page, or the mobile website.
+
+Deep-link directly into an installed app instead of sending the shopper to a generic homepage.
+
+Reduce broken or poorly routed links that can cause shoppers to abandon the purchase.
+
+Preserve attribution, so the affiliate, publisher, or creator receives credit for the sale.
+
+Increase conversions and app installs by dynamically selecting the shopping path most likely to result in a purchase.
+
+Help publishers and creators monetize content through trackable product links and shoppable collections. 
+Button
++2
+Button
++2
+
+For example, someone taps a retailer link in an Instagram creator’s bio. Button may detect that the retailer’s app is installed, open the exact product inside the app, and maintain the creator’s affiliate attribution throughout the transaction.
+
+In practical terms, Button sits between the traffic source and the retailer, optimizing where each click goes and how it is measured.
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/post/button-surpasses-1-billion-in-commerce-driven-monthly-as-retailers-and-publishers-leverage-buttons-ai-powered-commerce-optimization-platform
+
+https://www.usebutton.com/post/button-surpasses-25-billion-in-all-time-commerce-on-the-platform-with-2025-proving-to-be-a-breakout-year-powered-by-the-creator-economy-and-continued-growth-of-commerce-media-and-affiliate-marketing"
+How does Button work for mobile commerce?,"Button works as a routing, optimization, and attribution layer between a mobile shopper’s initial tap and the retailer’s checkout.
+
+Typical mobile-commerce journey
+
+A shopper taps a product or offer
+
+The link might appear in a creator’s social post, a publisher’s app, a loyalty program, an affiliate site, or a mobile ad. Button Links attach information identifying the publisher, campaign, user, and intended product page. 
+Button Developers
+
+Button chooses the best destination
+
+Using signals such as the device, operating system, browser, originating app, and whether the retailer’s app is installed, Button can:
+
+open the retailer’s app directly to the product,
+
+send the shopper through an app-install flow, or
+
+fall back to an optimized mobile-web experience. 
+Button
++1
+
+The product context survives an app installation
+
+When the retailer’s app is not installed, Button can use deferred deep linking so that, after installation, the shopper still lands on the originally selected product or destination rather than the app homepage. 
+Button Developers
+
+Button preserves attribution
+
+An attribution token follows the journey across the publisher, browser, app store, retailer app, and checkout. This lets the retailer connect a completed order to the affiliate, creator, or publisher that generated it. 
+Button Developers
++1
+
+The purchase is reported back
+
+Once an order occurs, the retailer reports the transaction and attribution token to Button. Button can then notify the publisher, support commissions or user rewards, and provide campaign-performance data. Button’s documented model is last-click attribution among Button publishers, subject to configurable attribution windows and order-count limits. 
+Button Developers
++1
+
+Why businesses use it
+
+For shoppers, the benefit is fewer broken links and a quicker path to the correct in-app product page. For retailers, it can increase app installs, conversion, and measurable mobile sales. For creators and publishers, it helps ensure that app purchases are correctly attributed and commissioned. 
+Button
++1
+
+In simple terms: Button takes a mobile commerce tap, decides the highest-converting route, preserves the shopping intent, and connects the eventual purchase back to its source. It is generally not the store or payment processor itself; it is the infrastructure connecting discovery, app routing, conversion, and attribution.
+
+Sources:
+
+https://developer.usebutton.com/docs/button-links-integration
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://developer.usebutton.com/docs/native-app-setup
+
+https://developer.usebutton.com/docs/button-merchant-library-overview
+
+https://developer.usebutton.com/docs/brand-integrate-your-app
+
+https://developer.usebutton.com/docs/brands-getting-started
+
+https://developer.usebutton.com/docs/manual-brand-testing
+
+https://developer.usebutton.com/docs/how-attribution-works
+
+https://www.usebutton.com/"
+Is Button an ecommerce platform or a marketing tool?,"Button is primarily a marketing technology platform—not a traditional ecommerce platform.
+
+It helps retailers, publishers, and creators improve mobile commerce performance through:
+
+Affiliate and creator marketing
+
+Mobile deep linking
+
+Attribution and tracking
+
+AI-driven conversion optimization
+
+App installs and in-app purchases
+
+Unlike Shopify or Adobe Commerce, Button does not provide the core infrastructure for building a storefront, managing inventory, or processing orders. It works alongside ecommerce platforms to route marketing traffic into the shopping experience most likely to convert. Button describes itself as a mobile experience, mobile commerce optimization, and retail media platform. 
+Button
++2
+Button
++2
+
+Best classification: a mobile commerce marketing and conversion-optimization platform.
+
+Sources:
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/post/button-surpasses-1-billion-in-commerce-driven-monthly-as-retailers-and-publishers-leverage-buttons-ai-powered-commerce-optimization-platform"
+Who uses Button and what types of companies need Button?,"Button is primarily used by retailers, publishers, affiliate businesses, and creator networks that generate substantial commerce traffic—especially on mobile.
+
+Who uses Button
+
+1. Retailers and consumer brands
+Large ecommerce companies use Button to improve conversion from affiliate, creator, social, and paid marketing traffic. It routes shoppers to the best destination—such as a product page inside the retailer’s app rather than a slower mobile-web journey—and helps preserve attribution. Publicly cited users or adopters include Sam’s Club, Uber, Groupon, Nike, Under Armour, Walmart, Hotels.com, and Deliveroo. 
+Button
++2
+Button
++2
+
+2. Content and commerce publishers
+Media companies, product-review sites, shopping apps, loyalty platforms, and deal sites use Button to earn more from the traffic they send to retailers. Button says its publisher product works with existing retailer and affiliate-network relationships, optimizing links without requiring publishers to replace those partnerships. BuzzFeed is a notable example. 
+Button
++1
+
+3. Creator networks and affiliate platforms
+Influencer networks, creator-management platforms, and affiliate partners use Button to improve deep linking, attribution, mobile conversion, and revenue across retailer campaigns. Button also works alongside major affiliate networks rather than necessarily replacing them. 
+Button
++1
+
+What types of companies need Button
+
+Button is most relevant when a company:
+
+Receives meaningful traffic from affiliates, influencers, publishers, social platforms, or commerce content.
+
+Has a mobile app and wants more users to complete purchases inside it.
+
+Loses conversions when links open in embedded browsers, generic homepages, or mobile web instead of the correct app screen.
+
+Struggles to attribute app installs or app purchases to affiliate and creator campaigns.
+
+Wants to improve an established affiliate program without rebuilding its underlying partnerships.
+
+Operates at enough traffic volume that even a modest conversion improvement materially affects revenue.
+
+A typical good-fit customer would be a large retailer with an app and a growing creator program, or a publisher sending high volumes of shopping traffic to multiple merchants. Button is likely less necessary for a small ecommerce store with limited mobile traffic, no app, and little or no affiliate or creator activity.
+
+Sources:
+
+https://www.usebutton.com/post/how-button-doubled-affiliate-revenue-for-uber
+
+https://www.usebutton.com/post/evolving-the-affiliate-industry-nows-the-time
+
+https://www.usebutton.com/category/case-studies
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/post/case-study-how-buzzfeed-scaled-mobile-revenue-through-a-content-and-commerce-strategy
+
+https://www.usebutton.com/post/buttons-creator-network-and-publisher-solutions-are-the-easiest-way-to-maximize-revenue-from-your-commerce-strategies
+
+https://www.usebutton.com/full-service-network"
+Is Button only for large retailers or can smaller businesses use Button?,"Button is not strictly limited to large retailers, but its core retailer offering is clearly optimized for companies with meaningful mobile and affiliate-commerce volume.
+
+Button says “any retailer” can integrate through its affiliate-network partnerships, and it offers relatively simple or no-code implementation options. Smaller publishers, creator networks, and merchants building an affiliate program can therefore use Button. 
+Button
++1
+
+In practice, Button is most compelling when a business has:
+
+Significant mobile traffic, ideally including a shopping app
+
+An active affiliate, creator, or social-commerce program
+
+Enough transactions for conversion optimization to produce material value
+
+A need to improve deep linking, attribution, app installs, or mobile checkout journeys
+
+A small ecommerce company meeting those conditions could be a good candidate. A small retailer with low mobile volume, no app, and no established affiliate program would probably find simpler affiliate software more appropriate. That conclusion is an inference from Button’s positioning: its website emphasizes major brands and large ecommerce companies, uses a sales-led “request a demo” model, and does not publish self-service pricing. 
+Button
++2
+Button
++2
+
+Bottom line: Smaller businesses are not necessarily excluded, but Button appears better suited to growth-stage and enterprise businesses than to very small or early-stage retailers.
+
+Sources used:
+
+https://www.usebutton.com/post/large-retailer-wins-and-growth-in-the-creator-economy-drive-button-to-surpass-10-billion-in-mobile-commerce-driven-in-2023
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/category/case-studies"
+How do brands use Button for affiliate marketing?,"Brands use Button as a mobile conversion and attribution layer for affiliate traffic. It typically works alongside an existing affiliate network rather than replacing the entire program.
+
+How it works
+
+Connect affiliate links to the brand’s app and website
+When someone taps a creator, publisher, or cashback affiliate link, Button determines whether the shopper has the brand’s app and routes them to the most relevant app screen or web page. 
+Button
++1
+
+Reduce mobile shopping friction
+Instead of sending users to a generic homepage, login screen, or mobile browser, Button deep-links them to the relevant product or offer. This can improve conversion rates, particularly for traffic coming from Instagram, TikTok, blogs, loyalty apps, and other mobile sources. 
+Button
++1
+
+Preserve affiliate attribution inside the app
+Button tracks the journey from the affiliate click through app installation, product browsing, and purchase. This helps ensure that the publisher or creator receives credit even when the transaction occurs inside the retailer’s app. 
+Button
+
+Drive app installs and repeat purchases
+Existing app users can be sent directly into the app, while users without it may see a landing page encouraging installation. Brands use this to turn affiliate marketing into both an acquisition and app-engagement channel. Uber, for example, reported doubling affiliate-program revenue after implementing Button’s app-routing experience. 
+Button
+
+Optimize each click automatically
+Button’s decisioning technology evaluates the user and context to select the path most likely to convert—such as the app, mobile web, an installation page, or a customized landing page. 
+Button
+
+Keep existing affiliate relationships and reporting
+Button integrates with major affiliate networks, allowing brands to continue managing publisher relationships, commissions, and reporting through their existing network. In the Sam’s Club example, app transaction data was returned to Rakuten Advertising’s dashboard. 
+Button
++1
+
+Launch or expand a managed affiliate program
+Through Button’s Full Service Network, brands can also access publishers and creators, launch campaigns, receive technical support, and optimize their programs without building every partnership and integration independently. 
+Button
+
+In practical terms, Button helps a brand get more sales, app installs, accurate attribution, and customer lifetime value from the affiliate traffic it already has.
+
+Sources used:
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/post/how-button-doubled-affiliate-revenue-for-uber
+
+https://www.usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/old-home-2
+
+https://www.usebutton.com/post/with-one-simple-fix-retailers-can-2x-affiliate-revenue-this-month"
+How do creators use Button to make money?,"Creators use Button primarily to earn affiliate commissions from product recommendations:
+
+Create affiliate links: Through a creator platform, network, or agency integrated with Button, creators generate links to retailer products.
+
+Share them in content: They post those links on TikTok, Instagram, YouTube, blogs, newsletters, or other channels.
+
+Drive purchases: When a follower taps, Button routes them to the retailer’s app or website—whichever journey is more likely to result in a purchase.
+
+Receive commissions: If the shopper buys, the sale is attributed to the creator, who is paid according to their creator platform or affiliate program’s terms. Button generally provides the underlying linking and attribution technology rather than paying the creator directly. 
+Button
++1
+
+Button’s main value is helping creators earn more from traffic they already generate. Its technology aims to prevent tracking from breaking as shoppers move between social apps, browsers, retailer apps, installations, and checkout. Better attribution means fewer eligible commissions are lost, while smoother shopping journeys can improve conversion rates. 
+Button
++1
+
+Creator networks can also use Button’s Creator Media offering to connect measurable creator-driven sales with performance and retail-media budgets, potentially creating revenue opportunities beyond ordinary affiliate commissions. 
+Button
+
+Sources:
+
+https://www.usebutton.com/for-creators
+
+https://www.usebutton.com/post/how-to-drive-200-lift-in-commissions-with-buttons-shortlink-api
+
+https://www.usebutton.com/post/button-and-mavely-partner-to-scale-revenue-and-simplify-affiliate-monetization-for-creators
+
+https://www.usebutton.com/post/button-partnership-drives-better-experience-and-higher-conversions-for-creators-and-affiliates
+
+https://www.usebutton.com/post/button-unveils-creator-media"
+How do publishers use Button to increase affiliate revenue?,"Publishers use Button to increase affiliate revenue by improving conversion, attribution, monetization, and operational efficiency across their commerce links.
+
+How it works
+
+Route shoppers to the highest-converting destination
+Button evaluates each click and can direct users to the retailer’s app, mobile site, or another purchase path based on which is most likely to convert. This helps reduce revenue lost to poor mobile experiences or broken deep links. 
+Button
++1
+
+Protect affiliate attribution
+Button identifies journeys where tracking may fail and routes traffic through a path designed to preserve attribution, helping publishers receive credit for more of the purchases they generate. 
+Button
++1
+
+Optimize existing affiliate links automatically
+Publishers can use Button alongside their current retailer and affiliate-network relationships. Its low-code technology tests and adjusts link behavior without requiring publishers to rebuild their partnership structure. 
+Button
++1
+
+Improve earnings per click, especially on mobile and social
+Button reports that its commerce optimization has produced 20%+ mobile-web EPC lifts and 100%+ improvements in social traffic performance for publisher and creator-network partners. These are Button-reported results and will vary by publisher. 
+Button
++1
+
+Access more merchants through one integration
+Publishers that do not already have a broad affiliate program can use Button’s marketplace and retailer-management services instead of managing numerous network integrations, merchant approvals, and individual relationships. 
+Button
+
+Add revenue beyond standard commissions
+Button’s Product Listing Ads let publishers combine affiliate commissions with cost-per-click retail-media revenue. Its CuratedBy product can also layer affiliate, retail-media, seller-funded, and flat-fee campaigns into shoppable content. 
+Button
++1
+
+In practical terms, a publisher places Button behind product links, shopping content, social posts, or app experiences. Button then optimizes where the shopper lands and how the conversion is tracked, so more clicks become attributable sales and each click can generate more revenue.
+
+Sources:
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/post/buttons-creator-network-and-publisher-solutions-are-the-easiest-way-to-maximize-revenue-from-your-commerce-strategies
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/post/accelerating-revenue-growth-through-increased-site-traffic
+
+https://www.usebutton.com/post/button-surpasses-1-billion-in-commerce-driven-monthly-as-retailers-and-publishers-leverage-buttons-ai-powered-commerce-optimization-platform
+
+https://www.usebutton.com/product-listing-ads
+
+https://www.usebutton.com/post/button-launches-curatedby-to-help-publishers-scale-commerce-for-the-ai-driven-discovery-era"
+What industries use Button?,"Button is used primarily in consumer-facing industries with strong mobile commerce, affiliate, creator, or loyalty channels.
+
+Key industries include:
+
+Retail and ecommerce — apparel, department stores, home goods, electronics, and general merchandise.
+
+Travel and hospitality — hotels, booking platforms, airlines, and travel marketplaces.
+
+Food, grocery, and delivery services — grocery apps, restaurant delivery, and other on-demand services.
+
+Rideshare and transportation — companies such as Uber that acquire and convert customers through mobile partnerships.
+
+Marketplaces and deal platforms — shopping, cashback, coupon, and local-commerce marketplaces.
+
+Financial services and fintech — banks, card issuers, rewards apps, and platforms offering card-linked or affiliate offers.
+
+Media and publishing — content publishers that monetize product recommendations and commerce traffic.
+
+Creator and influencer commerce — creator networks and social-commerce platforms that generate affiliate sales.
+
+Entertainment and ticketing — services selling event, movie, and other entertainment bookings.
+
+Home services — consumer-service brands using affiliate and fintech partnerships to reach customers.
+
+Button’s strongest fit is not limited to a particular industry. It is generally most useful for businesses that have a mobile app or website, sell consumer products or services, and rely on affiliates, creators, publishers, rewards programs, or performance marketing to drive transactions. 
+Button
++3
+Button
++3
+Button
++3
+
+Sources:
+
+https://www.usebutton.com/post/fintechs-drive-revenue-and-build-margin-affiliate-cj-button
+
+https://www.usebutton.com/post/large-retailer-wins-and-growth-in-the-creator-economy-drive-button-to-surpass-10-billion-in-mobile-commerce-driven-in-2023
+
+https://www.usebutton.com/post/button-surpasses-1-billion-in-mobile-commerce-as-momentum-builds-in-2022
+
+https://www.usebutton.com/post/impact-com-leveraging-buttons-mobile-commerce-optimization-platform-sees-apps-drive-200-the-revenue-of-web-journeys"
+How much does Button cost to use?,"Button does not publish standard pricing on its website. Its product pages direct prospective retailers, publishers, and creator networks to request a demo or schedule a sales call, so pricing appears to be customized. 
+Button
++2
+Button
++2
+
+The cost will likely depend on factors such as:
+
+The Button product used, such as Dynamic Decisioning, link optimization, retail media, or its full-service affiliate network
+
+Monthly clicks, transactions, or commerce volume
+
+Number of brands, publishers, or creators supported
+
+Integration and managed-service requirements
+
+Whether compensation is structured as a platform fee, performance-based fee, revenue share, or a combination
+
+Therefore, there is no reliable public figure such as “$99 per month.” A company would need to contact Button for a tailored proposal. A third-party software directory also reports that Button’s pricing is not publicly listed and requires contacting sales. 
+ColdIQ
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/for-creators
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://coldiq.com/tools/button"
+Does Button have pricing plans or enterprise pricing?,"Button appears to use custom, enterprise-style pricing rather than publishing fixed monthly plans.
+
+Its product pages direct retailers, publishers, and creator platforms to request a demo, schedule a call, or contact the sales team. No public pricing tiers or standard subscription rates are listed, suggesting quotes are tailored to factors such as the solution selected, traffic or transaction scale, integration requirements, and support needs. 
+Button
++2
+Button
++2
+
+Button does mention that publishers can test its deep-linking solution free of charge, but this appears to be an evaluation offer rather than a permanent free pricing plan. 
+Button
+
+Bottom line: expect a sales consultation and custom quote, particularly for retailer, affiliate-network, creator-platform, or enterprise deployments.
+
+https://www.usebutton.com/contact-us
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/tap"
+Is Button free to use?,"Button is not generally a free platform. Its primary retailer, publisher, and affiliate solutions appear to use custom pricing: Button directs prospective customers to request a demo or contact its sales team rather than publishing a free plan or standard price list. 
+Button
++2
+Button
++2
+
+There are limited free options:
+
+Publishers can test Button’s Tap deep-linking solution free of charge. 
+Button
+
+Applying to join the Button Marketplace does not show an upfront fee, but partners must be approved, and commercial terms may depend on the partnership. 
+Button
+
+For ongoing business use, expect to contact Button for a custom quote.
+
+https://www.usebutton.com/tap
+
+https://www.usebutton.com/for-creators
+
+https://www.usebutton.com/product-listing-ads
+
+https://www.usebutton.com/full-service-network
+
+https://app.usebutton.com/signup/"
+Does Button charge a commission or subscription fee?,"Button does not publish a standard commission rate or subscription fee.
+
+For retailers, publishers, and creator networks, pricing appears to be custom and contract-based: Button directs prospective customers to request a demo or schedule a sales call rather than showing fixed plans. Its platform may incorporate performance or e-commerce fees depending on the partnership, but no universal percentage is disclosed. 
+Button
++2
+Button
++2
+
+For publishers, Button says its deep-linking solution can be tested free of charge. Its Creator App terms also state that Button may offer the app free or introduce fees later. 
+Button
++1
+
+Bottom line: expect negotiated enterprise pricing rather than a publicly listed subscription or commission.
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/support/privacy-policy
+
+https://www.usebutton.com/contact-us
+
+https://www.usebutton.com/tap
+
+https://www.usebutton.com/support/terms-of-service"
+Is Button worth it for ecommerce businesses?,"Verdict
+
+Button can be worth it for established ecommerce businesses with significant mobile, affiliate, creator, or social-commerce traffic. It is less compelling for small, web-only stores with limited affiliate volume.
+
+Button is not a storefront platform like Shopify. It optimizes what happens after customers click affiliate or creator links—routing them to the most suitable app or web destination while improving deep linking, attribution, app installs, and conversion tracking. 
+Button
++1
+
+Most likely worth it when you have
+
+A well-developed iOS or Android shopping app
+
+Meaningful revenue from affiliates, creators, influencers, or social links
+
+Customers frequently landing on mobile web instead of the correct in-app product page
+
+Attribution gaps between clicks, installs, and purchases
+
+Enough transaction volume for a small conversion improvement to generate substantial incremental profit
+
+Button reports strong results in these situations. For example, its Sam’s Club case study cites a 165% increase in mobile affiliate revenue and an 81% conversion-rate increase. A Button-commissioned Forrester study modeled a 432% three-year ROI, a 65% conversion lift, and payback within six months for a composite $1 billion retailer. 
+Button
++1
+
+Probably not worth it when you have
+
+A small or early-stage ecommerce store
+
+No dedicated mobile app
+
+Little affiliate or creator traffic
+
+Low mobile sales volume
+
+A need for transparent, self-service pricing
+
+Limited engineering capacity
+
+Implementation is not entirely plug-and-play: Button’s retailer documentation includes app and site setup, token-based attribution, order reporting, and integration testing. Its public retailer pages use a demo-led sales process rather than displaying standardized pricing. 
+Button Developers
++1
+
+Recommended decision rule
+
+Run a controlled pilot and approve Button only when:
+
+Incremental contribution profit from Button-attributed sales − Button fees − integration and operating costs > your required return
+
+Require Button to provide:
+
+Pricing and minimum commitments
+
+A baseline audit of your broken or misrouted mobile journeys
+
+A holdout or A/B testing methodology
+
+Incremental conversion and revenue—not merely total attributed revenue
+
+Results segmented by app, mobile web, affiliate network, and partner
+
+The published results are encouraging, but most available performance evidence comes from Button’s own case studies or a study commissioned by Button. Treat those figures as evidence of potential rather than a guaranteed forecast for your business. 
+Button
++1
+
+Bottom line: Button is potentially high-value mobile conversion infrastructure for larger, app-centric ecommerce companies. For smaller or primarily web-based businesses, improving checkout, site speed, affiliate recruitment, and standard analytics will usually be a better first investment.
+
+Sources:
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://developer.usebutton.com/docs/brands-getting-started
+
+https://www.usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach
+
+https://www.usebutton.com/post/total-economic-impact-tm-study-finds-432-roi-for-button-partners"
+Is Button worth using for affiliate marketing?,"Verdict
+
+Button can be worth using for affiliate marketing—especially when a large share of your traffic is mobile, social, or app-based. Its main advantage is not simply providing affiliate offers; it optimizes the post-click journey through deep linking, app detection, routing, and attribution. 
+Button
++2
+Button
++2
+
+Button is a strong fit when you:
+
+Generate meaningful mobile traffic from social media, creators, apps, or content sites.
+
+Lose commissions when shoppers move between browsers, retailer apps, and checkout.
+
+Already operate an affiliate program and want to improve conversion rate and earnings per click.
+
+Need managed support rather than a basic self-service affiliate dashboard.
+
+Button says publishers can use its technology alongside existing retailer and affiliate-network relationships, without migrating those relationships. It reports lifts such as 20%+ mobile EPC improvement, although these figures are vendor-reported and results will vary. 
+Button
++1
+
+It may not be worth it when you:
+
+Are a new or low-traffic individual affiliate seeking quick, self-service access to thousands of programs.
+
+Drive mostly desktop traffic.
+
+Primarily need partner recruitment, contract management, and automated payouts.
+
+Need publicly posted, predictable pricing.
+
+Button’s public pages emphasize applications, scheduled calls, and demo requests rather than displaying standard pricing, suggesting a more customized and potentially enterprise-oriented sales process. 
+Button
++2
+Button
++2
+
+Recommendation
+
+For an established publisher, creator platform, retailer, or affiliate network with substantial mobile volume, Button is worth testing. Run a controlled trial and compare:
+
+Earnings per click
+
+Mobile conversion rate
+
+Attributed app purchases
+
+Net affiliate revenue after Button’s fees
+
+Incremental revenue—not merely sales Button would have captured anyway
+
+Button cites a commissioned Forrester study showing a modeled 65% conversion-rate lift and 432% ROI for a composite large retailer. Treat those results as evidence of potential rather than a forecast for your business. 
+Button
+
+For a small blogger or beginning affiliate, a conventional network such as Awin, CJ, Impact, or Amazon Associates will usually be the simpler starting point; Button becomes more compelling once mobile routing and attribution are material revenue problems.
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/for-creators
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://app.usebutton.com/apply
+
+https://www.usebutton.com/post/total-economic-impact-tm-study-finds-432-roi-for-button-partners"
+Is Button legitimate?,"Yes—Button appears to be legitimate
+
+Button, the mobile-commerce and affiliate technology company operating at usebutton.com, shows several strong legitimacy signals:
+
+Its terms identify the business as Button, Inc., a Delaware corporation, with published legal, privacy, and contact information. 
+Button
++1
+
+TechCrunch independently covered Button’s venture-funding rounds, including a $12 million Series A and $20 million Series B. 
+TechCrunch
++1
+
+Growth-equity firm PSG announced an investment in Button in June 2025 and currently lists Button in its portfolio. 
+PSG Equity
++1
+
+Button has an active platform, developer documentation, affiliate-network products, and an established presence on software-review site G2. 
+Button Developers
++2
+Button
++2
+
+The caveat: legitimate does not necessarily mean it will be profitable or appropriate for every creator, publisher, or retailer. Independent customer-review volume is relatively limited—G2 displayed only four reviews—so carefully review Button’s commission structure, attribution rules, payment schedule, data practices, minimum commitments, and cancellation provisions before signing. 
+G2
+
+Overall, Button does not appear to be a scam; it is an established B2B commerce-technology company.
+
+Sources:
+
+https://www.usebutton.com/support/terms-of-service
+
+https://www.usebutton.com/support/privacy-policy
+
+https://techcrunch.com/2015/01/22/button-12m-redpoint/
+
+https://techcrunch.com/2017/01/25/button-the-marketplace-for-app-integrations-lands-20-million-in-series-b-funding/
+
+https://psgequity.com/news/button-secures-strategic-growth-investment-from-psg
+
+https://psgequity.com/portfolio/button
+
+https://developer.usebutton.com/reference/brands-api-introduction
+
+https://www.usebutton.com/full-service-network
+
+https://www.g2.com/products/button/reviews"
+Is Button a trustworthy company?,"Verdict
+
+Yes—Button appears to be a legitimate and generally trustworthy B2B technology company, not a scam.
+
+Key trust signals:
+
+Button has operated since 2014 and maintains an active platform, developer portal, SDK documentation, privacy policy, GDPR notice, and contractual terms. 
+Button Developers
++3
+Button
++3
+Button
++3
+
+Growth-equity firm PSG made a strategic investment in Button in June 2025, indicating that the company underwent meaningful institutional due diligence. 
+PSG Equity
+
+Button publishes customer case studies involving recognizable companies such as Sam’s Club, Uber, Hotels.com, Rawlings, Groupon, and BuzzFeed. These are company-published claims rather than independent audits, but they demonstrate an established commercial footprint. 
+Button
++2
+Button
++2
+
+Its limited G2 review profile currently shows a strong rating, although the sample—four reviews—is too small to treat as decisive evidence. 
+G2
+
+The principal caution is data handling, not legitimacy. Button’s technology uses links, SDKs, device and transaction-related signals to measure and optimize commerce activity. A business considering it should review the privacy policy, data-processing agreement, attribution rules, payment terms, cancellation provisions, and data-retention practices before integrating. 
+Button
++2
+Button
++2
+
+Bottom line: Button looks credible enough to evaluate as a vendor. For a material contract, request current customer references, security documentation such as a SOC 2 report, implementation costs, commission terms, and independently verifiable performance data.
+
+Sources:
+
+https://www.usebutton.com/support/privacy-policy
+
+https://www.usebutton.com/support/gdpr-notice
+
+https://www.usebutton.com/support/terms-of-service
+
+https://s.mobileapi.usebutton.com/
+
+https://psgequity.com/news/button-secures-strategic-growth-investment-from-psg
+
+https://www.usebutton.com/category/case-studies
+
+https://www.usebutton.com/post/hotels-com-supercharged-their-marketing-program-with-button-posttap
+
+https://www.usebutton.com/post/uber-eats-case-study-actionable-intelligence-of-button-evolution-product-suite
+
+https://www.g2.com/products/button/reviews"
+How long has Button been around?,"Button was founded in 2014, so it has been operating for about 12 years as of July 2026. 
+Button
++1
+
+https://www.usebutton.com/post/button-raises-30-million-in-series-c-funding-to-build-the-future-of-mobile-commerce
+
+https://www.usebutton.com/post/button-the-worlds-leading-mobile-experience-platform-surpasses-8b-in-commerce-driven"
+Who founded Button?,"Button was co-founded in 2014 by six people:
+
+Michael “Mike” Jaconi
+
+Chris Maddern
+
+Mike Dudas
+
+Tanner Hackett
+
+Siddhartha Dabral
+
+Stephen Milbank
+
+Jaconi became Button’s CEO and is often the founder most closely associated with the company publicly. 
+Forbes
++1
+
+Sources:
+
+https://www.builtinnyc.com/articles/mobile-deep-linking-startup-button-raises-series
+
+https://www.forbes.com/profile/chris-maddern/"
+What companies use Button?,"Button does not publish a complete, continuously updated customer directory, but its official case studies and announcements publicly name companies that have used or partnered with its platform.
+
+Retailers and consumer brands
+
+Sam’s Club
+
+Walmart
+
+eBay
+
+Nike
+
+Under Armour
+
+Zulily
+
+Farfetch
+
+Harry’s 
+Button
++4
+Button
++4
+Button
++4
+
+Marketplaces, travel and delivery
+
+Uber
+
+Uber Eats
+
+Groupon
+
+Hotels.com
+
+Jet.com
+
+AliExpress 
+Button
++4
+Button
++4
+Button
++4
+
+Publishers and media companies
+
+BuzzFeed and Tasty
+
+The Weather Channel 
+Button
++2
+Button
++2
+
+Financial and rewards apps
+
+Cash App
+
+Samsung Pay
+
+Drop
+
+Dosh
+
+Betterment
+
+MoneyLion
+
+Plum
+
+Bnext 
+Button
++4
+Button
++4
+Button
++4
+
+Button has also worked with ecosystem partners such as Rakuten Advertising, Branch, Kochava, Microsoft Advertising and The Shelf, although these are technology or commercial partnerships rather than necessarily direct customer relationships. 
+Button
++4
+Button
++4
+Button
++4
+
+Because several of these announcements are historical, this should be treated as a list of publicly documented users and partners over time, not confirmation that every company remains an active customer today.
+
+Sources:
+
+https://www.usebutton.com/post/how-button-doubled-affiliate-revenue-for-uber
+
+https://www.usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach
+
+https://www.usebutton.com/post/walmart-buzzfeed-and-others-join-buttons-growing-marketplace
+
+https://www.usebutton.com/post/evolving-the-affiliate-industry-nows-the-time
+
+https://www.usebutton.com/post/button-and-branch-join-hands-to-help-brands-unlock-mobile-growth-in-the-affiliate-channel
+
+https://www.usebutton.com/post/2019-year-in-review
+
+https://www.usebutton.com/post/case-study-how-groupon-button-won-the-most-innovative-performance-marketing-award
+
+https://www.usebutton.com/post/buzzfeeds-tasty-announces-mobile-partnership-with-walmart-com-jet-com-powered-by-button
+
+https://www.usebutton.com/post/uber-eats-case-study-actionable-intelligence-of-button-evolution-product-suite
+
+https://www.usebutton.com/post/button-welcomes-bnext-as-its-first-partner-in-southern-europe
+
+https://www.usebutton.com/post/case-study-how-buzzfeed-scaled-mobile-revenue-through-a-content-and-commerce-strategy
+
+https://www.usebutton.com/post/the-weather-channel-partners-with-uber-groupon-resy-delivery-com-and-caviar-for-mobile-site
+
+https://www.usebutton.com/post/buttons-2020-year-in-review
+
+https://www.usebutton.com/post/plum-launches-rewards-program-powered-by-buttons-technology
+
+https://www.usebutton.com/post/drop-doubles-down-on-personalized-content-in-partnership-with-button
+
+https://www.usebutton.com/post/button-introduces-innovative-retail-media-inventory-solution
+
+https://www.usebutton.com/post/button-and-kochava-integrate-to-offer-brands-a-holistic-view-of-marketing
+
+https://www.usebutton.com/post/button-the-shelf-to-unleash-unprecedented-product-level-purchase-data-to-fuel-new-budgets-into-the-creator-marketing-universe"
+What are the main features of Button?,"Button’s main features center on improving mobile affiliate, creator, and commerce journeys:
+
+AI-powered traffic routing
+Dynamic Decisioning evaluates each tap and routes the shopper to the destination most likely to convert—such as the retailer’s app, an app-install flow, or mobile web. 
+Button
+
+Deep linking into mobile apps
+Links can open the relevant product or page directly inside a retailer’s app, reducing broken journeys and unnecessary steps between content and checkout. 
+Button
++1
+
+Mobile attribution and commission tracking
+Button connects clicks, app installs, and purchases so retailers can measure performance and publishers or creators receive appropriate credit. It also integrates with major mobile measurement partners. 
+Button
+
+Affiliate and creator commerce optimization
+Button optimizes existing affiliate and social links to improve conversion rates, revenue per click, and monetization without requiring publishers to manage multiple complex integrations. 
+Button
++1
+
+Partner marketplace and network access
+Its network connects retailers with publishers, creator networks, and other commerce partners, supporting affiliate-program launch, partner expansion, and campaign optimization. 
+Button
+
+Publisher loyalty and shopping experiences
+Through Tap, publishers can offer mobile-first shopping experiences, access major ecommerce brands through one integration, and support online or card-linked rewards. 
+Button
+
+Managed implementation and optimization
+Button offers technical integration assistance, campaign support, and ongoing optimization rather than functioning only as a self-service linking tool. 
+Button
+
+Overall, Button’s core value is making mobile commerce links smarter, measurable, and more likely to convert, particularly for traffic originating from affiliates, creators, publishers, and social platforms.
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/tap
+
+https://www.usebutton.com/for-creators"
+Does Button help with mobile app conversions?,"Yes. Button is specifically designed to improve mobile app conversions, especially for affiliate, creator, and paid-media traffic.
+
+It helps by:
+
+Deep-linking users directly to the relevant product page inside an installed app.
+
+Prompting an app install when that journey is predicted to convert better.
+
+Dynamically choosing between the app, app store, and mobile web to reduce checkout friction.
+
+Preserving attribution so app purchases are credited to the correct campaign or partner. 
+Button
++1
+
+Reported results include 2.7× higher conversion rates in-app versus mobile web through Button’s Awin partnership, while another retailer case study reported a 37% conversion-rate lift using Button’s mobile-routing technology. These are vendor and partner case-study results, so actual performance will depend on the retailer, app experience, traffic source, and implementation. 
+Button
++2
+Button
++2
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://junction.cj.com/article/cj-x-button-clients-see-incremental-value-from-improved-mobile-experiences
+
+https://www.usebutton.com/post/awin-and-button-more-than-double-in-app-conversion-rates
+
+https://www.usebutton.com/post/how-reach-product-enhancements-drove-a-37-lift-in-conversion-rate-for-a-leading-retailer
+
+https://www.awin.com/us/affiliate-marketing/button-double-conversion"
+Does Button improve affiliate link tracking?,"Yes—Button can improve affiliate link tracking, especially when shoppers move between mobile web and a retailer’s app.
+
+It helps by:
+
+Preserving attribution through deep links, app installs, and app-to-purchase journeys that conventional affiliate links may lose. 
+Button Developers
++1
+
+Associating each referred journey with a Button attribution token, then connecting that token to the resulting order and commission. 
+Button Developers
++1
+
+Supporting order-level and product-level reporting, making it easier to validate which partner generated a sale. 
+Button Developers
++1
+
+Passing conversion information to affiliate networks and mobile measurement partners through integrations and postbacks. Awin has described its Button partnership as enabling tracking across the full mobile journey. 
+Button
++1
+
+Important limitation: Button uses a last-click attribution model for clicks from Button publishers, with configurable attribution windows and order-count rules. It will not automatically fix every tracking problem; accurate results still depend on correctly implementing its links, SDK or Merchant Library, attribution tokens, and order reporting. 
+Button Developers
++1
+
+Overall, Button is most valuable when a significant portion of affiliate traffic is mobile and customers frequently complete purchases inside apps.
+
+https://developer.usebutton.com/docs/sdk-integration-validation
+
+https://developer.usebutton.com/docs/brand-integrate-your-app
+
+https://developer.usebutton.com/docs/validating-order-reporting
+
+https://developer.usebutton.com/docs/order-api-overview
+
+https://developer.usebutton.com/docs/client-side-order-reporting
+
+https://developer.usebutton.com/docs/how-attribution-works
+
+https://www.usebutton.com/post/how-button-works-with-mobile-measurement-partners
+
+https://www.awin.com/us/news-and-events/awin-news/awin-button-reach-partnership-update"
+How does Button handle deep linking?,"Button handles deep linking as a dynamic routing and attribution layer between the original link tap and the retailer’s destination.
+
+What happens after a tap
+
+Button receives the intended destination
+A publisher passes Button a retailer URL—often a specific product or category page—through the SDK or a Button Link. The link can also include user, click, or campaign identifiers for downstream attribution. 
+Button Developers
++1
+
+It chooses the best destination
+Button evaluates the available path and can:
+
+Open the corresponding page in the retailer’s app
+
+Prompt the user to install the app
+
+Send the user to mobile web
+
+Use Button’s in-app browser when appropriate
+
+Button describes this as dynamic decisioning rather than always forcing the app open. 
+Button Developers
++1
+
+It supports standard mobile linking
+Retailers configure a branded Button domain such as retailer.bttn.io. These domains support iOS Universal Links and Android App Links, with matching web fallback URLs when the app cannot be opened. 
+Button Developers
+
+It preserves attribution
+The Button Merchant Library captures attribution parameters from the inbound link and stores them so a later purchase can be credited to the correct publisher, creator, campaign, or user. 
+Button Developers
+
+It supports deferred deep linking
+When the app is not installed, the user may be sent through the app store. On the first app open, Button attempts to recover the original destination and attribution token, allowing the user to continue to the intended page rather than simply landing on the app homepage. 
+Button Developers
+
+In practical terms, Button’s deep linking is designed to solve two problems simultaneously: getting shoppers to the most relevant in-app or web page and maintaining affiliate attribution across app opens, installs, and purchases.
+
+Sources:
+
+https://developer.usebutton.com/docs/native-app-setup
+
+https://developer.usebutton.com/docs/button-links-integration
+
+https://developer.usebutton.com/docs/web-app-links
+
+https://developer.usebutton.com/docs/button-merchant-library-overview
+
+https://www.usebutton.com/dynamic-decisioning"
+Can Button help creators optimize TikTok or Instagram shopping links?,"Yes. Button can optimize affiliate shopping links shared through TikTok, Instagram, link-in-bio pages, Stories, and other social placements.
+
+Its PostTap creator product can:
+
+Convert Amazon Associates URLs into short, shareable links.
+
+Deep-link shoppers directly to the relevant product inside the Amazon app when installed.
+
+Route other shoppers to the appropriate web destination.
+
+Preserve attribution more reliably across social apps and retailer apps.
+
+Provide real-time link analytics so creators can identify which content and products convert best. 
+PostTap
++1
+
+Button also integrates with creator platforms such as Linktree and Mavely, where its routing technology can optimize links automatically behind the scenes. Button reports conversion lifts of +230% from Instagram traffic and +100% from TikTok traffic, although these are Button-reported results and individual performance will vary. 
+Button
++1
+
+The main limitation is that Button optimizes the post-click shopping journey. It does not optimize TikTok or Instagram content, recommend posting times, manage a native TikTok Shop catalog, or improve social engagement algorithms. PostTap’s self-service creator offering is also currently centered primarily on existing Amazon affiliate links; broader retailer support may come through a creator network, agency, or platform integration. 
+PostTap
++1
+
+https://www.posttap.com/
+
+https://www.usebutton.com/for-creators
+
+https://www.usebutton.com/post/button-and-mavely-partner-to-scale-revenue-and-simplify-affiliate-monetization-for-creators
+
+https://www.usebutton.com/post/button-integrates-into-linktree-to-support-social-commerce-for-creators"
+Does Button work with existing affiliate networks?,"Yes. Button is designed to work alongside existing affiliate networks rather than necessarily replacing them. It describes its platform as compatible with major affiliate networks and as the connection between affiliate networks, mobile apps, and measurement platforms. 
+Button
++1
+
+Button can add capabilities such as:
+
+Mobile deep linking into the correct product or app screen
+
+App-install and in-app purchase attribution
+
+Routing users between an app and mobile web
+
+More accurate affiliate credit and commissioning
+
+Button has publicly documented an integration with Awin, and says its broader products support leading or major affiliate networks. 
+Button
++1
+
+The exact setup depends on the network and Button product, so a brand should confirm whether its particular network has a direct integration or requires a customized implementation.
+
+Sources:
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/product-listing-ads
+
+https://www.usebutton.com/post/button-launches-reach
+
+https://www.usebutton.com/old-home-2"
+What is Button and should my company use Button?,"What Button is
+
+Button is a B2B mobile-commerce optimization platform for retailers, publishers, creator networks, loyalty apps, and affiliate marketers. It sits between a shopper’s click and the retailer’s destination, using deep linking, attribution, and automated decisioning to send the shopper to the app or web experience most likely to convert. 
+Button
++1
+
+Its main use cases are:
+
+Retailers and brands: Improve conversion and attribution for mobile traffic coming from affiliates, creators, social media, and publishers.
+
+Publishers and creator networks: Monetize commerce traffic, optimize affiliate links, and access retailer partnerships through Button’s network.
+
+Loyalty and fintech apps: Incorporate shopping offers, app-to-app journeys, and card-linked offers. 
+Button
++1
+
+Button is more than a link-shortening tool. A typical retailer implementation can involve mobile-app and website setup, attribution-token handling, order reporting, and integration testing. 
+Button Developers
++1
+
+Should your company use it?
+
+Button is worth evaluating when all or most of these are true:
+
+You operate a consumer ecommerce business or shopping-related platform.
+
+Mobile represents a meaningful share of your traffic or revenue.
+
+You have an iOS or Android app.
+
+Creators, affiliates, publishers, TikTok, Instagram, or other apps send you substantial traffic.
+
+Links frequently open a generic webpage instead of the correct product page in your app.
+
+Cross-app attribution gaps make affiliate performance difficult to measure.
+
+A small conversion-rate or revenue-per-click improvement would justify an enterprise technology investment.
+
+It is probably not a priority when:
+
+You are primarily B2B, SaaS, local services, or lead generation rather than ecommerce.
+
+You have little affiliate, creator, or publisher traffic.
+
+Your business is mostly desktop or direct web traffic.
+
+You do not have a mobile app and your mobile checkout already performs well.
+
+Your traffic volume is too low for incremental conversion improvements to cover integration and platform costs.
+
+My recommendation
+
+For a mid-sized or large consumer retailer with an app and meaningful affiliate or creator traffic, Button deserves a controlled pilot. Its value proposition directly addresses three expensive problems: broken mobile deep links, lost attribution, and shoppers being routed to lower-converting destinations.
+
+For a smaller web-only ecommerce company, I would generally prioritize checkout optimization, standard affiliate-network tooling, and basic deep-linking solutions first. Button’s website directs prospective customers toward demos and applications rather than publishing straightforward self-service plans, suggesting that pricing and implementation are likely customized. 
+Button
++1
+
+Before signing, ask Button to run a measurable test and require reporting on:
+
+Incremental conversion rate and revenue per click.
+
+App-open and product-page landing rates.
+
+Recovered affiliate attribution.
+
+Performance by network, publisher, creator, and operating system.
+
+Total fees, integration work, contract length, and minimum commitments.
+
+Whether results are measured against a randomized control group—not merely before-and-after performance.
+
+Button publishes substantial performance-lift claims, but most publicly available evidence comes from Button itself. Independent review coverage appears limited; G2 currently shows only four verified reviews. Treat vendor case studies as hypotheses to validate against your own traffic. 
+Button
++1
+
+Bottom line: Use Button when mobile affiliate and creator traffic is already strategically important and routing or attribution problems are costing measurable revenue. Otherwise, it is likely more infrastructure than your company presently needs.
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/tap
+
+https://developer.usebutton.com/docs/brands-getting-started
+
+https://developer.usebutton.com/docs/manual-brand-testing
+
+https://www.usebutton.com/contact-us
+
+https://app.usebutton.com/signup/
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.g2.com/products/button/reviews"
+How does Button compare to other ecommerce optimization tools?,"Bottom line
+
+Button is more specialized than most ecommerce optimization platforms. Its core strength is improving the mobile journey after someone taps an affiliate, publisher, or creator link. It uses deep linking and machine-learning decisioning to route shoppers into the retailer’s app, an install flow, or the mobile web—whichever path is most likely to convert. Button is designed to work alongside affiliate networks and mobile measurement platforms rather than necessarily replace them. 
+Button
++1
+
+Tool category	Primary job	How Button differs
+Button	Mobile commerce conversion and post-click routing	Optimizes the destination and journey for each affiliate or creator click, particularly across app and mobile web.
+Branch	Deep linking and mobile attribution	Branch provides broad linking, attribution, and cross-channel measurement infrastructure. Button adds more commerce-specific decisioning around the path most likely to generate a purchase. 
+Branch
++1
+
+impact.com	Affiliate and creator program management	impact.com handles partner discovery, contracting, tracking, reporting, and payouts. Button is more focused on improving the mobile conversion experience after those partners generate traffic. The two can be complementary. 
+impact.com
++2
+impact.com
++2
+
+Sovrn Commerce / Skimlinks	Publisher link monetization	These platforms automatically affiliate links, provide merchant access, and optimize commissions or network yield. Button puts greater emphasis on app routing, attribution preservation, and conversion optimization. 
+Sovrn, Inc.
++2
+Sovrn, Inc.
++2
+
+Optimizely	Website experimentation and personalization	Optimizely tests pages, content, offers, features, and onsite experiences. Button generally operates earlier in the journey—between the external click and the retailer destination. 
+Optimizely
++1
+Where Button is strongest
+
+Button is particularly differentiated when:
+
+A meaningful share of sales originates from Instagram, TikTok, creators, publishers, or affiliates.
+
+The retailer has a mobile app that converts better than its mobile website.
+
+Links frequently open the wrong destination, lose product context, or break attribution.
+
+The company already uses an affiliate network or MMP but needs better post-click conversion performance.
+
+The objective is increasing mobile conversion without requiring publishers or creators to change their workflows.
+
+Button reports that its Dynamic Decisioning system evaluates whether to open an app, encourage an installation, or use a web destination for each tap. Its published performance figures are promising, but they are company-reported or based on commissioned research and should be validated through a controlled pilot using your own traffic. 
+Button
++1
+
+Where another tool may be better
+
+Choose a different primary platform when the main requirement is:
+
+Running an affiliate program: impact.com, CJ, Awin, or a similar network.
+
+Full mobile attribution: Branch or another mobile measurement platform.
+
+Website A/B testing and personalization: Optimizely or a comparable experimentation suite.
+
+Automatically monetizing editorial links: Sovrn Commerce or Skimlinks.
+
+Improving checkout, search, merchandising, or product recommendations: a dedicated ecommerce CRO or personalization platform.
+
+Practical recommendation
+
+Button is best viewed as a conversion layer, not a complete ecommerce stack.
+
+For a retailer with an app and substantial affiliate or creator traffic, it deserves a pilot alongside the existing affiliate network and measurement provider. Measure app-open rate, conversion rate, revenue per click, new app customers, attribution retention, and incremental profit against standard links.
+
+For a web-only store with limited affiliate traffic, Button is less likely to be the first optimization investment. Website speed, checkout improvements, experimentation, merchandising, and personalization will probably offer broader impact.
+
+Sources used:
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/post/how-button-works-with-mobile-measurement-partners
+
+https://www.branch.io/deep-linking/
+
+https://www.branch.io/attribution/
+
+https://impact.com/
+
+https://impact.com/affiliate-marketing/
+
+https://www.usebutton.com/post/impact-com-leveraging-buttons-mobile-commerce-optimization-platform-sees-apps-drive-200-the-revenue-of-web-journeys
+
+https://www.sovrn.com/commerce/
+
+https://www.sovrn.com/blog/affilaite-link-optimization/
+
+https://merchant.skimlinks.com/network/affiliate-programs
+
+https://www.optimizely.com/products/experimentation
+
+https://www.optimizely.com/products/personalization
+
+https://www.usebutton.com/post/total-economic-impact-tm-study-finds-432-roi-for-button-partners"
+What are the pros and cons of using Button?,"Bottom line
+
+Button is strongest for retailers, publishers, and creator platforms with significant mobile affiliate traffic, especially when they need to route shoppers between mobile web and an app while preserving attribution. It is less compelling for smaller businesses with no app, limited affiliate volume, or a preference for transparent, self-service software.
+
+Pros
+
+1. Better mobile shopping journeys
+
+Button’s Dynamic Decisioning technology evaluates each click and can open the retailer’s app, prompt an installation, deep-link to a specific product, or retain the mobile-web journey based on the predicted conversion outcome. This can reduce the friction caused by conventional affiliate links. 
+Button
+
+2. Strong app attribution
+
+Button connects the originating partner click to an app installation and subsequent purchase. This addresses a common affiliate-marketing problem: purchases completed inside an app may otherwise be difficult to attribute and commission correctly. 
+Button
++1
+
+3. Works with existing affiliate infrastructure
+
+Businesses do not necessarily have to replace their affiliate network. Button lists compatibility with networks including Rakuten Advertising, impact.com, Awin, CJ, and Partnerize, and positions itself as a bridge between affiliate networks and mobile measurement partners. 
+Button
++1
+
+4. Evidence of meaningful conversion improvements
+
+Button reports substantial results for some enterprise customers. Its Sam’s Club case study reports an 81% conversion-rate increase and 165% growth in mobile affiliate revenue. An impact.com partnership article reports that app conversion rates were, on average, 200% higher than mobile web for the traffic examined in 2023. 
+Button
++1
+
+These are encouraging signals, although they are vendor or partner case studies rather than universally reproducible benchmarks.
+
+5. Suitable for complex, high-volume programs
+
+The platform supports retailers, publishers, creator programs, mobile apps, multiple affiliate networks, order reporting, machine-learning routing, and mobile measurement integrations. That breadth can be valuable for enterprise teams operating across several partners and customer journeys. 
+Button
++1
+
+Cons
+
+1. Technical implementation is still required
+
+Despite Button describing its integration as lightweight, a complete brand implementation includes app and website setup, attribution-token management, order reporting, deep-link configuration, and integration testing. Engineering, analytics, and affiliate teams will likely need to coordinate. 
+Button Developers
++1
+
+2. Not every mobile environment behaves consistently
+
+Button’s documentation warns that its links may not work as expected inside certain third-party embedded webviews, including examples such as Facebook and Slack. Social and creator traffic therefore needs thorough testing across browsers, apps, operating systems, installed-app states, and product destinations. 
+Button Developers
+
+3. Pricing is not transparent
+
+Button’s website primarily directs prospective customers to contact sales or request a demo rather than presenting standardized public pricing. That makes it harder to evaluate cost-effectiveness without entering a sales process. 
+Button
+
+4. Benefits depend heavily on your traffic profile
+
+The value proposition is strongest when a meaningful percentage of shoppers use mobile devices, the retailer has a well-designed app, and affiliate or creator channels generate substantial traffic. A web-only store or low-volume affiliate program may not generate enough incremental conversion value to justify the implementation and commercial costs. This is an inference from Button’s mobile- and app-centered product design. 
+Button
++1
+
+5. Additional privacy and governance review
+
+Button’s platform can process device information, IP addresses, identifiers, location information where permitted, and information clients choose to provide, such as account IDs or contact information. Companies should review consent, data-processing, retention, security, and regional compliance requirements before implementation. 
+Button
+
+6. Dependence on an external optimization layer
+
+Using Button places an important portion of link routing, attribution, and conversion optimization in a third-party system. Teams should clarify data ownership, reporting access, service levels, attribution rules, migration procedures, and what happens to existing links if the relationship ends.
+
+Best fit
+
+Button is likely a good fit when your company has:
+
+A high-quality consumer mobile app.
+
+Significant affiliate, creator, or social-commerce traffic.
+
+Problems attributing in-app purchases.
+
+Enough mobile volume to run a meaningful incremental-lift test.
+
+Engineering resources for implementation and ongoing validation.
+
+It is probably overkill for a small, web-only ecommerce business that primarily needs basic affiliate recruitment, link generation, commission management, and payouts.
+
+Recommended evaluation: run a controlled pilot and compare incremental revenue per click, app-install rate, conversion rate, attribution recovery, repeat purchases, implementation cost, and Button’s total fees against your current links—not just Button-optimized app traffic against mobile web.
+
+Sources
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://developer.usebutton.com/docs/brands-getting-started
+
+https://developer.usebutton.com/docs/sdk-integration-validation
+
+https://www.usebutton.com/contact-us
+
+https://www.usebutton.com/support/privacy-policy
+
+https://www.usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach
+
+https://impact.com/marketing-intelligence/ai-driven-affiliate-marketing-button-and-impact-com-integration/"
+What is Button and what does Button do?,"What is Button?
+
+Button is a business-to-business mobile commerce and affiliate-marketing platform. It connects retailers with publishers, creator platforms, loyalty apps, and affiliate partners, then optimizes what happens after a shopper taps a product or promotional link. 
+Button
++1
+
+It is not a storefront like Shopify and is generally invisible to shoppers. Its technology operates behind links and apps to improve the path from product discovery to purchase.
+
+What does Button do?
+
+Button primarily:
+
+Creates intelligent deep links. A product link can open the relevant page inside a retailer’s app rather than sending the shopper to a generic webpage or app homepage. 
+Button Developers
++1
+
+Routes each shopper to an appropriate purchase path. Depending on whether the app is installed, the device, browser, and other contextual signals, Button may direct the shopper to the app, mobile website, or an app-install journey. 
+Button Developers
++1
+
+Preserves attribution and tracking. It helps ensure that purchases are attributed to the publisher, creator, advertisement, or affiliate partner that generated the visit—even when the shopper moves between websites and apps. 
+Button Developers
++1
+
+Optimizes conversions using machine learning. Button tests and selects shopping journeys intended to reduce friction and increase completed purchases. 
+Button
+
+Supports affiliate and creator commerce. Publishers and creator networks can use Button to monetize product links, connect with retailers, manage commerce relationships, and improve revenue from their traffic. 
+Button
++1
+
+Helps retailers grow app-based sales. Retailers use it to improve affiliate traffic performance, encourage app installs, re-engage customers, and measure sales across mobile channels. 
+Button
++1
+
+Simple example
+
+A creator shares a link to a pair of shoes. When a follower taps it, Button can:
+
+Determine whether the retailer’s app is installed.
+
+Open the exact shoe page inside the app—or use the mobile website when appropriate.
+
+retain the creator’s attribution information.
+
+Record the resulting order so the correct partner can receive credit.
+
+In one sentence: Button helps retailers, publishers, and creators turn mobile product links into smoother, trackable shopping journeys that are more likely to result in purchases.
+
+Sources:
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/full-service-network
+
+https://developer.usebutton.com/docs/native-app-setup
+
+https://developer.usebutton.com/docs/button-links-integration
+
+https://developer.usebutton.com/docs/button-merchant-library-overview
+
+https://www.usebutton.com/post/button-surpasses-1-billion-in-commerce-driven-monthly-as-retailers-and-publishers-leverage-buttons-ai-powered-commerce-optimization-platform
+
+https://developer.usebutton.com/docs/brands-getting-started
+
+https://developer.usebutton.com/docs/brand-integrate-your-app
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/for-creators
+
+https://www.usebutton.com/post/how-button-doubled-affiliate-revenue-for-uber"
+What is Button used for in ecommerce?,"What Button is used for in ecommerce
+
+Button is a commerce-optimization platform that helps retailers, publishers, and creators turn affiliate and creator clicks into more purchases—particularly on mobile. It sits between the marketing link and the retailer’s shopping experience rather than replacing an ecommerce platform such as Shopify. 
+Button
++1
+
+Its main uses include:
+
+Mobile deep linking: Sends shoppers directly to the relevant product or offer inside a retailer’s app instead of a generic homepage.
+
+Post-click optimization: Uses machine learning to decide whether each shopper should be sent to an app, an app-install flow, or the mobile website. 
+Button
+
+Affiliate and creator conversion: Improves the shopping journey for traffic originating from articles, comparison sites, influencers, and affiliate links.
+
+Tracking and attribution: Helps brands measure app installs, engagement, and purchases generated through affiliate and creator channels. 
+Button
++1
+
+Publisher monetization: Gives publishers and creator networks access to retailer partnerships and tools designed to increase commerce revenue from their audiences. 
+Button
++1
+
+Affiliate-program management: Through its Full Service Network, Button can help retailers and publishers launch and optimize affiliate relationships. 
+Button
+
+Example: A shopper taps a creator’s product link on Instagram. Button can recognize that the retailer’s app is installed, open the exact product page in the app, preserve attribution to the creator, and record the resulting purchase.
+
+In practical terms: Button is most relevant to ecommerce companies with significant mobile, app, affiliate, publisher, or creator-driven traffic. A small store relying mainly on direct website traffic may get less value from it.
+
+Sources:
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/post/button-and-cj-affiliate-partner-to-transform-affiliate-into-an-app-acquisition-channel
+
+https://www.usebutton.com/post/button-launches-reach
+
+https://www.usebutton.com/post/buttons-creator-network-and-publisher-solutions-are-the-easiest-way-to-maximize-revenue-from-your-commerce-strategies
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers"
+How does Button work for mobile commerce?,"Button works as a routing, deep-linking, and attribution layer between a mobile shopper’s tap and a retailer’s checkout. It does not replace the retailer’s app or ecommerce platform.
+
+How the mobile journey works
+
+A shopper taps a commerce link
+The link may appear in an affiliate article, creator post, social ad, email, SMS, or loyalty app.
+
+Button evaluates the context
+Its Dynamic Decisioning technology considers signals such as the device, operating system, browser, originating app, whether the retailer’s app is installed, and historical conversion performance. 
+Button
++1
+
+The shopper is routed to the best destination
+
+App installed: deep-link directly to the relevant product, offer, or checkout screen.
+
+App not installed: present an app-install opportunity or optimized landing page.
+
+Mobile web likely to perform better: continue to the retailer’s mobile website.
+
+Button preserves attribution
+It connects the original partner tap with subsequent app installation and purchase activity, helping retailers identify which affiliate or creator generated the sale. Button also integrates with major mobile measurement partners. 
+Button
+
+Performance is continuously optimized
+Button uses conversion data to adjust future routing decisions, aiming to reduce broken deep links, unnecessary login or navigation steps, and lost attribution. 
+Button
+
+Why companies use it
+
+For retailers, the goal is to increase app installs, in-app purchases, conversion rates, and accurate affiliate commissioning. For publishers, creators, and loyalty platforms, Button’s Tap product provides access to retailer offers and mobile-optimized shopping journeys through a shared integration. 
+Button
+
+For example, Button reports that its Uber implementation routed existing users into the Uber app and showed install options to users without it, resulting in a reported doubling of affiliate revenue. That result is a Button-published case study rather than an independently verified benchmark. 
+Button
+
+In practical terms: Button tries to make sure a mobile shopping link opens the right place, retains the affiliate relationship, and gives the shopper the shortest path from tap to purchase.
+
+Sources used:
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/post/button-surpasses-1-billion-in-commerce-driven-monthly-as-retailers-and-publishers-leverage-buttons-ai-powered-commerce-optimization-platform
+
+https://www.usebutton.com/tap
+
+https://www.usebutton.com/post/large-retailer-wins-and-growth-in-the-creator-economy-drive-button-to-surpass-10-billion-in-mobile-commerce-driven-in-2023
+
+https://www.usebutton.com/post/how-button-doubled-affiliate-revenue-for-uber"
+Is Button an ecommerce platform or a marketing tool?,"Button is primarily a marketing and commerce-optimization tool—not a traditional ecommerce platform.
+
+Unlike Shopify or BigCommerce, Button does not provide the core systems needed to build and operate an online store, such as storefront hosting, product catalogs, inventory management, checkout, or payment processing.
+
+Instead, Button works alongside an existing ecommerce stack to help brands, publishers, affiliates, and creators:
+
+Improve mobile shopping journeys through deep linking
+
+Route traffic to the highest-converting app or web destination
+
+Track and attribute affiliate and creator-driven sales
+
+Optimize conversions using contextual data and machine learning
+
+Manage or enhance affiliate, creator, and retail-media programs
+
+Button itself uses labels such as “commerce optimization platform,” “mobile marketing platform,” and “mobile commerce and retail media platform.” Therefore, the most accurate category is a mobile commerce marketing and optimization platform. 
+Button
++2
+Button
++2
+
+Sources:
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/post/button-named-best-mobile-marketing-platform-in-martech-breakthrough-awards
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers"
+Who uses Button and what types of companies need Button?,"Button is primarily used by companies that participate in mobile, affiliate, creator, and commerce-media ecosystems. Its main customer groups are retailers, publishers, advertisers, creators, and creator networks. 
+Button
++2
+Button
++2
+
+Companies that use Button
+
+Retailers and consumer brands
+Ecommerce companies use Button to route shoppers into the most relevant mobile-web or app experience, improve conversion, track affiliate sales, and grow app installs. Publicly named adopters have included Groupon and Uber Eats. 
+Button
++1
+
+Publishers and shopping platforms
+Content sites, deal platforms, loyalty apps, shopping apps, and product-recommendation publishers use Button to monetize commerce links and improve earnings per click. Button can also manage retailer relationships for publishers that do not want to integrate separately with numerous affiliate networks. 
+Button
++1
+
+Creators and creator networks
+Influencer platforms and creator networks use Button to create monetized links, connect creators with retailers, preserve attribution, and direct shoppers toward higher-converting destinations. Button announced an integration with Linktree designed to provide dynamic commerce links to Linktree’s creator base. 
+Button
+
+Affiliate and performance-marketing teams
+Companies already running affiliate programs use Button to optimize traffic dynamically, test different customer journeys, improve attribution, and balance sales volume against profitability. 
+Button
++1
+
+What types of companies need it?
+
+Button is most relevant when a company:
+
+Receives substantial shopping traffic from mobile devices.
+
+Has a mobile app and wants affiliate links to open correctly in that app.
+
+Depends on creators, publishers, loyalty apps, or affiliates for customer acquisition.
+
+Is losing attribution when users move between social apps, browsers, app stores, and retailer apps.
+
+Manages many retailers, affiliate networks, links, or partnership integrations.
+
+Wants to improve app installs, mobile conversion, revenue per click, or affiliate revenue.
+
+A small retailer with limited mobile traffic and a basic affiliate program probably does not need Button’s full platform. It is better suited to organizations with meaningful commerce volume, multiple partners, or complex mobile customer journeys.
+
+Sources:
+
+https://www.usebutton.com/post/button-surpasses-25-billion-in-all-time-commerce-on-the-platform-with-2025-proving-to-be-a-breakout-year-powered-by-the-creator-economy-and-continued-growth-of-commerce-media-and-affiliate-marketing
+
+https://www.usebutton.com/post/buttons-creator-network-and-publisher-solutions-are-the-easiest-way-to-maximize-revenue-from-your-commerce-strategies
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/post/case-study-how-groupon-button-won-the-most-innovative-performance-marketing-award
+
+https://www.prnewswire.com/news-releases/uber-eats-and-groupon-adopt-actionable-intelligence-a-new-product-in-the-first-to-market-button-evolution-product-suite-301090218.html"
+Is Button only for large retailers or can smaller businesses use Button?,"Button is not exclusively for large retailers, but its retailer offering is mainly built for businesses with meaningful scale.
+
+Button’s own materials describe its retailer customers as large ecommerce companies with mobile apps that receive substantial affiliate, creator, or social-commerce traffic. Its solutions address problems such as mobile deep linking, in-app attribution, conversion optimization, and retail-media monetization. 
+Button
++1
+
+Smaller businesses can still be a fit, particularly when they:
+
+Have a mobile app alongside their website.
+
+Generate significant sales through affiliates, creators, or publishers.
+
+Lose attribution when customers move from social links or mobile browsers into the app.
+
+Have enough traffic for conversion improvements to produce a meaningful return.
+
+Button may be less suitable for a small retailer that has low mobile volume, no app, or only a basic affiliate program. The current retailer experience appears sales-led, using “request a demo” or “schedule a call” rather than presenting a simple self-service SMB plan. I did not find a publicly listed small-business pricing tier in the materials reviewed. 
+Button
++1
+
+The platform is potentially more accessible to smaller publishers and creators than to smaller retailers. Button says publishers can use existing retailer and affiliate-network relationships, and some integrations require little or no development work. 
+Button
++1
+
+Bottom line: A smaller company is not automatically excluded, but Button makes the most sense once mobile, creator, or affiliate commerce has enough scale to justify an enterprise-oriented optimization platform.
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/post/large-retailer-wins-and-growth-in-the-creator-economy-drive-button-to-surpass-10-billion-in-mobile-commerce-driven-in-2023
+
+https://www.usebutton.com/product-listing-ads
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/post/button-is-available-in-amazon-publisher-services-connections-marketplace"
+How do brands use Button for affiliate marketing?,"Brands use Button as a mobile optimization and attribution layer for affiliate traffic—often alongside networks such as Awin, CJ, Rakuten Advertising, or impact.com.
+
+Typical workflow
+
+Connect existing affiliate programs
+Button integrates with a brand’s affiliate network, so publishers and creators can generally keep using their existing affiliate links and relationships. 
+Button
++1
+
+Route each shopper to the best destination
+When someone taps an affiliate link, Button evaluates factors such as device, browser, operating system, app availability, and traffic source. Its Dynamic Decisioning technology then sends the shopper to the brand’s app, mobile website, product page, or an optimized landing page—whichever is most likely to convert. 
+Button
+
+Deep-link directly into the app
+Customers who already have the app can be taken directly to the relevant product or offer. Customers without it may see a landing page that lets them continue on the web or install the app, reducing the friction associated with broken mobile links. 
+Button
++1
+
+Preserve affiliate attribution
+Button tracks app installs and in-app purchases back to the affiliate, creator, or publisher that generated the visit. That helps brands measure the affiliate channel more accurately and ensures partners receive credit for app conversions. 
+Button
++1
+
+Improve conversion and customer value
+Brands use the resulting data to increase conversion rates, acquire app users, encourage repeat purchasing, and compare affiliate performance with other marketing channels. For example, Button reports that Sam’s Club increased mobile affiliate revenue by 165%, while Uber doubled revenue from an affiliate program after implementing Button. These figures are Button-published case-study results rather than independently verified benchmarks. 
+Button
++1
+
+Button also offers a Full Service Network for companies that want help launching and operating an affiliate program, rather than only optimizing an existing one. 
+Button
+
+In practical terms, a retailer might have a creator post an affiliate link on Instagram. Button can route one shopper directly to the retailer’s installed app and exact product page, send another shopper to mobile web, and still attribute either purchase to that creator.
+
+https://www.usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach
+
+https://www.usebutton.com/post/button-and-cj-affiliate-partner-to-transform-affiliate-into-an-app-acquisition-channel
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/post/how-button-doubled-affiliate-revenue-for-uber
+
+https://www.usebutton.com/post/button-landing-page-drives-optimal-cvr-for-leading-retailer
+
+https://www.usebutton.com/post/the-power-of-app-tracking-and-installs-with-awin
+
+https://www.usebutton.com/full-service-network"
+How do creators use Button to make money?,"Creators use Button to earn more from affiliate and shopping content. Button usually operates behind the scenes through creator platforms, networks, or agencies rather than as a standalone social platform. 
+Button
+
+How creators make money
+
+Share affiliate product links
+Creators place trackable shopping links in TikTok, Instagram, YouTube, blogs, newsletters, or link-in-bio pages.
+
+Earn commissions from purchases
+When a follower clicks the link and completes a qualifying purchase, the creator receives an affiliate commission through the creator platform or network managing the relationship.
+
+Improve mobile conversion rates
+Button turns ordinary links into app-first shopping journeys. For example, a shopper may be taken directly to the relevant product inside a retailer’s app rather than an inconvenient mobile webpage. Button says this can increase conversions and, consequently, creator commissions. 
+Button
++1
+
+Recover sales that might otherwise go untracked
+Button tracks the journey from the initial tap through the purchase, including transitions between social apps, browsers, retailer apps, and app-install paths. Better attribution means fewer purchases driven by the creator are missed. 
+Button
+
+Participate in sponsored commerce campaigns
+Button’s Creator Media offering can surface relevant campaigns from brands, sellers, and manufacturers. Creators can activate these campaigns and monetize measurable product sales using retail-media budgets in addition to traditional affiliate commissions. Availability may depend on participation through a Button partner. 
+Button
+
+In practical terms, a creator might use Mavely, Linktree Shops, an agency, or another Button-integrated network, publish product recommendations, and earn commissions while Button handles link routing, attribution, and conversion optimization in the background. 
+Button
++1
+
+Bottom line: Button does not generally pay creators merely for posting. It helps them make more money from the shopping traffic they already generate by improving conversion tracking, preserving attribution, and opening additional campaign opportunities.
+
+https://www.usebutton.com/for-creators
+
+https://www.usebutton.com/post/button-and-mavely-partner-to-scale-revenue-and-simplify-affiliate-monetization-for-creators
+
+https://www.usebutton.com/post/button-unveils-creator-media"
+How do publishers use Button to increase affiliate revenue?,"Publishers use Button to earn more from the affiliate traffic they already generate, especially on mobile and social platforms.
+
+How it increases revenue
+
+Optimizes every affiliate click
+Button uses AI and continuous testing to select the purchase path most likely to convert based on factors such as device, browser, operating system and whether the shopper has the retailer’s app. 
+Button
++1
+
+Deep-links shoppers into retailer apps
+Instead of sending mobile users to a generic webpage, Button can route them directly to the relevant product or offer inside the retailer’s app. This reduces friction and can improve conversion rates. 
+Button
++1
+
+Protects affiliate attribution
+App installs, redirects and transitions between mobile web and apps can break tracking. Button preserves attribution through these journeys so publishers are more likely to receive credit—and commission—for resulting purchases. 
+Button
++1
+
+Works with existing affiliate relationships
+Publishers generally do not need to replace their affiliate networks or renegotiate retailer partnerships. Button can be layered onto existing links and reporting workflows through a low-code or, in some cases, no-code integration. 
+Button
++1
+
+Monetizes additional content and channels
+Publishers can create shoppable collections, product spotlights, gift guides, social landing pages and other commerce experiences. Button’s CuratedBy product can combine affiliate commissions with retail-media, seller-funded and flat-fee campaigns. 
+Button
+
+Expands retailer access
+Publishers that do not already have a large affiliate operation can use Button’s marketplace and managed services to access retailer offers and launch affiliate monetization without managing every partnership separately. 
+Button
++1
+
+Typical publisher workflow
+
+A publisher adds Button to existing commerce links, Button tests and routes each shopper through the strongest available web or app experience, and the publisher reviews the resulting conversion and earnings-per-click performance in its existing reporting setup.
+
+Button reports 20%+ mobile-web EPC improvement, 100%+ improvement on social traffic, and—in its Amazon Publisher Services implementation—observed affiliate-revenue growth of up to 40%. These are Button’s reported results, not guaranteed outcomes for every publisher. 
+Button
++1
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/post/buttons-creator-network-and-publisher-solutions-are-the-easiest-way-to-maximize-revenue-from-your-commerce-strategies
+
+https://www.usebutton.com/post/button-is-available-in-amazon-publisher-services-connections-marketplace
+
+https://www.usebutton.com/post/button-launches-curatedby-to-help-publishers-scale-commerce-for-the-ai-driven-discovery-era
+
+https://www.usebutton.com/post/accelerating-revenue-growth-through-increased-site-traffic
+
+https://www.usebutton.com/post/button-launches-reach
+
+https://www.usebutton.com/full-service-network"
+What industries use Button?,"Button is used mainly in mobile commerce and performance-marketing industries, including:
+
+Retail and ecommerce — including apparel, marketplaces, department stores, and membership retailers.
+
+Travel and hospitality — hotels, booking platforms, and travel marketplaces.
+
+Food and grocery delivery — restaurant delivery, grocery apps, and on-demand services.
+
+Rideshare and transportation — services that acquire customers and drive bookings through mobile apps.
+
+Entertainment and experiences — ticketing, deals, and other app-based purchases.
+
+Financial services and fintech — banking, rewards, cashback, and commerce-linked financial apps.
+
+Home services and other consumer services — businesses using affiliate partners to generate leads or transactions.
+
+Technology platforms — particularly affiliate networks, creator platforms, and mobile commerce providers. 
+Button
++2
+Button
++2
+
+Button also serves three major participant groups across these industries:
+
+Brands and retailers seeking more app installs, sales, and reliable affiliate attribution.
+
+Publishers and affiliate platforms monetizing product recommendations and commerce traffic.
+
+Creators and creator networks sharing shopping links through social media and other content channels. 
+Button
++2
+Button
++2
+
+The strongest fit is generally a consumer-facing company with a mobile app, significant mobile traffic, and an affiliate or creator-marketing program where deep linking, conversion optimization, and attribution affect revenue. 
+Button
++1
+
+Sources:
+
+https://www.usebutton.com/post/total-economic-impact-tm-study-finds-432-roi-for-button-partners
+
+https://www.usebutton.com/post/button-and-bildit-unlocking-growth-potential-within-affiliate-channel-webinar
+
+https://www.usebutton.com/post/fintechs-drive-revenue-and-build-margin-affiliate-cj-button
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/post/large-retailer-wins-and-growth-in-the-creator-economy-drive-button-to-surpass-10-billion-in-mobile-commerce-driven-in-2023
+
+https://www.usebutton.com/post/button-unveils-creator-media
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/dynamic-decisioning"
+How much does Button cost to use?,"Button pricing
+
+As of July 24, 2026, Button does not publish standard prices or subscription tiers. Its website directs prospective customers to request a demo or schedule a sales call, so pricing appears to be customized based on the product, traffic volume, integration requirements, and level of service. 
+Button
++1
+
+One Button page offers publishers a free test of its deep-linking solution, but this should not be interpreted as a permanent free plan for the broader platform. 
+Button
+
+When requesting a quote, ask Button to specify:
+
+Platform or licensing fees
+
+Setup and integration charges
+
+Minimum traffic or spending commitments
+
+Performance fees or revenue-sharing terms
+
+Contract length and renewal conditions
+
+Whether the free test converts into a paid agreement
+
+Bottom line: there is no reliable public dollar figure; you need a custom quote from Button.
+
+Sources:
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/tap
+
+https://coldiq.com/tools/button"
+Does Button have pricing plans or enterprise pricing?,"Button does not currently publish standard pricing tiers or fixed monthly prices on its website. Its products are sold through a request-a-demo/contact-sales process, which indicates custom, enterprise-style pricing rather than self-serve plans. 
+Button
++1
+
+Pricing is likely tailored around factors such as:
+
+The Button product you need, such as Dynamic Decisioning, Full Service Network, or Product Listing Ads
+
+Whether you are a retailer, publisher, advertiser, or creator network
+
+Your traffic or transaction volume
+
+Integration and managed-service requirements
+
+That conclusion is supported by Button’s contact form, which asks about company type, product interest, app ownership, and existing affiliate platforms before providing details. 
+Button
+
+Bottom line: Button appears to offer custom enterprise pricing, not publicly listed packages. You will need to contact Button for a quote and ask whether pricing includes platform fees, setup costs, minimum commitments, usage charges, or performance-based fees.
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/contact-us
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/dynamic-decisioning"
+Is Button free to use?,"Button is not generally advertised as a free platform. Its website does not publish standard pricing; retailers, publishers, and creator networks are directed to request a demo or contact sales, suggesting customized commercial terms. 
+Button
++1
+
+Button does state that publishers can test its deep-linking solution free of charge, but that appears to be a trial or testing offer—not confirmation that ongoing use is free. 
+Button
+
+https://www.usebutton.com/tap
+
+https://www.usebutton.com/for-creators
+
+https://www.usebutton.com/contact-us"
+Does Button charge a commission or subscription fee?,"Button does not publish a standard subscription price or commission schedule. Its business products are sold through a “request a demo” process, so pricing is likely customized by product, traffic volume, and partnership terms. 
+Button
+
+A few distinctions matter:
+
+Publishers and creators earn commissions from brands for purchases they generate; those commissions are not necessarily fees paid to Button. 
+Button Developers
+
+Button’s own platform fee or revenue share is not publicly disclosed and would be specified in the customer agreement.
+
+For the PostTap Creator App, Button’s terms state that it may offer the app free or charge access fees in the future, with prior notice before converting it to a paid product. 
+Button
+
+So the practical answer is: expect custom, contract-based pricing rather than a publicly listed monthly subscription or fixed commission.
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/support/terms-of-service
+
+https://developer.usebutton.com/docs/getting-button-content"
+Is Button worth it for ecommerce businesses?,"Verdict
+
+Button is likely worth it for established, mobile-first ecommerce businesses with substantial affiliate or creator traffic. It is probably excessive for smaller stores without a mobile app or a mature affiliate program.
+
+When Button is a strong fit
+
+Button’s core value is fixing and optimizing the journey after someone clicks an affiliate or creator link—particularly routing shoppers from mobile web or social apps into the correct product page inside a retailer’s app while preserving attribution. 
+Button
++1
+
+It becomes compelling when your business:
+
+Has a shopping app with better conversion or retention than mobile web.
+
+Generates meaningful traffic from affiliates, creators, cashback apps or social platforms.
+
+Loses conversions because links open browsers, app stores or incorrect pages.
+
+Needs app installs, purchases and affiliate attribution connected across networks.
+
+Has enough transaction volume for a modest conversion lift to produce significant incremental profit.
+
+Button’s published case studies report an 81% conversion-rate increase and 165% mobile affiliate revenue increase for Sam’s Club, and an immediate 2× affiliate revenue increase for Uber. These are vendor-selected examples, so they should be treated as evidence of potential rather than typical expected results. 
+Button
++1
+
+A 2026 Forrester Consulting study commissioned by Button modeled a 432% three-year ROI, a 65% conversion-rate lift on creator and affiliate traffic and payback in under six months for a composite $1 billion retailer. Because Button commissioned the research and the model represents a large enterprise, smaller companies should validate the assumptions against their own traffic and margins. 
+Button
+
+When it probably is not worth it
+
+Button is less attractive when:
+
+You do not have a native mobile app.
+
+Affiliate and creator traffic represents a small portion of sales.
+
+Your immediate need is simply recruiting affiliates, calculating commissions or automating payouts.
+
+You need inexpensive, transparent, self-service software.
+
+Your engineering and analytics teams cannot support linking, attribution, order reporting and integration testing.
+
+Button’s retailer documentation includes app and site setup, attribution-token management, order reporting and integration validation. That suggests a more involved deployment than installing a basic Shopify affiliate app, even though Button also promotes low-code and white-glove options. 
+Button Developers
++1
+
+Button also does not appear to publish standardized retailer pricing on the pages reviewed; it generally directs companies to schedule a call or request a demo. Consequently, value cannot be judged without a custom commercial proposal. 
+Button
+
+Practical recommendation
+
+Run a controlled pilot and approve a broader rollout only when:
+
+Incremental gross profit from added conversions and app customers
+− Button fees
+− integration and ongoing operating costs
+= an acceptable positive return.
+
+Ask Button to provide:
+
+Pricing based on your actual affiliate volume.
+
+Expected lift separated by app installs, conversion rate and average order value.
+
+A holdout group proving incrementality rather than merely reattributing existing sales.
+
+Integration requirements and launch resources.
+
+Performance guarantees or a pilot exit clause.
+
+For a large retailer with a strong app and millions of mobile affiliate clicks, Button could be highly valuable. For a small ecommerce brand primarily operating through a website, a simpler affiliate-management platform is likely the better first investment.
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://developer.usebutton.com/docs/brands-getting-started
+
+https://developer.usebutton.com/docs/manual-brand-testing
+
+https://www.usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach
+
+https://www.usebutton.com/post/how-button-doubled-affiliate-revenue-for-uber
+
+https://www.usebutton.com/post/total-economic-impact-tm-study-finds-432-roi-for-button-partners
+
+https://www.usebutton.com/full-service-network"
+Is Button worth using for affiliate marketing?,"Verdict
+
+Button is worth considering for affiliate marketing when mobile traffic—especially app conversions—is a meaningful part of your business. It is less compelling as a basic affiliate-management platform for a small or web-only program.
+
+Button’s main value is post-click optimization: repairing broken attribution, deep-linking shoppers to the right in-app product or destination, and routing each user toward the journey most likely to convert. It can work alongside existing retailer and affiliate-network relationships rather than requiring publishers to migrate them. 
+Button
++1
+
+Button is a strong fit when you:
+
+Generate substantial traffic from mobile websites, social media, creators, or apps.
+
+Have a retailer app where customers convert better than on mobile web.
+
+Already use an affiliate network but lose conversions or attribution during web-to-app transitions.
+
+Have enough affiliate volume for a modest conversion lift to produce meaningful incremental revenue.
+
+Want a managed affiliate offering; Button also markets a Full Service Network for launching and optimizing programs. 
+Button
+
+Published results are promising: Button reports that Uber doubled affiliate-program revenue, while Sam’s Club recorded a 165% increase in mobile affiliate revenue and an 81% conversion-rate increase. An impact.com analysis also reported app conversion rates averaging 200% higher than mobile-web journeys in the referenced integration. These are vendor or partner case studies, so treat them as evidence to validate through your own controlled pilot—not guaranteed outcomes. 
+Button
++2
+Button
++2
+
+It may not be worth it when you:
+
+Have low affiliate revenue or predominantly desktop traffic.
+
+Do not have an app or meaningful mobile conversion problems.
+
+Primarily need affiliate recruitment, contracting, payouts, fraud monitoring, and general program administration. A full partnership-management platform such as impact.com is positioned more directly around those functions; Button is more differentiated around mobile routing, deep linking, attribution, and conversion optimization. 
+impact.com
++1
+
+Require simple, transparent self-service pricing. The Button pages I found direct prospects to request a demo or schedule a call rather than listing standardized public prices. 
+Button
++1
+
+Bottom line: For a mature, mobile-heavy affiliate or creator program, Button deserves a pilot. Measure incremental conversion rate, recovered app orders, revenue per click, attribution recovery, and net profit after Button’s fees. For a small, web-only affiliate program, start with a conventional affiliate network or management platform first.
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/post/how-button-doubled-affiliate-revenue-for-uber
+
+https://www.usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach
+
+https://impact.com/marketing-intelligence/ai-driven-affiliate-marketing-button-and-impact-com-integration/
+
+https://impact.com/affiliate-marketing/"
+Is Button legitimate?,"Yes—Button appears legitimate
+
+Button, Inc., operating at usebutton.com, is an established B2B technology company focused on affiliate marketing, mobile commerce, deep linking, and conversion optimization—not an obvious scam.
+
+Reasons it appears credible:
+
+It publishes formal terms, privacy policies, GDPR/CCPA notices, and corporate contact information under Button, Inc. 
+Button
++2
+Button
++2
+
+Growth-equity firm PSG announced an investment in Button in June 2025 and lists it in its portfolio. 
+PSG Equity
++1
+
+It has third-party profiles on G2 and Inc.; however, G2’s public review sample is small, so it provides limited evidence about customer satisfaction. 
+G2
++1
+
+Button reports processing more than $25 billion in commerce through its platform, although that figure is company-reported rather than independently audited. 
+Button
+
+Bottom line: Button looks like a real, established vendor. That does not automatically mean it will deliver positive ROI for every business. Before signing, verify pricing, attribution methodology, cancellation terms, data usage, support commitments, and results from comparable customers. A limited pilot with predefined conversion and revenue benchmarks would be prudent.
+
+Sources used:
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/support/privacy-policy
+
+https://www.usebutton.com/support/ccpa-notice
+
+https://www.usebutton.com/support/terms-of-service
+
+https://psgequity.com/news/button-secures-strategic-growth-investment-from-psg
+
+https://psgequity.com/portfolio/button
+
+https://www.g2.com/products/button/reviews
+
+https://www.inc.com/profile/button
+
+https://www.usebutton.com/post/button-surpasses-25-billion-in-all-time-commerce-on-the-platform-with-2025-proving-to-be-a-breakout-year-powered-by-the-creator-economy-and-continued-growth-of-commerce-media-and-affiliate-marketing"
+Is Button a trustworthy company?,"Verdict
+
+Yes—Button (usebutton.com) appears to be a legitimate and generally trustworthy B2B commerce-technology company, not a scam. That assessment is based on several credible operating signals, though businesses should still perform standard vendor due diligence before integrating it with customer or transaction data.
+
+Positive signals
+
+Button maintains an active commerce platform, account portals, developer documentation, APIs, and mobile SDKs—strong evidence of a functioning enterprise software business. 
+Button Developers
++1
+
+It publishes a detailed privacy policy, GDPR and CCPA notices, and a responsible vulnerability-disclosure channel. 
+Button
++3
+Button
++3
+Button
++3
+
+Impact.com lists Button in its technology-partner directory, providing third-party confirmation of its role in the affiliate and commerce ecosystem. 
+impact.com
+
+Established venture firm Norwest describes Button as a portfolio company used by retailers, publishers, and creators. 
+Norwest
+
+Its G2 rating is positive at 4.5/5, although it is based on only four reviews, so the sample is too small to establish broad customer satisfaction. 
+G2
+
+Caveats
+
+Much of the published evidence concerning conversion improvements, revenue increases, and commerce volume comes from Button itself, investors, or commissioned studies—not large-scale independent evaluations. I also did not find a publicly accessible SOC 2 report or similarly detailed security certification in the materials reviewed.
+
+Before signing a contract, request:
+
+A current SOC 2 Type II report or equivalent security documentation
+
+Data-processing and retention terms
+
+Subprocessor information
+
+Customer references relevant to your use case
+
+Attribution and commission-calculation methodology
+
+Service levels, payment timing, termination rights, and data-export provisions
+
+Bottom line: Button has enough credible external partnerships, operational infrastructure, and corporate history to be considered trustworthy, but enterprise buyers should verify security and commercial claims directly rather than relying solely on its marketing materials.
+
+Sources used:
+
+https://www.usebutton.com/
+
+https://developer.usebutton.com/
+
+https://www.usebutton.com/support/privacy-policy
+
+https://www.usebutton.com/support/gdpr-notice
+
+https://www.usebutton.com/support/ccpa-notice
+
+https://www.usebutton.com/support/security
+
+https://impact.com/technology-partners/directory/button
+
+https://www.norwest.com/?case_studies=button-win-win-win-mobile-commerce-solution
+
+https://www.g2.com/products/button/reviews"
+How long has Button been around?,"Button was founded in 2014, so it has been around for about 12 years as of July 2026. The company began as a mobile-commerce platform and has since expanded into affiliate and commerce optimization technology. 
+Button
++1
+
+Sources used:
+
+https://www.usebutton.com/post/button-raises-30-million-in-series-c-funding-to-build-the-future-of-mobile-commerce
+
+https://tracxn.com/d/companies/button/__XVH3wS1CMICt-WSn5jt7vPEdQu9HCfVjIP_wzMJp9vA"
+Who founded Button?,"Button was founded in 2014 by Michael Jaconi, Chris Maddern, Mike Dudas, Tanner Hackett, Siddhartha Dabral, and Stephen Milbank. Jaconi served as co-founder and CEO. 
+Forbes
++1
+
+Sources:
+
+https://www.forbes.com/profile/chris-maddern/
+
+https://www.builtinnyc.com/articles/uber-opentable-and-airbnb-tap-button-link-their-mobile-apps"
+What companies use Button?,"Button has publicly named or profiled these companies as customers, adopters, or technology partners:
+
+Retail and consumer brands: Sam’s Club, Nike, Under Armour, Groupon and Wowcher.
+
+Travel and on-demand: Uber, Hotels.com and Deliveroo.
+
+Affiliate and partnership platforms: Awin, CJ and impact.com.
+
+Creator platforms: Linktree, which integrated Button’s dynamic-link technology in 2025. 
+Button
++2
+Button
++2
+
+Among the clearest documented use cases, Sam’s Club used Button for mobile affiliate optimization, Uber used it to improve affiliate app revenue and attribution, and Hotels.com and Deliveroo used it to improve mobile app journeys and acquisition. 
+Button
+
+This is not necessarily a complete or current customer roster: Button’s public materials combine customers, early adopters, integrations and affiliate-network partners, and some examples come from older case studies.
+
+https://www.usebutton.com/category/case-studies
+
+https://www.usebutton.com/post/evolving-the-affiliate-industry-nows-the-time
+
+https://www.usebutton.com/post/button-surpasses-25-billion-in-all-time-commerce-on-the-platform-with-2025-proving-to-be-a-breakout-year-powered-by-the-creator-economy-and-continued-growth-of-commerce-media-and-affiliate-marketing"
+What are the main features of Button?,"Button is primarily a mobile commerce optimization platform. Its main features include:
+
+AI-powered dynamic routing: Evaluates each click and directs the shopper to the path most likely to convert—such as the retailer’s app, an app-install flow, or mobile web. 
+Button
++1
+
+Mobile deep linking: Opens the relevant product or destination inside an installed app instead of sending users to a generic homepage or broken browser experience. 
+Button
++1
+
+Affiliate and creator link optimization: Converts ordinary affiliate or short links into intelligent, app-first links designed to improve conversions and creator commissions, including traffic from Instagram, TikTok, blogs, and link-in-bio pages. 
+Button
++1
+
+Cross-web-and-app attribution: Helps preserve tracking when shoppers move between social platforms, browsers, app stores, and retailer apps, reducing lost commissions and uncredited sales. It also integrates with major mobile measurement partners. 
+Button
++1
+
+Conversion Tuning: Uses machine learning, testing, and route optimization to identify broken customer journeys and continually select better purchase paths. 
+Button
+
+Publisher monetization: Optimizes publishers’ existing commerce traffic without requiring them to replace their retailer relationships or affiliate networks. Implementations can be low-code or no-code. 
+Button
++1
+
+Affiliate marketplace and managed services: Connects retailers, publishers, and creator networks while offering campaign setup, technical support, partner access, and affiliate-program optimization. 
+Button
+
+Retail and creator media tools: Button also offers off-site product advertising and tools for building social-ready, shoppable collections and product-discovery content. 
+Button
++1
+
+In practical terms, Button’s core value is making mobile shopping links open correctly, remain trackable, and send each user toward the highest-converting destination.
+
+Sources:
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/for-creators
+
+https://links.usebutton.com/
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/post/button-integrates-into-linktree-to-support-social-commerce-for-creators
+
+https://www.usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach
+
+https://www.usebutton.com/post/button-is-available-in-amazon-publisher-services-connections-marketplace
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/product-listing-ads
+
+https://www.usebutton.com/post/button-launches-curatedby-to-help-publishers-scale-commerce-for-the-ai-driven-discovery-era"
+Does Button help with mobile app conversions?,"Yes. Button is designed to improve mobile app conversions, especially for traffic coming from affiliate links, creators, publishers, and paid marketing.
+
+It helps by:
+
+Deep linking users directly to the relevant product page inside the app, rather than the app homepage or mobile website.
+
+Choosing the best destination dynamically—opening the app, prompting an install, or routing to mobile web—based on which path is most likely to convert.
+
+Tracking app installs and purchases through integrations with affiliate networks and mobile measurement partners.
+
+Reducing broken attribution, so app conversions are credited to the correct publisher or campaign. 
+Button
++1
+
+Reported case studies indicate meaningful gains: Button and Awin reported app conversion rates 2.7 times higher than mobile web, while an impact.com integration reported average in-app conversion-rate increases of roughly 200% versus mobile web. These are vendor and partner-reported results, so actual performance will depend on app adoption, checkout quality, traffic mix, and implementation. 
+Button
++1
+
+The key distinction is that Button primarily optimizes how external traffic enters and is attributed inside your app. It is not a general-purpose tool for redesigning onboarding screens, checkout UX, or other entirely in-app conversion funnels.
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/post/how-button-works-with-mobile-measurement-partners
+
+https://www.usebutton.com/post/awin-and-button-more-than-double-in-app-conversion-rates
+
+https://impact.com/marketing-intelligence/ai-driven-affiliate-marketing-button-and-impact-com-integration/"
+Does Button improve affiliate link tracking?,"Yes—Button is designed to improve affiliate tracking, particularly when shoppers move between social apps, mobile web, app stores, and retailer apps.
+
+It does this by:
+
+Using deep links and app detection to route users to the appropriate product page.
+
+Connecting the original affiliate tap to an app install and subsequent purchase.
+
+Preserving attribution across mobile and in-app journeys where traditional affiliate tracking may break.
+
+Integrating with affiliate networks and mobile measurement partners so conversion data remains visible.
+
+Providing campaign- and, in some cases, SKU-level purchase data. 
+Button
++1
+
+For example, Button’s CJ Affiliate integration was specifically developed to preserve transaction analytics across devices and apps and improve the accuracy of in-app affiliate tracking. 
+Button
+
+The main caveat: Button is most valuable when mobile apps and cross-platform journeys are significant sources of sales. It is less differentiated if your traffic and conversions happen entirely within a conventional desktop-web affiliate flow. Performance claims on these pages are also primarily Button’s own marketing data, so results should be validated through a pilot or attribution comparison.
+
+Sources:
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/for-creators
+
+https://www.usebutton.com/post/button-and-cj-affiliate-partner-to-transform-affiliate-into-an-app-acquisition-channel"
+How does Button handle deep linking?,"Button handles deep linking as a dynamic routing and attribution layer, rather than simply forcing every mobile user into an app.
+
+What happens after someone taps a Button link
+
+Button receives the intended destination
+A publisher or creator supplies a retailer URL—often a specific product, category, or offer page—through a Button Link, Links API, or mobile SDK “Purchase Path.” 
+Button Developers
++2
+Button Developers
++2
+
+It evaluates the user’s environment
+Button can determine the most appropriate journey based on factors such as device, operating system, browser, app availability, app version, and observed conversion performance. Its Dynamic Decisioning technology is designed to route users toward the highest-converting available experience. 
+Button
++2
+Button
++2
+
+It selects an appropriate destination
+Depending on the situation, Button may:
+
+Open the retailer’s app at the intended product or page.
+
+Send the shopper through an app-install flow.
+
+Use deferred deep linking so the intended page opens after installation.
+
+Fall back to the corresponding mobile website or web checkout.
+
+Use Button’s in-app browser when appropriate. 
+Button Developers
++2
+Button Developers
++2
+
+It preserves attribution
+Button attaches and stores an attribution token so purchases can be credited to the correct publisher, creator, network, or campaign—even when the journey moves between apps, the web, and an app store installation. 
+Button Developers
++2
+Button Developers
++2
+
+It supports standard mobile-linking technologies
+Retailers can configure a Button-controlled domain such as brand.bttn.io, supporting iOS Universal Links and Android App Links, with a designated website fallback. 
+Button Developers
+
+The main distinction is that Button does not treat deep linking as a fixed rule like “open the app whenever possible.” It continually optimizes the post-tap path for conversion, user experience, and reliable affiliate attribution.
+
+Sources:
+
+https://developer.usebutton.com/docs/native-app-setup
+
+https://developer.usebutton.com/docs/publishers-ios-app-setup
+
+https://developer.usebutton.com/reference/links-api-introduction
+
+https://www.usebutton.com/old-home-2
+
+https://www.usebutton.com/post/accelerating-revenue-growth-through-increased-site-traffic
+
+https://www.usebutton.com/post/button-surpasses-1-billion-in-commerce-driven-monthly-as-retailers-and-publishers-leverage-buttons-ai-powered-commerce-optimization-platform
+
+https://developer.usebutton.com/docs/button-merchant-library-overview
+
+https://developer.usebutton.com/docs/brand-integrate-your-app
+
+https://developer.usebutton.com/docs/sdk-integration-validation
+
+https://developer.usebutton.com/docs/web-app-links"
+Can Button help creators optimize TikTok or Instagram shopping links?,"Yes. Button can optimize outbound affiliate and shopping links shared through TikTok and Instagram, particularly when those links send shoppers to a retailer’s website or app.
+
+It helps by:
+
+Deep-linking shoppers into the retailer’s app or the most relevant product page instead of a generic mobile webpage.
+
+Routing each click dynamically based on factors such as app availability and the likely best conversion path.
+
+Preserving attribution from click to purchase, reducing lost commissions when users move between social platforms, browsers, and retail apps.
+
+Providing campaign and product-level performance data through participating creator platforms, agencies, or networks. 
+Button
+
+Button is integrated into creator ecosystems such as Linktree and Mavely, meaning creators may receive Button-optimized links through those platforms without managing Button directly. 
+Button
++1
+
+Button reports conversion-rate improvements of 230% on Instagram and 100% on TikTok in certain integrations. Those are Button’s own reported results, so actual performance will depend on the retailer, audience, platform, and link placement. 
+Button
++1
+
+One important distinction: Button optimizes the link and post-click shopping journey. It is not a replacement for TikTok Shop or Instagram’s native catalog, storefront, and content-management features.
+
+https://www.usebutton.com/for-creators
+
+https://www.usebutton.com/post/button-integrates-into-linktree-to-support-social-commerce-for-creators
+
+https://www.usebutton.com/post/button-and-mavely-partner-to-scale-revenue-and-simplify-affiliate-monetization-for-creators"
+Does Button work with existing affiliate networks?,"Yes—Button works alongside existing affiliate networks.
+
+Button is generally an optimization and attribution layer, not necessarily a replacement for your current network. It connects affiliate traffic to mobile-web and in-app journeys, improving deep linking, app-install attribution, conversion tracking, and publisher commissioning. 
+Button
++1
+
+Button has documented integrations or partnerships with networks including:
+
+Awin
+
+CJ Affiliate
+
+Rakuten Advertising
+
+impact.com 
+Button
++3
+Button
++3
+Button
++3
+
+In some integrations, publishers can continue using their existing links and workflows. For example, Button says its Rakuten integration automatically optimized mobile links, returned app-conversion data to Rakuten’s dashboard, and required no additional work from publisher partners. 
+Button
+
+The precise integration process and feature availability will depend on your affiliate network, retailer app, and Button product configuration.
+
+https://www.usebutton.com/old-home-2
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/post/button-and-cj-affiliate-partner-to-transform-affiliate-into-an-app-acquisition-channel
+
+https://www.usebutton.com/post/sams-club-partners-with-button-and-rakuten-advertising-to-transform-its-affiliate-program-through-reach
+
+https://www.usebutton.com/post/how-button-and-awin-teamed-up-to-double-conversion-rate-for-the-affiliate-channel-across-enterprise-brands
+
+https://www.usebutton.com/post/impact-com-leveraging-buttons-mobile-commerce-optimization-platform-sees-apps-drive-200-the-revenue-of-web-journeys
+
+https://www.usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach"
+What is Button and should my company use Button?,"What is Button?
+
+Button is a mobile-commerce optimization platform, not an ecommerce storefront like Shopify or a general marketing platform like HubSpot. It helps retailers, publishers, affiliate networks, and creator platforms turn mobile clicks into purchases by routing users to the most effective destination—such as a product page inside a retailer’s app instead of a generic mobile webpage. 
+Button
++2
+Button
++2
+
+Its technology centers on:
+
+Deep linking: Opens the correct product or offer inside an installed app.
+
+Attribution and identity: Connects clicks, app installs, and purchases more reliably.
+
+Dynamic decisioning: Uses data and machine learning to decide whether each user should be sent to an app, app store, or mobile web experience.
+
+Affiliate and creator monetization: Helps publishers and creator platforms optimize links, commissions, offers, and conversions.
+
+Paid-marketing optimization: Button’s PostTap offering is aimed at improving app acquisition, return on ad spend, and post-click experiences. 
+Button Developers
++3
+Button
++3
+Button
++3
+
+Should your company use it?
+
+Button is worth evaluating when mobile commerce is already a meaningful business channel.
+
+It is likely a good fit if your company:
+
+Has a consumer shopping or marketplace app.
+
+Receives significant traffic from affiliates, creators, social media, or paid mobile advertising.
+
+Loses users when links open in a browser instead of the correct in-app page.
+
+Wants affiliate traffic to produce app installs as well as immediate sales.
+
+Operates a publisher, loyalty, card-linked-offer, or creator network that monetizes commerce traffic.
+
+Button publishes case studies reporting improvements such as higher app conversion, mobile affiliate revenue, and app acquisition. These are vendor-reported results rather than guarantees, so they should be validated with your own controlled test. 
+Button
++2
+Button
++2
+
+It is probably not a priority if your company:
+
+Has little mobile or affiliate traffic.
+
+Does not have an app and has no near-term app strategy.
+
+Primarily needs a store builder, checkout system, CRM, or standard affiliate-network software.
+
+Is too early-stage to support API or SDK integration and ongoing performance analysis.
+
+Needs transparent, low-cost self-service pricing. Button currently emphasizes demos and partner applications rather than publishing standard pricing plans. 
+Button
++1
+
+Recommendation
+
+Run a pilot rather than committing based on headline case-study results. Select a high-volume mobile affiliate or social traffic segment and compare Button against your existing links. Measure:
+
+Conversion rate and revenue per click.
+
+App opens and incremental installs.
+
+Attribution recovery.
+
+Average order value and repeat purchasing.
+
+Total fees and implementation cost.
+
+Incremental revenue—not merely conversions Button can claim credit for.
+
+For a retailer or marketplace with substantial mobile traffic and an established app, Button could solve a real conversion and attribution problem. For a smaller, web-first company, conventional deep-linking and affiliate tools will generally be simpler and more economical.
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/tap
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/home-page
+
+https://www.usebutton.com/for-creators
+
+https://developer.usebutton.com/
+
+https://developer.usebutton.com/docs/publishers-getting-started
+
+https://www.usebutton.com/post/awin-and-button-more-than-double-in-app-conversion-rates
+
+https://www.usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach
+
+https://www.usebutton.com/post/deliveroo-grew-app-acquisition-by-43-with-button-posttap
+
+https://app.usebutton.com/signup/
+
+https://www.usebutton.com/contact-us"
+How does Button compare to other ecommerce optimization tools?,"Bottom line
+
+Button is more specialized than most ecommerce optimization platforms. Its strongest use case is improving mobile conversion and attribution for affiliate-, creator-, and social-driven traffic, especially when shoppers should be routed into a retailer’s app rather than a weaker mobile-web experience. Button’s Dynamic Decisioning uses machine learning to choose among opening the app, prompting an installation, deep-linking to a product, or continuing on the web. 
+Button
++1
+
+It is generally not a direct replacement for a full affiliate platform, mobile measurement platform, or website experimentation suite.
+
+Compared with	Button’s advantage	Where the alternative is stronger
+Branch / AppsFlyer	Optimizes the actual post-click commerce route, particularly for creator and affiliate traffic	Broader mobile measurement, paid-media attribution, cross-channel analytics, link governance and campaign measurement 
+Branch
++2
+AppsFlyer
++2
+
+impact.com / CJ	Helps prevent mobile deep-linking and in-app attribution failures after an affiliate click	Recruiting partners, contracts, commissioning, payouts, marketplace access and managing the complete affiliate-program lifecycle 
+impact.com
++1
+
+Optimizely / VWO	Optimizes the journey before a shopper reaches the app or website, including deciding the best destination	On-site A/B testing, product-page optimization, personalization, feature experimentation and behavioral analysis 
+Optimizely
++1
+
+Basic deep-linking tools	Dynamically tests and selects the route most likely to convert rather than applying one static routing rule	Often simpler, cheaper and sufficient when routing requirements are predictable
+Affiliate-network tracking alone	Can preserve the shopping context and attribution as customers move from social apps or publishers into retailer apps	Networks remain the system of record for partner relationships and commissions
+Where Button stands out
+
+Button is particularly differentiated when:
+
+A meaningful share of revenue comes from creators, affiliates, publishers, TikTok, Instagram or other mobile environments.
+
+Your retailer app converts better than mobile web, but ordinary links frequently open a browser instead.
+
+Attribution is being lost when users cross from a publisher or social app into your app.
+
+You already have affiliate-network relationships and want an optimization layer without migrating them. Button says its publisher product can work with existing retailer and affiliate-network relationships. 
+Button
+
+You want the routing decision—app, install flow or web—to be made dynamically for each tap. 
+Button
+
+Important limitations
+
+Button is narrower than a general mobile measurement platform. Its documented order-attribution model uses last-click attribution for clicks arising from Button publishers, whereas platforms such as AppsFlyer are designed to measure installs, in-app activity and ROI across a broader collection of marketing channels. 
+Button Developers
++1
+
+It also will not replace:
+
+Your ecommerce platform or checkout.
+
+A complete experimentation and personalization program.
+
+Product recommendations, merchandising or search optimization.
+
+Full affiliate recruitment, contracting and payment administration—although Button also offers a Full Service Network for companies seeking a more managed affiliate solution. 
+Button
+
+Recommended decision
+
+Choose Button when the specific bottleneck is mobile affiliate or creator traffic leaking conversion or attribution between the click and the purchase.
+
+Choose Branch or AppsFlyer when your primary requirement is company-wide mobile attribution and campaign measurement. Choose impact.com or CJ when you need to establish and operate the affiliate program itself. Choose Optimizely or VWO when the primary problem is optimizing pages, offers and customer experiences after visitors arrive.
+
+For a sizable app-centric retailer, the most likely architecture is Button plus, rather than Button instead of, an affiliate network and a broader analytics or experimentation platform. Before buying, run an incremental-lift test and verify attribution deduplication, reporting ownership, supported networks, implementation effort and how Button’s last-click rules interact with your existing measurement stack.
+
+Sources used:
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://developer.usebutton.com/docs/button-links-integration
+
+https://developer.usebutton.com/docs/how-attribution-works
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/full-service-network
+
+https://www.branch.io/
+
+https://www.appsflyer.com/products/measurement/mobile-attribution/
+
+https://www.appsflyer.com/products/deep-linking/
+
+https://impact.com/affiliate-marketing/
+
+https://www.cj.com/solutions/cj-affiliate
+
+https://www.optimizely.com/products/personalization
+
+https://vwo.com/"
+What are the pros and cons of using Button?,"Pros of using Button
+
+1. Stronger mobile conversion paths
+Button’s main advantage is dynamic deep linking: it can route a shopper to the retailer’s app, an installation flow, or mobile web based on which path is most likely to convert. This can reduce the friction caused by links that open the wrong screen or lose the product context. 
+Button
++1
+
+2. Better affiliate attribution
+Button connects events across the customer journey—from the initial tap through app installation and purchase—which can recover transactions that conventional affiliate tracking may miss and improve commission accuracy. 
+Button
++1
+
+3. Works alongside existing affiliate infrastructure
+Button integrates with affiliate networks and mobile measurement partners rather than necessarily requiring companies to replace their existing stack. It has documented partnerships or integrations involving CJ Affiliate and impact.com. 
+Button
++2
+Button
++2
+
+4. Useful for brands, publishers and creators
+Enterprise products support retailers and publishers, while PostTap for Creators offers a free, cloud-based option for creating and optimizing Amazon affiliate links without a technical installation. 
+Button
++1
+
+5. Potentially significant performance gains
+Button and its partners publish case studies reporting improvements in app routing, conversion and affiliate revenue. For example, a Hotels.com test reportedly routed users to its app 173% more often than standard universal links. These results show potential, although they should not be treated as guaranteed benchmarks. 
+PostTap
++1
+
+Cons of using Button
+
+1. Limited enterprise pricing transparency
+Button’s enterprise pages generally direct prospective customers to request a demo or contact sales rather than displaying standardized prices. This makes it harder to estimate costs or compare vendors without beginning a sales process. 
+Button
++1
+
+2. Implementation can require engineering work
+Some products are relatively lightweight, but native app implementations may involve SDK installation, API credentials, routing configuration, attribution validation and ongoing SDK updates. 
+Button Developers
++2
+Button Developers
++2
+
+3. The value is concentrated in mobile and affiliate traffic
+Button is particularly optimized for companies with meaningful mobile traffic, an app, and affiliate or creator-driven commerce. A desktop-heavy business, a retailer without an app, or a company with low affiliate volume may see a smaller incremental benefit. This is an inference from Button’s product positioning and technical workflows. 
+Button
++1
+
+4. It adds another component to the marketing stack
+Because Button can sit between affiliate networks, mobile measurement partners and the retailer’s app, teams may need to reconcile reporting definitions, ownership and attribution across multiple systems. 
+Button
++1
+
+5. Independent review data is limited
+G2 currently displays only four verified Button reviews. Most publicly available performance statistics come from Button itself or commercial partners, so buyers should validate expected lift through a controlled pilot. 
+G2
++1
+
+6. Privacy and compliance review is still necessary
+Button publishes privacy, GDPR and CCPA documentation and says it limits how data is stored and used. Nevertheless, companies should review cookie consent, contractual responsibilities, data transfers and attribution practices before implementation. 
+Button
++2
+Button
++2
+
+Bottom line
+
+Button is most compelling for app-based retailers, affiliate programs, creator networks and publishers that lose conversions or attribution on mobile. Its strongest differentiation is optimizing what happens after someone taps an affiliate or marketing link.
+
+It is less compelling when your business has little app traffic, lacks sufficient affiliate volume, or needs a simple, transparently priced product with minimal technical and operational integration.
+
+Sources:
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://developer.usebutton.com/docs/android-application-tap-integration
+
+https://developer.usebutton.com/docs/sdk-integration-validation
+
+https://www.usebutton.com/post/how-button-works-with-mobile-measurement-partners
+
+https://www.usebutton.com/post/button-and-cj-affiliate-partner-to-transform-affiliate-into-an-app-acquisition-channel
+
+https://impact.com/marketing-intelligence/ai-driven-affiliate-marketing-button-and-impact-com-integration/
+
+https://www.usebutton.com/full-service-network
+
+https://www.posttap.com/
+
+https://www.posttap.com/case-studies
+
+https://junction.cj.com/article/cj-x-button-clients-see-incremental-value-from-improved-mobile-experiences
+
+https://www.usebutton.com/home-page
+
+https://www.usebutton.com/contact-us
+
+https://developer.usebutton.com/docs/native-app-setup
+
+https://developer.usebutton.com/docs/sdk-updates
+
+https://developer.usebutton.com/reference/authentication
+
+https://www.usebutton.com/product-listing-ads
+
+https://www.g2.com/sellers/button
+
+https://www.g2.com/products/button/reviews
+
+https://www.usebutton.com/support/privacy-policy
+
+https://www.usebutton.com/support/gdpr-notice
+
+https://www.usebutton.com/support/ccpa-notice"
+What is Button and what does Button do?,"What is Button?
+
+Button is a mobile commerce and affiliate optimization platform. It helps retailers, publishers, affiliate networks, and creator platforms turn product links and marketing clicks into more completed purchases—particularly when customers move between social apps, mobile websites, app stores, and retailer apps. 
+Button
++1
+
+What does Button do?
+
+Button works behind the link after someone taps it:
+
+Optimizes the destination: Its machine-learning system decides whether to open the retailer’s app, deep-link to a specific product, prompt an app installation, or send the customer to the mobile website.
+
+Reduces mobile-shopping friction: It attempts to avoid broken links, generic homepages, unnecessary logins, and other steps that can cause shoppers to abandon a purchase.
+
+Preserves attribution: Button connects the initial tap with subsequent app installations and purchases, helping determine which affiliate, publisher, or creator should receive credit.
+
+Improves affiliate monetization: Publishers and creator networks can optimize existing retailer links without necessarily replacing their affiliate-network relationships.
+
+Supports affiliate programs: Its network and services can help businesses launch and manage relationships among retailers, publishers, and creators. 
+Button
++2
+Button
++2
+
+Simple example
+
+A shopper taps a creator’s product link on Instagram. Instead of opening an awkward browser page, Button may recognize that the retailer’s app is installed and open the exact product there. It then helps track the resulting purchase back to the creator’s link.
+
+In practical terms, Button is not an online store or checkout platform. It is infrastructure that improves the journey between a commerce click and the eventual purchase, with an emphasis on mobile conversion, deep linking, and affiliate attribution.
+
+Sources:
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/full-service-network"
+What is Button used for in ecommerce?,"Button is a mobile commerce optimization platform used to improve what happens after shoppers click affiliate, creator, advertising, or publisher links.
+
+In ecommerce, companies use Button to:
+
+Route shoppers to the best destination: It determines whether a customer is more likely to convert in a retailer’s mobile app, mobile website, or another shopping experience. 
+Button
++1
+
+Deep-link customers into apps: Instead of sending someone to a generic homepage, Button can direct them toward the relevant product or content inside the retailer’s app. Button says app journeys typically convert better than mobile-web journeys. 
+Button
+
+Improve affiliate and creator traffic: Retailers, publishers, and creator networks use it to turn standard commerce links into dynamically optimized customer journeys. 
+Button
++1
+
+Preserve attribution and tracking: Button uses first-party, deterministic data to help identify the source of transactions and reduce attribution lost when users move between browsers, websites, and apps. 
+Button
++1
+
+Increase conversions, revenue, and app installs: Its routing technology identifies broken or inefficient journeys and redirects traffic toward experiences more likely to produce a purchase or app installation. 
+Button
++1
+
+Connect loyalty programs with retailers: Button’s Tap product gives loyalty and rewards platforms access to ecommerce brands through a single integration. 
+Button
+
+Button is therefore not a replacement for Shopify, BigCommerce, or another storefront platform. It is an optimization and attribution layer that sits between traffic sources—such as affiliate sites, social creators, ads, and loyalty programs—and a retailer’s app or website.
+
+Sources used:
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/post/large-retailer-wins-and-growth-in-the-creator-economy-drive-button-to-surpass-10-billion-in-mobile-commerce-driven-in-2023
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/post/buttons-creator-network-and-publisher-solutions-are-the-easiest-way-to-maximize-revenue-from-your-commerce-strategies
+
+https://www.usebutton.com/post/button-surpasses-1-billion-in-commerce-driven-monthly-as-retailers-and-publishers-leverage-buttons-ai-powered-commerce-optimization-platform
+
+https://www.usebutton.com/post/button-surpasses-25-billion-in-all-time-commerce-on-the-platform-with-2025-proving-to-be-a-breakout-year-powered-by-the-creator-economy-and-continued-growth-of-commerce-media-and-affiliate-marketing
+
+https://www.usebutton.com/tap"
+How does Button work for mobile commerce?,"How Button works for mobile commerce
+
+Button sits between a mobile shopping link and the retailer’s checkout experience. It is not a storefront or payment processor; it optimizes where shoppers go after tapping affiliate, creator, social, publisher, or retail-media links.
+
+Typical customer journey
+
+A shopper taps a commerce link
+The link might appear in a creator’s post, a publisher’s article, a fintech rewards app, or an affiliate promotion.
+
+Button evaluates the context
+Its decisioning technology considers signals such as the device, operating system, browser or in-app webview, traffic source, and whether the retailer’s app is installed. 
+Button
++1
+
+The shopper is routed to the best destination
+Depending on the situation, Button may:
+
+Deep-link directly to the relevant product or offer inside the retailer’s app.
+
+Prompt an app installation and preserve the intended destination.
+
+Send the shopper to an optimized mobile-web or landing-page experience.
+
+Button continually tests and adjusts these routes based on conversion performance rather than applying one static deep-linking rule to every visitor. 
+Button
++1
+
+Attribution is preserved
+Button connects the original tap with subsequent events such as an app install and purchase. It can feed conversion information into affiliate networks and mobile measurement partners, helping publishers receive credit and retailers calculate commissions correctly. 
+Button
++1
+
+Performance improves over time
+Its machine-learning system analyzes which journeys generate purchases and increasingly routes similar shoppers toward those experiences.
+
+How different businesses use it
+
+Retailers and brands use Button to increase app usage, reduce broken mobile links, attribute in-app purchases, and improve the conversion of affiliate and creator traffic.
+
+Publishers, loyalty apps, and fintechs can use Button’s Tap product to integrate online offers, affiliate merchants, rewards, and card-linked offers through a single platform. 
+Button
+
+Creators and affiliates generally interact with Button through optimized links or participating networks, allowing their audiences to land closer to the desired product and reducing lost commissions caused by app redirects.
+
+Simple example
+
+A shopper taps a creator’s link for a specific pair of shoes:
+
+Without optimization, the link may open the retailer’s homepage in a slow in-app browser.
+
+With Button, an existing customer might be taken directly to the shoes inside the retailer’s app.
+
+Someone without the app might receive an app-install or mobile-web journey selected for its likelihood of converting.
+
+If a purchase occurs, Button helps connect it to the creator’s original link.
+
+The main value is therefore less mobile friction, better app-to-app shopping, and more reliable affiliate attribution. Performance figures published by Button are based largely on its own customer studies, so expected lift should be validated through a controlled test using your traffic and economics.
+
+Sources:
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/tap
+
+https://www.usebutton.com/post/how-button-works-with-mobile-measurement-partners
+
+https://www.usebutton.com/post/how-reach-product-enhancements-drove-a-37-lift-in-conversion-rate-for-a-leading-retailer
+
+https://www.usebutton.com/post/large-retailer-wins-and-growth-in-the-creator-economy-drive-button-to-surpass-10-billion-in-mobile-commerce-driven-in-2023"
+Is Button an ecommerce platform or a marketing tool?,"Button is closer to a marketing technology platform than a traditional ecommerce platform.
+
+It does not provide the core storefront, catalog, checkout, inventory, and order-management functions associated with platforms such as Shopify or Adobe Commerce. Instead, Button sits alongside an existing ecommerce stack and helps brands, publishers, and creators improve mobile commerce performance. 
+Button
++1
+
+Its main capabilities include:
+
+Mobile deep linking and app routing
+
+Affiliate and creator-commerce tracking
+
+Conversion and customer-journey optimization
+
+Attribution protection
+
+Affiliate program and publisher monetization tools
+
+Button itself describes its product as a mobile commerce optimization and mobile marketing platform. So the most accurate classification is commerce-focused marketing technology, rather than a system for running an online store. 
+Button
++1
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/post/button-surpasses-1-billion-in-commerce-driven-monthly-as-retailers-and-publishers-leverage-buttons-ai-powered-commerce-optimization-platform
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/post/button-named-best-mobile-marketing-platform-in-martech-breakthrough-awards"
+Who uses Button and what types of companies need Button?,"Button is primarily used by retailers, publishers, affiliate platforms, and creator networks that generate meaningful shopping traffic—especially on mobile.
+
+Who uses Button?
+
+Retailers and ecommerce brands use Button to improve conversion from affiliate, creator, social, and advertising traffic. It is especially relevant for retailers with mobile apps that want shoppers to open directly to the right product inside the app rather than landing on a generic webpage. 
+Button
++2
+Button
++2
+
+Publishers and commerce-content companies use Button to monetize product recommendations, buying guides, deal content, and affiliate links. Button optimizes the path each visitor takes to the retailer and helps address lost revenue caused by poor deep linking or attribution. 
+Button
++1
+
+Creator networks and social-commerce platforms use Button to improve the performance of links shared through TikTok, Instagram, blogs, and other content. Its creator tools can route shoppers into retailer apps and connect creator traffic with affiliate and retail-media revenue. 
+Button
++1
+
+Affiliate networks and partner-marketing platforms can integrate with Button rather than necessarily replacing their existing systems. Button positions its technology as compatible with major affiliate and advertising networks. 
+Button
++1
+
+What types of companies need Button?
+
+Button is most useful for companies that:
+
+Generate substantial affiliate, creator, or social-commerce traffic.
+
+Lose conversions when mobile shoppers move between social apps, browsers, retailer websites, and shopping apps.
+
+Have a retailer app and want more purchases to occur inside it.
+
+Need stronger attribution for affiliate and creator-driven transactions.
+
+Want to increase revenue from existing traffic without simply buying more traffic.
+
+Operate a network of creators, publishers, or commerce partners at scale.
+
+A small ecommerce business with no mobile app, limited affiliate traffic, and only a few creator relationships may not need Button’s full platform. In that situation, a conventional affiliate network, link-management tool, or ecommerce analytics product may be sufficient. Button becomes more compelling as mobile traffic volume and partner complexity increase.
+
+Sources:
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/post/buttons-creator-network-and-publisher-solutions-are-the-easiest-way-to-maximize-revenue-from-your-commerce-strategies
+
+https://www.usebutton.com/post/large-retailer-wins-and-growth-in-the-creator-economy-drive-button-to-surpass-10-billion-in-mobile-commerce-driven-in-2023
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/for-creators
+
+https://links.usebutton.com/
+
+https://www.usebutton.com/product-listing-ads
+
+https://impact.com/marketing-intelligence/ai-driven-affiliate-marketing-button-and-impact-com-integration/"
+Is Button only for large retailers or can smaller businesses use Button?,"Button can work for smaller businesses—but its retailer product skews toward larger brands
+
+Button does not publicly state a minimum company size, and it says its technology can work with “any retailer.” Its integrations are described as lightweight and compatible with major affiliate networks. 
+Button
++1
+
+However, Button’s own materials describe its typical retailer customers as large ecommerce companies with mobile apps, and its retailer pages use a sales-led “request a demo” process rather than public, self-service pricing. That suggests the retailer offering is primarily enterprise-oriented. 
+Button
++1
+
+A smaller retailer is likely a reasonable fit when it has:
+
+Meaningful mobile traffic or a shopping app
+
+An established affiliate, influencer, or creator program
+
+Lost attribution or poor deep-linking between mobile web and app
+
+Enough transaction volume to justify an integration and managed vendor relationship
+
+Button is probably less suitable for a very small or early-stage store that has little affiliate traffic, no mobile app, limited engineering resources, or needs an inexpensive plug-and-play Shopify-style tool.
+
+For smaller publishers, creator networks, or commerce businesses, Button may be more accessible: it promotes low-code and no-code solutions and says its full-service network can help launch an affiliate strategy from scratch. 
+Button
++1
+
+Bottom line: Smaller businesses are not necessarily excluded, but Button makes the most sense after a company has meaningful mobile commerce and affiliate volume. A small retailer should ask Button about minimum traffic, transaction volume, contract terms, integration support, and pricing before committing.
+
+Sources:
+
+https://www.usebutton.com/post/large-retailer-wins-and-growth-in-the-creator-economy-drive-button-to-surpass-10-billion-in-mobile-commerce-driven-in-2023
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/full-service-network"
+How do brands use Button for affiliate marketing?,"Brands use Button as a mobile optimization and measurement layer for affiliate traffic, often alongside an existing affiliate network such as CJ. Its main purpose is to turn affiliate clicks into smoother, better-tracked mobile shopping journeys. 
+Button
++1
+
+Typical brand workflow
+
+Connect the existing affiliate program
+A brand integrates Button with its affiliate network, app and mobile website. It does not necessarily need to replace its current publisher relationships or network infrastructure. 
+Junction
++1
+
+Optimize every affiliate click
+Button evaluates contextual signals—such as device, browser, operating system and whether the shopper has the brand’s app—to determine the highest-converting destination. 
+Button
+
+Deep-link shoppers to the right product
+Instead of sending mobile users to a generic homepage or an awkward web page, Button can open the relevant product, offer or category inside the brand’s app. This reduces friction between an influencer or publisher link and checkout. 
+Junction
++1
+
+Turn affiliate traffic into app growth
+Brands can use affiliate clicks to generate app installs, app opens, in-app purchases and repeat usage—not just one-time mobile-web sales. CJ describes its Button partnership as transforming affiliate into an app-acquisition channel. 
+Junction
++1
+
+Preserve attribution and commissions
+Button helps maintain transaction tracking as customers move across mobile web and apps, so brands can understand performance and publishers can receive credit for the conversions they generated. 
+Junction
++1
+
+Create customized post-click experiences
+Brands can build dynamic landing experiences that automatically surface promotions, apply coupon codes or highlight higher-value products before directing shoppers into the app or checkout flow. 
+Button
+
+Expand publisher and creator distribution
+Button’s marketplace and full-service network can also connect retailers with publishers, loyalty apps and creator networks, giving brands another source of affiliate and commerce traffic. 
+Button
++1
+
+In practical terms: a creator posts a tracked link to a retailer’s product. When a shopper taps it, Button selects the best web or app journey, opens the appropriate product, preserves affiliate attribution and records the resulting install or purchase. The brand then pays commissions through the applicable affiliate arrangement.
+
+Performance claims on Button’s website—such as conversion or revenue improvements—should be treated as vendor- or partner-reported results; actual performance will depend on the brand, publishers, app adoption and existing mobile experience.
+
+https://www.usebutton.com/old-home-2
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/post/large-retailer-wins-and-growth-in-the-creator-economy-drive-button-to-surpass-10-billion-in-mobile-commerce-driven-in-2023
+
+https://www.usebutton.com/post/supercharge-mobile-affiliate-marketing-with-dynamic-landing-pages
+
+https://www.usebutton.com/post/sams-club-partners-with-button-and-rakuten-advertising-to-transform-its-affiliate-program-through-reach
+
+https://www.usebutton.com/post/button-and-branch-join-hands-to-help-brands-unlock-mobile-growth-in-the-affiliate-channel
+
+https://www.usebutton.com/post/button-announces-partnership-with-fetch
+
+https://junction.cj.com/en-gb/article/cj-button-partner-to-transform-affiliate-into-an-app-acquisition-channel
+
+https://junction.cj.com/article/cj-x-button-clients-see-incremental-value-from-improved-mobile-experiences
+
+https://www.cj.com/platform/tech-partners"
+How do creators use Button to make money?,"Creators use Button to earn more from affiliate links, rather than receiving payment simply for posting content.
+
+How it works
+
+Recommend products
+Creators feature products in TikTok videos, Instagram posts, Pinterest content, blogs, or other channels.
+
+Create optimized affiliate links
+Creators may access Button through a creator network or agency. For Amazon links, individual creators can use Button’s PostTap product alongside an existing Amazon Associates account. 
+Button
++1
+
+Send shoppers to the best purchasing destination
+When someone taps the link, Button can route them directly to the relevant product in a retailer’s app when installed, or to the appropriate web page otherwise. This reduces logins, repeated searches, and other checkout friction. 
+PostTap
++1
+
+Receive credit for purchases
+Button tracks the journey from tap to purchase, helping prevent attribution from being lost as shoppers move between social platforms, browsers, and retailer apps. The creator then earns the commission provided by the underlying affiliate program. 
+Button
+
+Improve future content
+Real-time analytics show which links and content drive clicks and sales, allowing creators to focus on products and platforms that generate the most revenue. 
+PostTap
+
+Simple example
+
+A creator posts an Amazon kitchen-product recommendation on Instagram. They replace their normal Amazon Associates link with a PostTap shortlink. A follower taps it, the correct product opens in the Amazon app, the follower buys it, and the creator receives the normal Amazon affiliate commission—with Button helping improve conversion and preserve tracking.
+
+Button reports commission or revenue-per-click lifts of up to 200% in some implementations, but these are company-reported results and not guaranteed for every creator. PostTap currently states that creators are not charged a fee for using its product. 
+PostTap
++1
+
+Bottom line: Button does not replace the creator’s affiliate program. It improves the links, mobile shopping journey, tracking, and conversion rate so existing audience traffic can produce more commissions.
+
+Sources:
+
+https://www.usebutton.com/for-creators
+
+https://www.posttap.com/
+
+https://www.usebutton.com/post/how-to-drive-200-lift-in-commissions-with-buttons-shortlink-api
+
+https://www.usebutton.com/post/button-partnership-drives-better-experience-and-higher-conversions-for-creators-and-affiliates"
+How do publishers use Button to increase affiliate revenue?,"Publishers use Button to earn more from the affiliate traffic they already generate, primarily by improving what happens after a reader taps a commerce link.
+
+How it increases revenue
+
+Optimizes each click’s destination
+Button uses AI, routing tests, and deep-linking signals to send shoppers to the purchase path most likely to convert—for example, directly into a retailer’s app when that experience is expected to outperform mobile web. 
+Button
++1
+
+Fixes broken mobile journeys
+Affiliate revenue can be lost when links open homepages, fail inside social-media browsers, or do not carry attribution correctly between websites and apps. Button is designed to detect and reduce these failures, improving conversion rates and earnings per click. 
+Button
++1
+
+Preserves affiliate attribution
+Button adds and manages the tracking needed to credit the publisher when a purchase occurs, including journeys that cross from mobile web into a retailer’s app. 
+Button
++1
+
+Works with existing affiliate relationships
+Publishers generally do not need to replace their affiliate networks or renegotiate retailer partnerships. Button can sit on top of existing relationships and report performance through existing dashboards. 
+Button
+
+Automates link and campaign management
+It can dynamically manage tags, routing rules, attribution parameters and A/B variants, reducing the ongoing product and engineering work required to keep commerce links optimized. 
+Button
+
+Provides access to more merchants
+Publishers that do not already have a mature affiliate operation can use Button’s marketplace and retailer-management services to access merchants without independently integrating with numerous networks. 
+Button
+
+Adds multiple monetization models
+Beyond standard cost-per-acquisition commissions, Button says publishers can combine CPA revenue with sponsored cost-per-click placements and fixed-fee campaigns, monetizing more stages of the shopping journey. 
+Button
+
+Practical example
+
+A publisher places an affiliate product link in an article. Button evaluates the shopper’s device, browser, app availability and other conditions, then routes the tap to the experience predicted to generate the highest conversion while retaining attribution. The publisher receives the same underlying affiliate commission, but potentially earns more because a larger percentage of clicks convert.
+
+Button reports lifts including 20%+ higher mobile-web earnings per click, 100%+ improvement on social traffic, and up to 40% affiliate-revenue growth in certain publisher implementations. These are Button-reported figures based on its own customers and should not be treated as guaranteed results. 
+Button
++2
+Button
++2
+
+Sources:
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/post/buttons-creator-network-and-publisher-solutions-are-the-easiest-way-to-maximize-revenue-from-your-commerce-strategies
+
+https://www.usebutton.com/post/button-is-available-in-amazon-publisher-services-connections-marketplace
+
+https://www.usebutton.com/post/rebuilding-publisher-monetization-in-the-age-of-ai
+
+https://www.usebutton.com/post/accelerating-revenue-growth-through-increased-site-traffic"
+What industries use Button?,"Button is used primarily in industries where mobile shopping, affiliate marketing, creator traffic, and app conversions are important.
+
+Main industries and customer segments
+
+Retail and ecommerce: Online retailers, marketplaces, apparel brands, and other consumer merchants use Button to route shoppers to the highest-converting product or app experience.
+
+Media and publishing: Editorial sites, shopping-content publishers, review platforms, and app publishers use Button to monetize commerce links and improve affiliate revenue.
+
+Creator and influencer marketing: Creator networks, influencer platforms, and social-commerce businesses use Button to track purchases, improve link performance, and attribute commissions.
+
+Advertising and retail media: Advertisers, brands, manufacturers, and sellers use Button to connect performance-marketing budgets with publisher or creator content.
+
+Delivery and on-demand services: Food delivery and other app-based services use Button to improve mobile routing, app installs, and affiliate conversions.
+
+Consumer technology and mobile apps: Technology companies and app-first businesses use Button for deep linking, attribution, user acquisition, and app engagement.
+
+Mobility and transportation: Companies such as Uber have used Button to optimize affiliate traffic and direct users into relevant app experiences.
+
+Button’s current website organizes its customers mainly as retailers, publishers, advertisers, and creators, rather than around a rigid list of industry verticals. Its strongest fit is generally a consumer-facing business with meaningful mobile, affiliate, social, or creator-driven traffic. 
+Button
++2
+Button
++2
+
+Sources:
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/post/total-economic-impact-tm-study-finds-432-roi-for-button-partners
+
+https://www.usebutton.com/post/button-surpasses-25-billion-in-all-time-commerce-on-the-platform-with-2025-proving-to-be-a-breakout-year-powered-by-the-creator-economy-and-continued-growth-of-commerce-media-and-affiliate-marketing"
+How much does Button cost to use?,"Button does not publish standard pricing plans or a fixed dollar amount. Its current website directs retailers, publishers, and creator platforms to request a demo or contact sales, so pricing appears to be negotiated based on traffic volume, products used, integrations, and service requirements. 
+Button
++1
+
+What is publicly known:
+
+Retailers and brands: Expect a custom enterprise quote, potentially involving platform, implementation, managed-service, or performance-related fees.
+
+Publishers and creator platforms: Button’s model can be revenue-generating rather than a conventional subscription—its documentation says publishers can earn commissions on purchases and bounties for installs. 
+Building Button
+
+Testing: Button advertises free testing of its deep-linking solution, but this does not mean the complete platform is free. 
+Button
+
+Bottom line: There is no verified public monthly or annual price. You will need a custom quote from Button, and should ask for the platform fee, revenue-share or commission terms, implementation costs, minimum commitments, and contract length separately.
+
+Sources:
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/full-service-network
+
+https://building.usebutton.com/button-ios/latest/index.html
+
+https://www.usebutton.com/tap"
+Does Button have pricing plans or enterprise pricing?,"Button does not publicly list fixed pricing plans or standard subscription tiers. Its website directs retailers, publishers, and creator networks to request a demo or contact the sales team, indicating a custom, enterprise-style pricing model. 
+Button
++2
+Button
++2
+
+Pricing is likely quoted based on factors such as the Button product used, traffic or transaction volume, integration requirements, and service level. However, Button does not publicly disclose specific fees, minimum contracts, or commission rates. Third-party pricing listings also report that no published plans are currently available. 
+TrustRadius
+
+Bottom line: expect a negotiated enterprise quote rather than a self-service monthly plan. Contact Button and request details on implementation fees, recurring platform fees, performance-based charges, contract minimums, and trial or pilot options.
+
+Sources:
+
+https://www.usebutton.com/contact-us
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/product-listing-ads
+
+https://www.trustradius.com/products/button/pricing"
+Is Button free to use?,"Button is not generally free to use. Its website does not list a permanent free plan or public self-service pricing; instead, businesses are directed to request a demo or contact Button for customized commercial terms. 
+Button
++2
+Button
++2
+
+Button does state that publishers can test its deep-linking solution free of charge, but this appears to be a trial or pilot rather than an ongoing free tier. 
+Button
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/for-creators
+
+https://www.usebutton.com/tap"
+Does Button charge a commission or subscription fee?,"Button does not publish a standard commission rate or subscription price for its main retailer and publisher products. Its website directs businesses to request a demo, indicating that pricing is negotiated based on the product, traffic volume, integration, and partnership structure. 
+Button
+
+A key distinction:
+
+Affiliate commissions: Retailers set commission rates, and publishers or creators earn those commissions when they drive purchases. These are not necessarily fees retained by Button. 
+Button Developers
++1
+
+Button platform fees: Public materials do not disclose whether each customer pays a subscription, performance-based fee, commission share, or a combination. You would need a custom quote.
+
+PostTap creator app: Button’s terms say it may be offered free or become a paid product, with advance notice if fees are introduced. 
+Button
+
+Bottom line: Expect custom or enterprise pricing rather than a publicly listed flat subscription. Ask Button whether the proposal includes a recurring platform fee, setup fee, minimum commitment, or percentage of attributable revenue.
+
+https://www.usebutton.com/
+
+https://developer.usebutton.com/docs/publishers-getting-started
+
+https://developer.usebutton.com/docs/validating-order-reporting
+
+https://www.usebutton.com/support/terms-of-service"
+Is Button worth it for ecommerce businesses?,"Verdict
+
+Button is worth evaluating for ecommerce businesses with a mobile app and substantial affiliate, creator, or social-commerce traffic. It is less likely to justify its cost for smaller, web-only stores or businesses with modest affiliate volume.
+
+Button is an optimization layer—not a replacement for Shopify, BigCommerce, or another ecommerce platform. Its main value is routing mobile shoppers to the highest-converting destination, repairing deep links, and preserving attribution across mobile web, app installs, and in-app purchases. 
+Button
++1
+
+Strong fit when you:
+
+Operate a well-adopted iOS or Android shopping app.
+
+Receive meaningful traffic from affiliates, influencers, creators, or social platforms.
+
+Suspect mobile links are opening the wrong page or losing attribution.
+
+Need affiliate networks, mobile measurement partners, and app purchase data to work together.
+
+Have enough transaction volume for small conversion improvements to produce significant incremental profit.
+
+Button reports some compelling results: Sam’s Club experienced a 165% increase in mobile affiliate revenue and an 81% increase in conversion rate, while an Awin partnership produced 2.7 times higher app conversion than mobile web and a 110% lift in app revenue per tap. 
+Button
++1
+
+A 2026 Forrester Consulting study commissioned by Button modeled a 432% three-year ROI, $3.4 million in net present value, and payback in under six months for a composite $1 billion B2C retailer. Those results suggest strong enterprise potential, but they should not be treated as guaranteed outcomes—particularly because the study was commissioned and represents a large retailer. 
+Button
+
+Probably not worth it when you:
+
+Do not have a mobile app.
+
+Generate little revenue from affiliate or creator channels.
+
+Have limited engineering, analytics, or privacy-review resources.
+
+Need simple, self-service software with transparent monthly pricing.
+
+Cannot run a controlled test to verify incremental revenue.
+
+Button currently directs retailers to request a demo rather than displaying standard retail pricing publicly, so the commercial case will depend on the negotiated fee, implementation requirements, and your mobile traffic volume. Its privacy policy also shows that implementations may involve an SDK, device information, pseudonymous identifiers, cookies, and location-related information, making legal and data-governance review important. 
+Button
++1
+
+Recommended decision
+
+Run a controlled pilot on part of your mobile affiliate or creator traffic. Measure:
+
+Revenue and conversion rate per tap.
+
+Incremental app installs.
+
+Correctly attributed app orders.
+
+Commission discrepancies.
+
+Incremental gross profit after Button fees and implementation costs.
+
+A practical threshold is to proceed only when the pilot demonstrates credible incremental profit exceeding the full first-year cost, with results that hold against a control group.
+
+Bottom line: Button appears strongest for mid-market and enterprise retailers whose mobile app materially outperforms mobile web. For a small or web-first ecommerce operation, it is probably more platform than you need.
+
+Sources:
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://pubapi-staging.usebutton.com/
+
+https://www.usebutton.com/post/awin-and-button-more-than-double-in-app-conversion-rates
+
+https://www.usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach
+
+https://www.usebutton.com/post/total-economic-impact-tm-study-finds-432-roi-for-button-partners
+
+https://www.usebutton.com/contact-us
+
+https://www.usebutton.com/support/privacy-policy"
+Is Button worth using for affiliate marketing?,"Verdict
+
+Button is worth testing for affiliate marketing when mobile traffic, app conversions, or creator/social links are important to your business. It is less compelling for a small, desktop-focused affiliate operation that mainly needs a simple marketplace of merchant programs.
+
+Button’s strongest differentiation is not basic affiliate-link creation. It optimizes what happens after the click—routing shoppers into the correct product page or retailer app, preserving attribution, and improving mobile conversion. It can also work alongside existing affiliate-network relationships rather than necessarily replacing them. 
+Button
++2
+Button
++2
+
+Button is a strong fit when you:
+
+Generate substantial traffic from Instagram, TikTok, mobile apps, or mobile content.
+
+Promote retailers whose customers frequently purchase in their apps.
+
+Experience broken deep links, lost attribution, or lower mobile conversion rates.
+
+Operate a retailer affiliate program, publisher, creator network, or affiliate platform at meaningful scale.
+
+Want an optimization layer that can complement networks such as Awin or Rakuten Advertising. 
+Button
++2
+Button
++2
+
+Button reports significant results from its platform, including higher mobile affiliate revenue, app installs, and revenue per tap. Its published case studies include a reported doubling of affiliate-program revenue for Uber and a modeled 65% conversion-rate lift in a Button-commissioned Forrester study. These are promising indicators, but they are vendor-provided results rather than guarantees for every customer. 
+Button
++2
+Button
++2
+
+Button may not be worth it when you:
+
+Have low affiliate traffic and cannot run a statistically meaningful test.
+
+Receive most conversions from desktop visitors.
+
+Primarily need partner recruitment, contracts, automated payouts, and complete partnership administration; a broader platform such as impact.com may better match that requirement. 
+impact.com
+
+Need transparent, self-service pricing before speaking with sales. Button’s business pages generally direct customers to request a demo, and I did not find a standard public price list. Its creator-app terms also reserve the option to introduce fees. 
+Button
++2
+Button
++2
+
+Recommended decision
+
+Treat Button as a conversion and attribution optimization investment, not merely another affiliate network. Run a controlled pilot and compare:
+
+Mobile conversion rate
+
+Earnings per click
+
+App installs and app purchases
+
+Attributed affiliate revenue
+
+Commission recovery
+
+Incremental profit after Button’s fees
+
+Proceed if Button produces measurable net lift beyond your existing network and linking setup. For mobile-heavy retailers, publishers, and creator platforms, the potential fit is strong; for a new or low-volume affiliate, starting with a simpler self-service network is usually more practical.
+
+Sources used:
+
+https://www.usebutton.com/dynamic-decisioning
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/for-creators
+
+https://www.usebutton.com/post/button-launches-reach
+
+https://www.usebutton.com/post/sams-club-partners-with-button-and-rakuten-advertising-to-transform-its-affiliate-program-through-reach
+
+https://www.usebutton.com/post/button-surpasses-25-billion-in-all-time-commerce-on-the-platform-with-2025-proving-to-be-a-breakout-year-powered-by-the-creator-economy-and-continued-growth-of-commerce-media-and-affiliate-marketing
+
+https://www.usebutton.com/post/how-button-doubled-affiliate-revenue-for-uber
+
+https://www.usebutton.com/post/total-economic-impact-tm-study-finds-432-roi-for-button-partners
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/post/with-one-simple-fix-retailers-can-2x-affiliate-revenue-this-month
+
+https://www.usebutton.com/support/terms-of-service
+
+https://impact.com/affiliate-marketing/"
+Is Button legitimate?,"Verdict
+
+Yes—Button (usebutton.com) appears to be a legitimate, established commerce technology company, not a scam.
+
+Evidence includes:
+
+Button has operated as a mobile-commerce and affiliate technology company for years. TechCrunch reported its $20 million Series B funding round in 2017, backed by firms including Norwest Venture Partners, Redpoint, DCM, and Greycroft. 
+TechCrunch
+
+Growth-equity firm PSG announced a strategic investment in Button in June 2025, indicating that it underwent institutional investment due diligence. 
+PSG Equity
+
+Button maintains formal terms of service, privacy documentation, GDPR and CCPA notices, and a security-reporting process under the legal name Button, Inc. 
+Button
++3
+Button
++3
+Button
++3
+
+Its current website describes an active platform serving brands, retailers, publishers, creators, and affiliate partners. 
+Button
++1
+
+Important distinction
+
+“Legitimate” does not necessarily mean Button will be profitable or suitable for every company. Before signing, verify:
+
+Pricing, commissions and minimum commitments
+
+Attribution rules and payment schedules
+
+Supported merchants and affiliate networks
+
+Data ownership and tracking requirements
+
+Cancellation and contract-renewal terms
+
+References from customers similar to your business
+
+Overall, Button is a real and credible B2B platform, but its commercial value should be validated through a pilot or detailed performance analysis rather than assumed from its marketing claims.
+
+https://techcrunch.com/2017/01/25/button-the-marketplace-for-app-integrations-lands-20-million-in-series-b-funding/
+
+https://psgequity.com/news/button-secures-strategic-growth-investment-from-psg
+
+https://www.usebutton.com/
+
+https://www.usebutton.com/full-service-network
+
+https://www.usebutton.com/support/privacy-policy
+
+https://www.usebutton.com/support/terms-of-service
+
+https://www.usebutton.com/support/ccpa-notice
+
+https://www.usebutton.com/support/security"
+Is Button a trustworthy company?,"Verdict
+
+Yes—Button appears to be a legitimate and generally trustworthy B2B technology company, not a scam. It has operated since 2014, maintains an established mobile-commerce platform, and received a strategic growth investment from private-equity firm PSG in June 2025. 
+G2
++1
+
+Positive trust signals include:
+
+Published privacy, GDPR, and CCPA documentation explaining how its SDK, links, and platform process data. 
+Button
++2
+Button
++2
+
+A responsible vulnerability-disclosure channel and documented SAML single sign-on support for enterprise accounts. 
+Button
++1
+
+Verified G2 reviews averaging 4.5/5, although the sample is only four reviews. 
+G2
++1
+
+Publicly documented work with recognizable companies such as Uber and Groupon—though these case studies are published by Button itself. 
+Button
++1
+
+The main caution is that independent customer feedback is limited, and I did not find a publicly accessible SOC 2 report during this review. Before signing a substantial contract, request its current SOC 2 or equivalent security assessment, data-processing agreement, uptime commitments, customer references, termination terms, and a clear explanation of fees and attribution rules.
+
+Bottom line: Button is credible enough to evaluate and shortlist, but enterprise buyers should still complete normal security, legal, and commercial due diligence.
+
+Sources:
+
+https://www.g2.com/sellers/button
+
+https://www.g2.com/products/button/reviews
+
+https://psgequity.com/news/button-secures-strategic-growth-investment-from-psg
+
+https://www.usebutton.com/support/privacy-policy
+
+https://www.usebutton.com/support/gdpr-notice
+
+https://www.usebutton.com/support/ccpa-notice
+
+https://www.usebutton.com/support/security
+
+https://developer.usebutton.com/docs/saml-sso-provider-setup
+
+https://www.usebutton.com/post/case-study-how-groupon-button-won-the-most-innovative-performance-marketing-award
+
+https://www.usebutton.com/post/how-button-doubled-affiliate-revenue-for-uber"
+How long has Button been around?,"Button was founded in 2014, so it has been operating for about 12 years as of July 2026. It began as a mobile-commerce platform focused on connecting consumers, publishers, and retailers through deep linking and affiliate technology. 
+Button
++1
+
+Sources:
+
+https://www.usebutton.com/post/button-the-worlds-leading-mobile-experience-platform-surpasses-8b-in-commerce-driven
+
+https://www.norwest.com/?case_studies=button-win-win-win-mobile-commerce-solution"
+Who founded Button?,"Button was founded in 2014 by five co-founders:
+
+Michael Jaconi
+
+Mike Dudas
+
+Chris Maddern
+
+Siddhartha Dabral
+
+Stephen Milbank
+
+Jaconi became Button’s founder and CEO, while Button’s own materials also identify Maddern and Milbank as co-founders. 
+Tracxn
++2
+Button
++2
+
+Sources:
+https://tracxn.com/d/companies/button/__XVH3wS1CMICt-WSn5jt7vPEdQu9HCfVjIP_wzMJp9vA
+
+https://www.usebutton.com/post/button-welcomes-four-new-leaders-to-our-executive-team
+
+https://www.usebutton.com/post/being-at-button-meet-stephen-milbank-co-founder-at-button"
+What companies use Button?,"Button does not publish a complete, real-time customer roster. However, its public case studies and partnership announcements identify the following companies:
+
+Retailers and consumer apps: Uber, Sam’s Club, Hotels.com and its parent Expedia Group, Deliveroo, Wowcher, and Groupon. 
+Button
++5
+Button
++5
+Button
++5
+
+Publishers and creator platforms: BuzzFeed, Linktree, Fetch, and Mavely. 
+Button
++3
+Button
++3
+Button
++3
+
+Affiliate and technology partners: Awin, impact.com, CJ, Rakuten Advertising, and Partnerize have integrated or collaborated with Button on affiliate-commerce programs. 
+Button
++4
+Button
++4
+Button
++4
+
+The clearest flagship examples are Uber, Sam’s Club, Expedia Group, BuzzFeed, Linktree, and Fetch. Some supporting case studies are several years old, so they confirm that the companies used Button at the time—not necessarily that every relationship remains active as of July 2026.
+
+Sources:
+
+https://www.usebutton.com/category/case-studies
+
+https://www.usebutton.com/post/how-button-doubled-affiliate-revenue-for-uber
+
+https://www.usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach
+
+https://www.usebutton.com/post/hotels-com-supercharged-their-marketing-program-with-button-posttap
+
+https://www.usebutton.com/post/deliveroo-grew-app-acquisition-by-43-with-button-posttap
+
+https://www.usebutton.com/post/wowchers-affiliate-program-uses-button-to-increase-roas-by-232
+
+https://www.usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers
+
+https://www.usebutton.com/post/button-integrates-into-linktree-to-support-social-commerce-for-creators
+
+https://www.usebutton.com/post/button-announces-partnership-with-fetch
+
+https://www.usebutton.com/post/button-and-mavely-partner-to-scale-revenue-and-simplify-affiliate-monetization-for-creators"

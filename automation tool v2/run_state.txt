@@ -1,4 +1,4 @@
-project_title: Button Brand focus queries - Sheet1_output
-project_url: https://chatgpt.com/g/g-p-6a623be36e0c8191aa93a043e7328dde/project
-csv_path: /Users/matthewcyntje/Automation Tool/automation tool v2/Input/Button Brand focus queries - Sheet1_output.csv
+project_title: Button Brand focus queries 7_23 p2 - Sheet1
+project_url: https://chatgpt.com/g/g-p-6a63c9d00ebc81918f49ae97466a343f/project
+csv_path: /Users/matthewcyntje/Automation Tool/automation tool v2/Input/Button Brand focus queries 7_23 p2 - Sheet1.csv
 output_folder: /Users/matthewcyntje/Automation Tool/automation tool v2/Output
