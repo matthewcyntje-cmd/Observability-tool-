@@ -1,4 +1,4 @@
-project_title: Button Brand focus queries 7_23 p2 - Sheet1
-project_url: https://chatgpt.com/g/g-p-6a63c9d00ebc81918f49ae97466a343f/project
-csv_path: /Users/matthewcyntje/Automation Tool/automation tool v2/Input/Button Brand focus queries 7_23 p2 - Sheet1.csv
+project_title: P2 Button comp landscape queries - Sheet1
+project_url: https://chatgpt.com/g/g-p-6a6762f1447481918282f9fd31df812b/project
+csv_path: /Users/matthewcyntje/Automation Tool/automation tool v2/Input/P2 Button comp landscape queries - Sheet1.csv
 output_folder: /Users/matthewcyntje/Automation Tool/automation tool v2/Output
