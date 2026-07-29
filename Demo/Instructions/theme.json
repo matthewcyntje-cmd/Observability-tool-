@@ -1,0 +1,40 @@
+{
+  "brand": "Button",
+  "source": "Button Design System, Brand page, wordmark and approved usage contexts",
+  "core": {
+    "brandBlue": "#0077FF",
+    "white": "#FFFFFF",
+    "canvas": "#FAFAFA",
+    "dark": "#181818"
+  },
+  "wordmark": {
+    "font": "Inter Black",
+    "tracking": "-0.04em",
+    "dotColor": "#0077FF",
+    "note": "The dot after the wordmark is always brand blue regardless of the surface it sits on."
+  },
+  "approvedSurfaces": [
+    {"name": "On White", "background": "#FFFFFF", "wordmarkColor": "#181818"},
+    {"name": "On Canvas", "background": "#FAFAFA", "wordmarkColor": "#181818"},
+    {"name": "On Brand Blue", "background": "#0077FF", "wordmarkColor": "#FFFFFF"},
+    {"name": "On Dark", "background": "#181818", "wordmarkColor": "#FFFFFF"}
+  ],
+  "derivedForUi": {
+    "note": "Not part of the official brand page, extrapolated to cover UI needs the source doesn't specify, chart series, borders, muted text. Swap these out if Button has an actual secondary palette defined elsewhere.",
+    "primary": "#0077FF",
+    "primaryHover": "#0062D1",
+    "primaryTint10": "#E5F0FF",
+    "primaryTint20": "#CCE1FF",
+    "background": "#FAFAFA",
+    "surface": "#FFFFFF",
+    "border": "#E5E5E5",
+    "textPrimary": "#181818",
+    "textMuted": "#6B6B6B",
+    "chartSeries": ["#0077FF", "#181818", "#6B6B6B", "#99C2FF", "#B8B8B8"]
+  },
+  "typography": {
+    "wordmarkFont": "Inter Black",
+    "uiFont": "Inter",
+    "note": "No body/UI type scale given on this brand page. Defaulting to Inter for all UI text to stay consistent with the wordmark family, using standard weights since only the wordmark itself is specified as Black."
+  }
+}

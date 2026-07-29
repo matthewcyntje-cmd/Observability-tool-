@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GEO Visibility Scan — Button</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+  :root{
+    --brand-blue: #0077FF;
+    --brand-blue-hover: #0062D1;
+    --tint-10: #E5F0FF;
+    --tint-20: #CCE1FF;
+    --white: #FFFFFF;
+    --canvas: #FAFAFA;
+    --dark: #181818;
+    --border: #E5E5E5;
+    --text-primary: #181818;
+    --text-muted: #6B6B6B;
+    --series-2: #181818;
+    --series-3: #6B6B6B;
+    --series-4: #99C2FF;
+    --series-5: #B8B8B8;
+    --good: #1FA45C;
+    --font-ui: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    --font-wordmark: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html, body{
+    margin: 0;
+    padding: 0;
+    background: var(--canvas);
+    color: var(--text-primary);
+    font-family: var(--font-ui);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #app{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ---- Top bar ---- */
+  .topbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .wordmark{
+    font-family: var(--font-wordmark);
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: -0.04em;
+    color: var(--dark);
+    display: flex;
+    align-items: baseline;
+    user-select: none;
+  }
+  .wordmark .dot{ color: var(--brand-blue); }
+
+  .topbar-right{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .steps{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .step{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--text-muted);
+    padding: 6px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: var(--font-ui);
+    transition: background 0.12s ease, color 0.12s ease;
+    white-space: nowrap;
+  }
+  .step:hover{ background: var(--canvas); }
+  .step .num{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--border);
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+  }
+  .step.active{
+    color: var(--brand-blue);
+    background: var(--tint-10);
+  }
+  .step.active .num{
+    background: var(--brand-blue);
+    color: var(--white);
+  }
+  .step.done .num{
+    background: var(--brand-blue);
+    color: var(--white);
+  }
+  .step-sep{
+    width: 12px;
+    height: 1px;
+    background: var(--border);
+    flex: 0 0 auto;
+  }
+
+  .restart-btn{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 7px 12px;
+    cursor: pointer;
+    font-family: var(--font-ui);
+    transition: all 0.12s ease;
+    white-space: nowrap;
+  }
+  .restart-btn:hover{ color: var(--brand-blue); border-color: var(--brand-blue); }
+
+  /* ---- Screen container ---- */
+  .screen{
+    flex: 1;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 48px 24px 80px 24px;
+  }
+  .screen.active{
+    display: flex;
+    animation: fadeIn 0.25s ease;
+  }
+  @keyframes fadeIn{
+    from{ opacity: 0; transform: translateY(6px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+
+  .card{
+    width: 100%;
+    max-width: 640px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 1px 2px rgba(24,24,24,0.04);
+  }
+  .card.wide{ max-width: 1120px; }
+
+  .eyebrow{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brand-blue);
+    margin: 0 0 8px 0;
+  }
+
+  h1{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px 0;
+  }
+
+  .subtitle{
+    font-size: 14px;
+    color: var(--text-muted);
+    margin: 0 0 28px 0;
+    line-height: 1.5;
+  }
+
+  label.field-label{
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+  }
+
+  textarea#brand-description{
+    width: 100%;
+    min-height: 140px;
+    resize: vertical;
+    font-family: var(--font-ui);
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--text-primary);
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1.5px solid var(--border);
+    background: var(--canvas);
+    outline: none;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  textarea#brand-description:focus{
+    border-color: var(--brand-blue);
+    background: var(--white);
+  }
+  textarea#brand-description[readonly]{
+    background: var(--white);
+    border-color: var(--border);
+    color: var(--text-primary);
+    cursor: default;
+  }
+
+  .text-input{
+    width: 100%;
+    font-family: var(--font-ui);
+    font-size: 15px;
+    color: var(--text-primary);
+    padding: 13px 16px;
+    border-radius: 10px;
+    border: 1.5px solid var(--border);
+    background: var(--canvas);
+    outline: none;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  .text-input:focus{
+    border-color: var(--brand-blue);
+    background: var(--white);
+  }
+
+  .affordance-row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+
+  .chip-btn{
+    font-family: var(--font-ui);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 9px 16px;
+    border-radius: 999px;
+    border: 1.5px solid var(--border);
+    background: var(--white);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.12s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .chip-btn:hover{
+    border-color: var(--brand-blue);
+    color: var(--brand-blue);
+  }
+  .chip-btn.selected{
+    background: var(--brand-blue);
+    border-color: var(--brand-blue);
+    color: var(--white);
+  }
+  .chip-btn.selected.edit-selected{
+    background: var(--dark);
+    border-color: var(--dark);
+  }
+
+  .status-pill{
+    margin-left: auto;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .status-pill.visible{ opacity: 1; }
+  .status-pill .dot-indicator{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--brand-blue);
+  }
+  .status-pill.confirmed .dot-indicator{ background: var(--good); }
+  .status-pill.confirmed{ color: var(--good); }
+
+  .divider{
+    height: 1px;
+    background: var(--border);
+    margin: 32px 0 24px 0;
+  }
+
+  .actions-row{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+  .actions-row.space-between{ justify-content: space-between; }
+
+  .btn-primary{
+    font-family: var(--font-ui);
+    font-size: 14.5px;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 10px;
+    border: none;
+    background: var(--brand-blue);
+    color: var(--white);
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.05s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-primary:hover{ background: var(--brand-blue-hover); }
+  .btn-primary:active{ transform: scale(0.98); }
+  .btn-primary svg{ width: 16px; height: 16px; }
+  .btn-primary:disabled{ background: var(--brand-blue-hover); opacity: 0.75; cursor: default; }
+
+  .btn-spinner{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.4);
+    border-top-color: #fff;
+    animation: spin 0.8s linear infinite;
+    flex: 0 0 auto;
+  }
+
+  .btn-secondary{
+    font-family: var(--font-ui);
+    font-size: 14.5px;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: 1.5px solid var(--border);
+    background: var(--white);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.12s ease;
+  }
+  .btn-secondary:hover{ border-color: var(--brand-blue); color: var(--brand-blue); }
+
+  /* ---- Screen: Query reveal ---- */
+  .tabs{
+    display: flex;
+    gap: 6px;
+    background: var(--canvas);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 4px;
+    margin-bottom: 22px;
+    width: fit-content;
+  }
+  .tab-btn{
+    font-family: var(--font-ui);
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 9px 18px;
+    border-radius: 9px;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.12s ease;
+  }
+  .tab-btn.active{
+    background: var(--white);
+    color: var(--brand-blue);
+    box-shadow: 0 1px 2px rgba(24,24,24,0.08);
+  }
+
+  .tab-panel{ display: none; }
+  .tab-panel.active{ display: block; }
+
+  .query-list{
+    max-height: 420px;
+    overflow-y: auto;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--canvas);
+  }
+  .query-row{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    background: var(--white);
+    animation: rowIn 0.22s ease;
+  }
+  .query-row:last-child{ border-bottom: none; }
+  @keyframes rowIn{
+    from{ opacity: 0; transform: translateY(-4px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+  .query-num{
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--tint-10);
+    color: var(--brand-blue);
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+  }
+  .query-text{
+    flex: 1 1 auto;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--text-primary);
+    outline: none;
+    border-radius: 6px;
+    padding: 2px 4px;
+    margin: -2px -4px;
+  }
+  .query-text:focus{
+    background: var(--tint-10);
+  }
+  .query-delete{
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.12s ease;
+  }
+  .query-delete:hover{
+    background: #FDECEC;
+    color: #C0392B;
+  }
+
+  .set-meta{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin: 12px 2px 0 2px;
+  }
+
+  /* ---- Screen: Run scan ---- */
+  .btn-run{
+    width: 100%;
+    justify-content: center;
+    padding: 16px 26px;
+    font-size: 15px;
+  }
+  .scan-line{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+  }
+  .scan-line.active{ color: var(--text-primary); font-weight: 600; }
+  .scan-line.done{ color: var(--text-primary); }
+  .line-icon{
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    position: relative;
+  }
+  .scan-line.active .line-icon{
+    border: 2px solid var(--tint-20);
+    border-top-color: var(--brand-blue);
+    animation: spin 0.8s linear infinite;
+  }
+  .scan-line.done .line-icon{
+    border: none;
+    background: var(--good);
+  }
+  .scan-line.done .line-icon::after{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  @keyframes spin{ to{ transform: rotate(360deg); } }
+
+  /* ---- Dashboards ---- */
+  .dash-header{
+    margin-bottom: 26px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .dash-badge{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: var(--canvas);
+    border: 1px solid var(--border);
+    padding: 8px 14px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .stat-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .stat-tile{
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+  }
+  .stat-value{
+    font-size: 34px;
+    font-weight: 800;
+    color: var(--brand-blue);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  .stat-label{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 6px;
+    color: var(--text-primary);
+  }
+  .stat-denom{
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+  .stat-caption{
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    line-height: 1.5;
+  }
+
+  .dashboard-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  .full-width{ grid-column: 1 / -1; }
+
+  .section-card{
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 20px;
+  }
+  .section-title-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 2px;
+  }
+  .section-title{
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .section-sub{
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 0 0 14px 0;
+  }
+  .extraction-toggle-btn{
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--brand-blue);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    white-space: nowrap;
+    font-family: var(--font-ui);
+  }
+  .extraction-toggle-btn:hover{ text-decoration: underline; }
+  .extraction-detail{
+    font-size: 12.5px;
+    color: var(--text-muted);
+    background: var(--canvas);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 12px;
+    line-height: 1.55;
+    display: none;
+  }
+  .extraction-detail.visible{ display: block; }
+  .extraction-detail b{ color: var(--text-primary); }
+
+  .data-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+  }
+  .data-table th{
+    text-align: left;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-muted);
+    font-weight: 700;
+    padding: 9px 10px;
+    border-bottom: 1.5px solid var(--border);
+    background: var(--white);
+  }
+  .data-table td{
+    padding: 9px 10px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+    vertical-align: top;
+  }
+  .data-table tr:last-child td{ border-bottom: none; }
+  .data-table td.num, .data-table th.num{
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .data-table tr.highlight-row td{
+    background: var(--tint-10);
+    font-weight: 700;
+  }
+  .no-scroll-table{ border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+
+  .tie-flag{
+    font-size: 9.5px;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-left: 4px;
+    text-transform: uppercase;
+  }
+
+  .note-callout{
+    font-size: 12.5px;
+    color: var(--text-muted);
+    background: var(--tint-10);
+    border-left: 3px solid var(--brand-blue);
+    padding: 11px 13px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 14px;
+    line-height: 1.55;
+  }
+
+  @media (max-width: 860px){
+    .dashboard-grid, .stat-grid{ grid-template-columns: 1fr; }
+    .topbar{ flex-direction: column; align-items: flex-start; gap: 12px; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <div class="topbar">
+    <div class="wordmark">Button<span class="dot">.</span></div>
+    <div class="topbar-right">
+      <div class="steps" id="steps">
+        <button class="step" data-step="1" type="button"><span class="num">1</span>Brand</button>
+        <div class="step-sep"></div>
+        <button class="step" data-step="2" type="button"><span class="num">2</span>Description</button>
+        <div class="step-sep"></div>
+        <button class="step" data-step="3" type="button"><span class="num">3</span>Queries</button>
+        <div class="step-sep"></div>
+        <button class="step" data-step="4" type="button"><span class="num">4</span>Scan</button>
+        <div class="step-sep"></div>
+        <button class="step" data-step="5" type="button"><span class="num">5</span>Brand Focus</button>
+        <div class="step-sep"></div>
+        <button class="step" data-step="6" type="button"><span class="num">6</span>Market Focus</button>
+      </div>
+      <button class="restart-btn" id="btn-restart" type="button">&#8635; Restart</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 1: Brand Name -->
+  <section class="screen active" id="screen-1">
+    <div class="card">
+      <p class="eyebrow">Step 1 of 6</p>
+      <h1>What brand are we analyzing?</h1>
+      <p class="subtitle">Enter the brand, then generate the description large language models will be measured against.</p>
+
+      <label class="field-label" for="brand-name">Brand name</label>
+      <input type="text" id="brand-name" class="text-input" value="Button" autocomplete="off" spellcheck="false">
+
+      <div class="divider"></div>
+
+      <div class="actions-row">
+        <button class="btn-primary" id="btn-generate-desc" type="button">
+          <span id="generate-btn-label">Generate Description</span>
+          <svg id="generate-btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 2: Brand Description confirm -->
+  <section class="screen" id="screen-2">
+    <div class="card">
+      <p class="eyebrow">Step 2 of 6</p>
+      <h1>Confirm your brand description</h1>
+      <p class="subtitle">This is how large language models are told to understand your brand before we probe what they actually say about it. Review it, and edit if anything's off.</p>
+
+      <label class="field-label" for="brand-description">Brand description</label>
+      <textarea id="brand-description">Button is the mobile commerce optimization platform that helps brands, publishers, and creators drive more affiliate, app, and creator-driven revenue. Working alongside a brand's existing affiliate networks, Button uses deep linking, AI-powered dynamic decisioning, and attribution that holds up end to end, routing shoppers into the fastest-converting path from tap to purchase.</textarea>
+
+      <div class="affordance-row">
+        <button class="chip-btn" id="btn-agree" type="button">✓ This looks right</button>
+        <button class="chip-btn" id="btn-edit" type="button">✎ Let me edit it</button>
+        <div class="status-pill" id="status-pill"><span class="dot-indicator"></span><span id="status-text">Reviewing</span></div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="actions-row space-between">
+        <button class="btn-secondary" id="btn-back-2" type="button">Back</button>
+        <button class="btn-primary" id="btn-continue-2" type="button">
+          Continue
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 3: Query Set Reveal -->
+  <section class="screen" id="screen-3">
+    <div class="card wide">
+      <p class="eyebrow">Step 3 of 6</p>
+      <h1>Query sets generated</h1>
+      <p class="subtitle">30 prompts per focus area, each run 4x across models. Every question is editable or removable before the scan runs.</p>
+
+      <div class="tabs" id="q-tabs">
+        <button class="tab-btn active" data-tab="brand" type="button">Brand Focus</button>
+        <button class="tab-btn" data-tab="market" type="button">Market Focus</button>
+      </div>
+
+      <div class="tab-panel active" id="panel-brand">
+        <div class="query-list" id="list-brand"></div>
+        <p class="set-meta" id="meta-brand">Generating questions…</p>
+      </div>
+      <div class="tab-panel" id="panel-market">
+        <div class="query-list" id="list-market"></div>
+        <p class="set-meta" id="meta-market">Generating questions…</p>
+      </div>
+
+      <div class="divider"></div>
+      <div class="actions-row space-between">
+        <button class="btn-secondary" id="btn-back-3" type="button">Back</button>
+        <button class="btn-primary" id="btn-continue-3" type="button">
+          Continue
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 4: Run Scan -->
+  <section class="screen" id="screen-4">
+    <div class="card">
+      <p class="eyebrow">Step 4 of 6</p>
+      <h1>Run the scan</h1>
+      <p class="subtitle">Queries each model across both question sets, extracts language, and normalizes it against the brand description.</p>
+
+      <div id="scan-idle">
+        <button class="btn-primary btn-run" id="btn-run-scan" type="button">▶ Run Scan</button>
+      </div>
+
+      <div id="scan-progress" style="display:none;">
+        <div class="scan-line" data-line="0"><span class="line-icon"></span><span class="line-text">Querying ChatGPT…</span></div>
+        <div class="scan-line" data-line="1"><span class="line-icon"></span><span class="line-text">Querying Gemini…</span></div>
+        <div class="scan-line" data-line="2"><span class="line-icon"></span><span class="line-text">Querying Perplexity…</span></div>
+        <div class="scan-line" data-line="3"><span class="line-icon"></span><span class="line-text">Extracting descriptors…</span></div>
+        <div class="scan-line" data-line="4"><span class="line-icon"></span><span class="line-text">Normalizing paraphrased phrasing…</span></div>
+        <div class="scan-line" data-line="5"><span class="line-icon"></span><span class="line-text">Scoring narrative alignment…</span></div>
+      </div>
+
+      <div class="divider"></div>
+      <div class="actions-row space-between">
+        <button class="btn-secondary" id="btn-back-4" type="button">Back</button>
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 5: Brand Focus Dashboard -->
+  <section class="screen" id="screen-5">
+    <div class="card wide">
+      <div class="dash-header">
+        <div>
+          <p class="eyebrow">Step 5 of 6 · Brand Focus</p>
+          <h1>What LLMs say about Button directly</h1>
+          <p class="subtitle" style="margin-bottom:0;">Aggregated across 120 responses — ChatGPT, Gemini, and Perplexity, 30 brand-focus prompts run 4x per model.</p>
+        </div>
+        <div class="dash-badge">120 responses analyzed</div>
+      </div>
+
+      <div class="dashboard-grid" id="brand-focus-grid"></div>
+
+      <div class="divider"></div>
+      <div class="actions-row space-between">
+        <button class="btn-secondary" id="btn-back-5" type="button">Back</button>
+        <button class="btn-primary" id="btn-continue-5" type="button">
+          View Market Focus
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 6: Market Focus Dashboard -->
+  <section class="screen" id="screen-6">
+    <div class="card wide">
+      <div class="dash-header">
+        <div>
+          <p class="eyebrow">Step 6 of 6 · Market Focus</p>
+          <h1>How Button shows up in the landscape</h1>
+          <p class="subtitle" style="margin-bottom:0;">Aggregated across 120 comparative, market-level responses — 30 market-focus prompts run 4x per model.</p>
+        </div>
+        <div class="dash-badge">120 responses analyzed</div>
+      </div>
+
+      <div class="stat-grid" id="market-stat-grid"></div>
+      <div id="market-competitor-section"></div>
+      <div class="dashboard-grid" id="market-focus-grid"></div>
+
+      <div class="divider"></div>
+      <div class="actions-row space-between">
+        <button class="btn-secondary" id="btn-back-6" type="button">Back</button>
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // =========================================================
+  // Embedded data (staged/canned for Screens 1–4, real for 5–6)
+  // =========================================================
+
+  var QUERY_SETS = {
+    "brandFocusQuestions": [
+      "What is Button and what does Button do?",
+      "What is Button used for in ecommerce?",
+      "How does Button work for mobile commerce?",
+      "Is Button an ecommerce platform or a marketing tool?",
+      "Who uses Button and what types of companies need Button?",
+      "Is Button only for large retailers or can smaller businesses use Button?",
+      "How do brands use Button for affiliate marketing?",
+      "How do creators use Button to make money?",
+      "How do publishers use Button to increase affiliate revenue?",
+      "What industries use Button?",
+      "How much does Button cost to use?",
+      "Does Button have pricing plans or enterprise pricing?",
+      "Is Button free to use?",
+      "Does Button charge a commission or subscription fee?",
+      "Is Button worth it for ecommerce businesses?",
+      "Is Button worth using for affiliate marketing?",
+      "Is Button legitimate?",
+      "Is Button a trustworthy company?",
+      "How long has Button been around?",
+      "Who founded Button?",
+      "What companies use Button?",
+      "What are the main features of Button?",
+      "Does Button help with mobile app conversions?",
+      "Does Button improve affiliate link tracking?",
+      "How does Button handle deep linking?",
+      "Can Button help creators optimize TikTok or Instagram shopping links?",
+      "Does Button work with existing affiliate networks?",
+      "What is Button and should my company use Button?",
+      "How does Button compare to other ecommerce optimization tools?",
+      "What are the pros and cons of using Button?"
+    ],
+    "marketFocusQuestions": [
+      "Who are the top mobile commerce optimization platforms?",
+      "What are the best affiliate commerce platforms for ecommerce brands?",
+      "Which companies help retailers improve mobile app conversion?",
+      "Who are the major players in mobile deep linking for ecommerce?",
+      "What are the top platforms for affiliate marketing attribution?",
+      "Which companies help brands track creator-driven sales?",
+      "What are the best tools for creator commerce programs?",
+      "Who are the biggest companies in affiliate marketing software?",
+      "Which platforms help publishers monetize commerce content?",
+      "What are the top companies for retail media attribution?",
+      "Which companies help ecommerce brands route shoppers into apps?",
+      "What are the best platforms for managing affiliate links?",
+      "Who are the leading companies in social commerce attribution?",
+      "Which tools help creators make money from product links?",
+      "What are the best Amazon affiliate link tools for creators?",
+      "Which companies help publishers increase affiliate revenue?",
+      "What platforms should a retailer use to improve mobile shopping conversion?",
+      "Who are the main competitors in mobile attribution and deep linking?",
+      "Which companies help brands optimize post-click shopping journeys?",
+      "What are the best alternatives to traditional affiliate networks?",
+      "Which platforms help brands run creator marketing partnerships?",
+      "Who are the top players in publisher commerce monetization?",
+      "What companies help track revenue from influencer links?",
+      "Which tools are best for ecommerce affiliate attribution?",
+      "What platforms help brands connect affiliate, creator, and retail media programs?",
+      "Which companies help retailers drive more app installs from commerce traffic?",
+      "Who are the top companies in mobile performance marketing?",
+      "What are the best platforms for app-to-app commerce linking?",
+      "Which companies help brands measure sales from social commerce traffic?",
+      "What are the top tools for brands trying to improve mobile affiliate conversion?"
+    ]
+  };
+
+  var ANALYSIS = {
+    "brand": "Button",
+    "totalResponses": 120,
+    "brandFocus": {
+      "descriptorPhrases": [
+        {"rank": 1, "phrase": "Attribution & tracking capability", "totalFrequency": 155, "pctOfTop15Occurrences": 15.4, "pctResponses": 64.2},
+        {"rank": 2, "phrase": "Deep linking capability", "totalFrequency": 108, "pctOfTop15Occurrences": 10.7, "pctResponses": 71.7},
+        {"rank": 3, "phrase": "AI-powered / machine-learning routing", "totalFrequency": 107, "pctOfTop15Occurrences": 10.6, "pctResponses": 56.7},
+        {"rank": 4, "phrase": "Conversion optimization / friction reduction", "totalFrequency": 99, "pctOfTop15Occurrences": 9.9, "pctResponses": 53.3},
+        {"rank": 5, "phrase": "Enterprise-oriented positioning", "totalFrequency": 86, "pctOfTop15Occurrences": 8.6, "pctResponses": 36.7},
+        {"rank": 6, "phrase": "Works alongside existing affiliate networks", "totalFrequency": 81, "pctOfTop15Occurrences": 8.1, "pctResponses": 48.3},
+        {"rank": 7, "phrase": "Affiliate & creator commerce monetization", "totalFrequency": 76, "pctOfTop15Occurrences": 7.6, "pctResponses": 49.2},
+        {"rank": 8, "phrase": "Publisher/creator monetization tools", "totalFrequency": 73, "pctOfTop15Occurrences": 7.3, "pctResponses": 43.3},
+        {"rank": 9, "phrase": "Positioned as complementary layer, not full ecommerce platform", "totalFrequency": 59, "pctOfTop15Occurrences": 5.9, "pctResponses": 33.3},
+        {"rank": 10, "phrase": "Mobile commerce optimization platform/layer (core identity)", "totalFrequency": 42, "pctOfTop15Occurrences": 4.2, "pctResponses": 33.3},
+        {"rank": 11, "phrase": "Commerce infrastructure layer/provider", "totalFrequency": 32, "pctOfTop15Occurrences": 3.2, "pctResponses": 23.3},
+        {"rank": 12, "phrase": "Notable client roster / social proof (new)", "totalFrequency": 29, "pctOfTop15Occurrences": 2.9, "pctResponses": 12.5},
+        {"rank": 13, "phrase": "Established company (history)", "totalFrequency": 28, "pctOfTop15Occurrences": 2.8, "pctResponses": 10.0},
+        {"rank": 14, "phrase": "\"Legitimate\" (adjective)", "totalFrequency": 20, "pctOfTop15Occurrences": 2.0, "pctResponses": 6.7},
+        {"rank": 15, "phrase": "Founded in 2014 (identity/history)", "totalFrequency": 10, "pctOfTop15Occurrences": 1.0, "pctResponses": 8.3}
+      ],
+      "reachNote": "If ranked by percent of responses (reach) instead of raw frequency, the top 10 membership doesn't change, but the order shuffles. Deep linking capability moves into first place, 71.7% reach versus Attribution's 64.2%, even though Attribution has the higher raw frequency, since attribution language repeats several times within the responses that use it. Affiliate and creator commerce monetization jumps from 7th to 5th by reach, swapping past Enterprise-oriented positioning, which drops from 5th to 8th, since enterprise language concentrates heavily in a narrow band of pricing related responses. Positioned-as-complementary and Mobile-commerce-core-identity tie at 33.3% reach either way.",
+      "figures": [
+        {"rank": 1, "value": "165%", "context": "Increase in mobile affiliate revenue, Sam's Club case study", "frequency": 9, "pctResponses": 7.5},
+        {"rank": 2, "value": "4", "context": "Reviews on G2, cited repeatedly as a limited sample size", "frequency": 9, "pctResponses": 7.5},
+        {"rank": 3, "value": "2014", "context": "Year Button was founded", "frequency": 8, "pctResponses": 6.7},
+        {"rank": 4, "value": "2x (doubling)", "context": "Uber affiliate program revenue increase after Button's app routing", "frequency": 7, "pctResponses": 5.8},
+        {"rank": 5, "value": "81%", "context": "Conversion rate increase, Sam's Club case study", "frequency": 7, "pctResponses": 5.8},
+        {"rank": 6, "value": "20%+", "context": "Mobile-web earnings-per-click lift for publisher/creator network partners", "frequency": 5, "pctResponses": 4.2},
+        {"rank": 7, "value": "432%", "context": "Three-year ROI, 2026 Forrester Consulting study commissioned by Button", "frequency": 5, "pctResponses": 4.2},
+        {"rank": 8, "value": "65%", "context": "Conversion rate lift, same Forrester study", "frequency": 5, "pctResponses": 4.2},
+        {"rank": 9, "value": "2.7x", "context": "Higher in-app versus mobile-web conversion rate, Button's Awin partnership", "frequency": 5, "pctResponses": 4.2},
+        {"rank": 10, "value": "100%+", "context": "Improvement in social-traffic performance for publisher/creator network partners", "frequency": 4, "pctResponses": 3.3, "tie": true},
+        {"rank": 10, "value": "6 months", "context": "Forrester study payback period", "frequency": 4, "pctResponses": 3.3, "tie": true},
+        {"rank": 10, "value": "$1 billion", "context": "Size of the composite retailer modeled in the Forrester study", "frequency": 4, "pctResponses": 3.3, "tie": true},
+        {"rank": 10, "value": "12 years", "context": "Approximate operating duration as of July 2026", "frequency": 4, "pctResponses": 3.3, "tie": true},
+        {"rank": 10, "value": "200%", "context": "Higher in-app conversion rate versus mobile web, impact.com partnership, 2023", "frequency": 4, "pctResponses": 3.3, "tie": true}
+      ],
+      "excludedFigures": [
+        {"value": "43%", "context": "Deliveroo app-acquisition growth", "reason": "appeared only in a cited URL slug, not the response body", "source": "deliveroo-grew-app-acquisition-by-43-with-button-posttap, response 58"},
+        {"value": "200% lift in commissions", "context": "Shortlink API", "reason": "appeared only in a cited URL slug, not the response body", "source": "how-to-drive-200-lift-in-commissions-with-buttons-shortlink-api, response 8"}
+      ],
+      "sourceDomains": [
+        {"domain": "usebutton.com (incl. developer, links, building, app, pubapi-staging, mobileapi subdomains)", "frequency": 118, "pctResponses": 98.3},
+        {"domain": "impact.com", "frequency": 18, "pctResponses": 15.0},
+        {"domain": "g2.com", "frequency": 13, "pctResponses": 10.8},
+        {"domain": "psgequity.com", "frequency": 8, "pctResponses": 6.7},
+        {"domain": "cj.com (incl. junction.cj.com, docs.cj.com)", "frequency": 5, "pctResponses": 4.2},
+        {"domain": "awin.com", "frequency": 5, "pctResponses": 4.2},
+        {"domain": "norwest.com", "frequency": 4, "pctResponses": 3.3},
+        {"domain": "posttap.com", "frequency": 4, "pctResponses": 3.3},
+        {"domain": "branch.io", "frequency": 4, "pctResponses": 3.3},
+        {"domain": "coldiq.com", "frequency": 3, "pctResponses": 2.5},
+        {"domain": "builtinnyc.com", "frequency": 3, "pctResponses": 2.5},
+        {"domain": "forbes.com", "frequency": 3, "pctResponses": 2.5},
+        {"domain": "optimizely.com", "frequency": 3, "pctResponses": 2.5},
+        {"domain": "vwo.com", "frequency": 3, "pctResponses": 2.5},
+        {"domain": "trustradius.com", "frequency": 3, "pctResponses": 2.5},
+        {"domain": "techcrunch.com", "frequency": 2, "pctResponses": 1.7},
+        {"domain": "prnewswire.com", "frequency": 2, "pctResponses": 1.7},
+        {"domain": "tracxn.com", "frequency": 2, "pctResponses": 1.7},
+        {"domain": "appsflyer.com", "frequency": 2, "pctResponses": 1.7},
+        {"domain": "nosto.com", "frequency": 2, "pctResponses": 1.7},
+        {"domain": "sovrn.com", "frequency": 1, "pctResponses": 0.8},
+        {"domain": "skimlinks.com", "frequency": 1, "pctResponses": 0.8},
+        {"domain": "inc.com", "frequency": 1, "pctResponses": 0.8},
+        {"domain": "accelerationpartners.com", "frequency": 1, "pctResponses": 0.8},
+        {"domain": "forrester.com", "frequency": 1, "pctResponses": 0.8},
+        {"domain": "tiktok.com (support.tiktok.com)", "frequency": 1, "pctResponses": 0.8}
+      ],
+      "topUrls": [
+        {"rank": 1, "url": "usebutton.com/full-service-network", "frequency": 52, "pctResponses": 43.3},
+        {"rank": 2, "url": "usebutton.com/dynamic-decisioning", "frequency": 46, "pctResponses": 38.3},
+        {"rank": 3, "url": "usebutton.com/ (homepage)", "frequency": 40, "pctResponses": 33.3},
+        {"rank": 4, "url": "usebutton.com/for-creators", "frequency": 27, "pctResponses": 22.5},
+        {"rank": 5, "url": "usebutton.com/post/buttons-commerce-optimization-platform-launches-button-for-publishers", "frequency": 26, "pctResponses": 21.7},
+        {"rank": 6, "url": "usebutton.com/post/sams-club-experienced-a-165-increase-in-total-mobile-affiliate-revenue-with-buttons-reach", "frequency": 18, "pctResponses": 15.0, "tie": true},
+        {"rank": 6, "url": "usebutton.com/tap", "frequency": 18, "pctResponses": 15.0, "tie": true},
+        {"rank": 8, "url": "usebutton.com/product-listing-ads", "frequency": 16, "pctResponses": 13.3},
+        {"rank": 9, "url": "usebutton.com/post/large-retailer-wins-and-growth-in-the-creator-economy-drive-button-to-surpass-10-billion-in-mobile-commerce-driven-in-2023", "frequency": 15, "pctResponses": 12.5, "tie": true},
+        {"rank": 9, "url": "usebutton.com/support/privacy-policy", "frequency": 15, "pctResponses": 12.5, "tie": true}
+      ],
+      "urlNote": "Unlike the brand-direct dataset where one 2023 PR Newswire release dominated sourcing, this focus-query set is diffuse across usebutton.com's own product and case study pages rather than concentrated on one external article. PR Newswire only shows up twice here, both tied to the 432% Forrester ROI figure."
+    },
+    "marketFocus": {
+      "totalQueries": 120,
+      "competitorMentions": [
+        {"entity": "impact.com", "responses": 58, "pctTotal": 48.3},
+        {"entity": "Button", "responses": 57, "pctTotal": 47.5},
+        {"entity": "Branch", "responses": 53, "pctTotal": 44.2},
+        {"entity": "AppsFlyer", "responses": 51, "pctTotal": 42.5},
+        {"entity": "Awin", "responses": 49, "pctTotal": 40.8},
+        {"entity": "Partnerize", "responses": 48, "pctTotal": 40.0},
+        {"entity": "Adjust", "responses": 43, "pctTotal": 35.8},
+        {"entity": "LTK", "responses": 30, "pctTotal": 25.0},
+        {"entity": "ShopMy", "responses": 30, "pctTotal": 25.0},
+        {"entity": "Everflow", "responses": 27, "pctTotal": 22.5},
+        {"entity": "Rakuten Advertising", "responses": 27, "pctTotal": 22.5},
+        {"entity": "Singular", "responses": 26, "pctTotal": 21.7},
+        {"entity": "CJ Affiliate", "responses": 25, "pctTotal": 20.8},
+        {"entity": "Kochava", "responses": 25, "pctTotal": 20.8},
+        {"entity": "CreatorIQ", "responses": 25, "pctTotal": 20.8},
+        {"entity": "GRIN", "responses": 25, "pctTotal": 20.8},
+        {"entity": "Refersion", "responses": 24, "pctTotal": 20.0},
+        {"entity": "URLgenius", "responses": 23, "pctTotal": 19.2},
+        {"entity": "Sovrn Commerce", "responses": 20, "pctTotal": 16.7},
+        {"entity": "Skimlinks", "responses": 20, "pctTotal": 16.7},
+        {"entity": "Airbridge", "responses": 17, "pctTotal": 14.2},
+        {"entity": "Dynamic Yield", "responses": 16, "pctTotal": 13.3},
+        {"entity": "Levanta", "responses": 16, "pctTotal": 13.3},
+        {"entity": "PartnerStack", "responses": 16, "pctTotal": 13.3},
+        {"entity": "Aspire", "responses": 16, "pctTotal": 13.3},
+        {"entity": "Geniuslink", "responses": 15, "pctTotal": 12.5},
+        {"entity": "Social Snowball", "responses": 14, "pctTotal": 11.7},
+        {"entity": "Shopify Collabs", "responses": 13, "pctTotal": 10.8},
+        {"entity": "TUNE", "responses": 12, "pctTotal": 10.0},
+        {"entity": "Captiv8", "responses": 12, "pctTotal": 10.0}
+      ],
+      "competitorNote": "impact.com leads overall. Button is effectively tied for second, ahead of every dedicated affiliate network (Awin, Partnerize, CJ, Rakuten) despite being a much narrower point solution.",
+      "visibilityRate": {"pct": 47.5, "numerator": 57, "denominator": 120},
+      "averageRanking": {
+        "mean": 3.05,
+        "median": 1.0,
+        "rankedDenominator": 56,
+        "rankedDenominatorNote": "Out of the 57 appearances, one response discussed Button only in a qualitative aside with no ranked position in a competitor table, so it's excluded from this specific denominator, though still counted in visibility above.",
+        "pctTop1": 61,
+        "top1Count": 34,
+        "top1Denominator": 56,
+        "meanVsMedianNote": "The mean is pulled up by a handful of long tables where Button lands 8th to 10th. The median is the more representative number."
+      },
+      "descriptorPhrases": [
+        {"rank": 1, "phrase": "Deep linking / app routing as the core mechanism", "count": 49, "pctOf57": 86},
+        {"rank": 2, "phrase": "Targets affiliate, creator, and retail-media/social-commerce traffic specifically", "count": 27, "pctOf57": 47},
+        {"rank": 3, "phrase": "\"Dynamic Decisioning\": chooses among app-open, install, or mobile web based on predicted conversion", "count": 25, "pctOf57": 44},
+        {"rank": 4, "phrase": "Preserves/maintains attribution through the click-to-purchase journey", "count": 25, "pctOf57": 44},
+        {"rank": 5, "phrase": "Connects to app installs specifically", "count": 18, "pctOf57": 32},
+        {"rank": 6, "phrase": "Post-click / after-the-tap optimization framing", "count": 16, "pctOf57": 28},
+        {"rank": 7, "phrase": "Superlative positioning (\"most differentiated,\" \"most specialized,\" \"clearest specialist\")", "count": 15, "pctOf57": 26},
+        {"rank": 8, "phrase": "Machine learning / AI-powered / identity-based routing", "count": 11, "pctOf57": 19},
+        {"rank": 9, "phrase": "Named recent sub-product (PostTap, CuratedBy, Creator Media)", "count": 8, "pctOf57": 14},
+        {"rank": 10, "phrase": "Complements (not a replacement for) existing affiliate network or MMP", "count": 6, "pctOf57": 11}
+      ],
+      "descriptorNote": "Deep linking is by far the dominant single frame, present in 86% of all Button mentions. Affiliate/creator targeting, Dynamic Decisioning, and attribution preservation form a tightly clustered second tier, each around 44 to 47%, usually appearing together in the same sentence rather than independently.",
+      "sourceDomains": [
+        {"domain": "impact.com", "frequency": 72, "pctTotal": 60.0},
+        {"domain": "usebutton.com", "frequency": 57, "pctTotal": 47.5},
+        {"domain": "branch.io", "frequency": 54, "pctTotal": 45.0},
+        {"domain": "appsflyer.com", "frequency": 52, "pctTotal": 43.3},
+        {"domain": "partnerize.com", "frequency": 48, "pctTotal": 40.0},
+        {"domain": "awin.com", "frequency": 43, "pctTotal": 35.8},
+        {"domain": "adjust.com", "frequency": 34, "pctTotal": 28.3},
+        {"domain": "cj.com", "frequency": 32, "pctTotal": 26.7},
+        {"domain": "shopmy.us", "frequency": 31, "pctTotal": 25.8},
+        {"domain": "shopltk.com", "frequency": 31, "pctTotal": 25.8},
+        {"domain": "everflow.io", "frequency": 27, "pctTotal": 22.5},
+        {"domain": "singular.net", "frequency": 26, "pctTotal": 21.7},
+        {"domain": "rakutenadvertising.com", "frequency": 26, "pctTotal": 21.7},
+        {"domain": "grin.co", "frequency": 25, "pctTotal": 20.8},
+        {"domain": "creatoriq.com", "frequency": 25, "pctTotal": 20.8},
+        {"domain": "urlgeni.us", "frequency": 22, "pctTotal": 18.3},
+        {"domain": "kochava.com", "frequency": 22, "pctTotal": 18.3},
+        {"domain": "refersion.com", "frequency": 22, "pctTotal": 18.3},
+        {"domain": "sovrn.com", "frequency": 22, "pctTotal": 18.3},
+        {"domain": "skimlinks.com", "frequency": 18, "pctTotal": 15.0}
+      ]
+    }
+  };
+
+  var EXTRACTION_NOTES = {
+    brandDescriptors: "<b>Canonicalization rule:</b> candidate descriptor spans are pulled from each response, then paraphrases are collapsed into one canonical phrase (“lets you track affiliate performance” and “tracking and attribution built in” both roll up to <i>Attribution &amp; tracking capability</i>). Counted once per occurrence for frequency, once per response for reach.",
+    brandFigures: "<b>Figures rule:</b> a number only counts if it appears in the response body text. A figure appearing solely inside a cited URL slug is logged separately and excluded from the ranked table — see the two exclusions below.",
+    brandDomains: "<b>Domain rollup rule:</b> every cited URL is mapped to its root domain, subdomains rolled up (e.g. developer.usebutton.com → usebutton.com), and deduped per response before counting.",
+    brandUrls: "<b>URL normalization rule:</b> URLs are stripped of tracking parameters and trailing slashes before counting, so the same page cited with different query strings still counts once.",
+    marketCompetitors: "<b>Entity counting rule:</b> each entity is counted once per response regardless of how many times it's named within that response, then rolled up across all 120 market-focus queries.",
+    marketRanking: "<b>Denominator rule:</b> visibility counts any response where Button is named at all. Average ranking only counts responses where Button appears inside an explicit ordered or numbered list — a qualitative mention with no list position is excluded from that narrower denominator but still counts toward visibility.",
+    marketDescriptors: "<b>Canonicalization rule:</b> same phrase-collapsing rule as Brand Focus, applied only to the subset of responses where Button appears at all (57 of 120).",
+    marketDomains: "<b>Domain rollup rule:</b> same root-domain rollup as Brand Focus, applied across all 120 market-focus responses regardless of whether Button appears."
+  };
+
+  // =========================================================
+  // Navigation
+  // =========================================================
+
+  function showScreen(n){
+    document.querySelectorAll('.screen').forEach(function(el){ el.classList.remove('active'); });
+    var target = document.getElementById('screen-' + n);
+    if(target) target.classList.add('active');
+    window.scrollTo(0, 0);
+
+    document.querySelectorAll('.step').forEach(function(el){
+      var step = parseInt(el.getAttribute('data-step'), 10);
+      el.classList.remove('active', 'done');
+      if(step === n) el.classList.add('active');
+      else if(step < n) el.classList.add('done');
+    });
+
+    if(n === 1){ resetGenerateButton(); }
+    if(n === 3){ startQueryReveal(); }
+  }
+
+  document.querySelectorAll('.step').forEach(function(el){
+    el.addEventListener('click', function(){
+      showScreen(parseInt(el.getAttribute('data-step'), 10));
+    });
+  });
+
+  document.getElementById('btn-restart').addEventListener('click', function(){
+    location.reload();
+  });
+
+  // =========================================================
+  // Screen 1: Brand Name -> staged "Generate Description"
+  // =========================================================
+
+  var btnGenerate = document.getElementById('btn-generate-desc');
+  var generateLabel = document.getElementById('generate-btn-label');
+  var generateArrow = document.getElementById('generate-btn-arrow');
+  var generateTimeoutId = null;
+
+  function resetGenerateButton(){
+    if(generateTimeoutId){ clearTimeout(generateTimeoutId); generateTimeoutId = null; }
+    btnGenerate.disabled = false;
+    generateLabel.textContent = 'Generate Description';
+    generateArrow.style.display = '';
+    var spinner = document.getElementById('generate-btn-spinner');
+    if(spinner) spinner.remove();
+  }
+
+  btnGenerate.addEventListener('click', function(){
+    if(btnGenerate.disabled) return;
+    btnGenerate.disabled = true;
+    generateLabel.textContent = 'Generating description…';
+    generateArrow.style.display = 'none';
+    var spinner = document.createElement('span');
+    spinner.className = 'btn-spinner';
+    spinner.id = 'generate-btn-spinner';
+    btnGenerate.insertBefore(spinner, generateLabel);
+    generateTimeoutId = setTimeout(function(){
+      if(document.getElementById('screen-1').classList.contains('active')){
+        showScreen(2);
+      }
+    }, 950);
+  });
+
+  // =========================================================
+  // Screen 2: Brand Description confirm
+  // =========================================================
+
+  var textarea = document.getElementById('brand-description');
+  var btnAgree = document.getElementById('btn-agree');
+  var btnEdit = document.getElementById('btn-edit');
+  var statusPill = document.getElementById('status-pill');
+  var statusText = document.getElementById('status-text');
+
+  btnAgree.addEventListener('click', function(){
+    btnAgree.classList.add('selected');
+    btnEdit.classList.remove('selected', 'edit-selected');
+    textarea.setAttribute('readonly', 'readonly');
+    statusPill.classList.add('visible', 'confirmed');
+    statusText.textContent = 'Confirmed accurate';
+  });
+
+  btnEdit.addEventListener('click', function(){
+    btnEdit.classList.add('selected', 'edit-selected');
+    btnAgree.classList.remove('selected');
+    textarea.removeAttribute('readonly');
+    textarea.focus();
+    statusPill.classList.remove('confirmed');
+    statusPill.classList.add('visible');
+    statusText.textContent = 'Editing';
+  });
+
+  textarea.addEventListener('input', function(){
+    if(btnAgree.classList.contains('selected')){
+      btnAgree.classList.remove('selected');
+      statusPill.classList.remove('visible', 'confirmed');
+    }
+  });
+
+  document.getElementById('btn-back-2').addEventListener('click', function(){ showScreen(1); });
+  document.getElementById('btn-continue-2').addEventListener('click', function(){ showScreen(3); });
+
+  // =========================================================
+  // Screen 3: Query Set Reveal (staged, not live)
+  // =========================================================
+
+  var queryRevealStarted = false;
+
+  document.querySelectorAll('.tab-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+      document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById('panel-' + btn.getAttribute('data-tab')).classList.add('active');
+    });
+  });
+
+  function makeQueryRow(index, text){
+    var row = document.createElement('div');
+    row.className = 'query-row';
+    var num = document.createElement('span');
+    num.className = 'query-num';
+    num.textContent = index + 1;
+    var span = document.createElement('span');
+    span.className = 'query-text';
+    span.contentEditable = 'true';
+    span.spellcheck = false;
+    span.textContent = text;
+    var del = document.createElement('button');
+    del.className = 'query-delete';
+    del.type = 'button';
+    del.title = 'Remove question';
+    del.textContent = '×';
+    del.addEventListener('click', function(){ row.remove(); });
+    row.appendChild(num);
+    row.appendChild(span);
+    row.appendChild(del);
+    return row;
+  }
+
+  function revealList(listId, metaId, questions, doneLabel){
+    var list = document.getElementById(listId);
+    var meta = document.getElementById(metaId);
+    list.innerHTML = '';
+    meta.textContent = 'Generating questions…';
+    var i = 0;
+    function next(){
+      if(i >= questions.length){
+        meta.textContent = doneLabel;
+        return;
+      }
+      list.appendChild(makeQueryRow(i, questions[i]));
+      list.scrollTop = list.scrollHeight;
+      i++;
+      var delay = 150 + Math.random() * 150;
+      setTimeout(next, delay);
+    }
+    next();
+  }
+
+  function startQueryReveal(){
+    if(queryRevealStarted) return;
+    queryRevealStarted = true;
+    revealList('list-brand', 'meta-brand', QUERY_SETS.brandFocusQuestions, '30 questions, run 4x per model');
+    revealList('list-market', 'meta-market', QUERY_SETS.marketFocusQuestions, '30 questions, run 4x per model');
+  }
+
+  document.getElementById('btn-back-3').addEventListener('click', function(){ showScreen(2); });
+  document.getElementById('btn-continue-3').addEventListener('click', function(){ showScreen(4); });
+
+  // =========================================================
+  // Screen 4: Run Scan (staged, not live)
+  // =========================================================
+
+  var scanRunning = false;
+
+  document.getElementById('btn-run-scan').addEventListener('click', function(){
+    if(scanRunning) return;
+    scanRunning = true;
+    document.getElementById('scan-idle').style.display = 'none';
+    var progress = document.getElementById('scan-progress');
+    progress.style.display = 'block';
+    var lines = Array.prototype.slice.call(document.querySelectorAll('.scan-line'));
+    lines.forEach(function(l){ l.classList.remove('active', 'done'); });
+
+    var i = 0;
+    function step(){
+      if(i > 0){ lines[i - 1].classList.remove('active'); lines[i - 1].classList.add('done'); }
+      if(i >= lines.length){
+        setTimeout(function(){ showScreen(5); }, 500);
+        return;
+      }
+      lines[i].classList.add('active');
+      var delay = 1000 + Math.random() * 1000;
+      i++;
+      setTimeout(step, delay);
+    }
+    step();
+  });
+
+  document.getElementById('btn-back-4').addEventListener('click', function(){ showScreen(3); });
+
+  // =========================================================
+  // Screen 5 & 6: Dashboards (real data from button_analysis.json)
+  // =========================================================
+
+  function esc(s){
+    var d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  function tieFlag(row){ return row.tie ? '<span class="tie-flag">tied</span>' : ''; }
+
+  function sectionCard(opts){
+    // opts: {title, sub, extractionKey, bodyHtml, fullWidth}
+    var id = 'ext-' + opts.extractionKey;
+    var toggle = opts.extractionKey ?
+      '<button class="extraction-toggle-btn" type="button" onclick="var d=document.getElementById(\'' + id + '\'); d.classList.toggle(\'visible\');">View extraction logic</button>' : '';
+    var detail = opts.extractionKey ?
+      '<div class="extraction-detail" id="' + id + '">' + EXTRACTION_NOTES[opts.extractionKey] + '</div>' : '';
+    return '<div class="section-card' + (opts.fullWidth ? ' full-width' : '') + '">' +
+      '<div class="section-title-row"><h3 class="section-title">' + opts.title + '</h3>' + toggle + '</div>' +
+      (opts.sub ? '<p class="section-sub">' + opts.sub + '</p>' : '') +
+      opts.bodyHtml +
+      (opts.noteHtml ? '<div class="note-callout">' + opts.noteHtml + '</div>' : '') +
+      detail +
+      '</div>';
+  }
+
+  function renderBrandFocus(){
+    var bf = ANALYSIS.brandFocus;
+
+    var descriptorRows = bf.descriptorPhrases.map(function(r){
+      return '<tr><td class="num">' + r.rank + '</td><td>' + esc(r.phrase) + '</td>' +
+        '<td class="num">' + r.totalFrequency + '</td>' +
+        '<td class="num">' + r.pctOfTop15Occurrences + '%</td>' +
+        '<td class="num">' + r.pctResponses + '%</td></tr>';
+    }).join('');
+    var descriptorHtml = '<div class="no-scroll-table"><table class="data-table">' +
+      '<thead><tr><th class="num">Rank</th><th>Canonical phrase</th><th class="num">Frequency</th><th class="num">% of top 15</th><th class="num">% of responses</th></tr></thead>' +
+      '<tbody>' + descriptorRows + '</tbody></table></div>';
+
+    var figureRows = bf.figures.map(function(r){
+      return '<tr><td class="num">' + r.rank + tieFlag(r) + '</td><td>' + esc(r.value) + '</td>' +
+        '<td>' + esc(r.context) + '</td><td class="num">' + r.frequency + '</td><td class="num">' + r.pctResponses + '%</td></tr>';
+    }).join('');
+    var excludedHtml = bf.excludedFigures.map(function(x){
+      return esc(x.value) + ' (' + esc(x.context) + ') — ' + esc(x.reason) + '.';
+    }).join('<br>');
+    var figuresHtml = '<div class="no-scroll-table"><table class="data-table">' +
+      '<thead><tr><th class="num">Rank</th><th>Value</th><th>What it refers to</th><th class="num">Frequency</th><th class="num">% of responses</th></tr></thead>' +
+      '<tbody>' + figureRows + '</tbody></table></div>';
+
+    var domainRows = bf.sourceDomains.map(function(r){
+      return '<tr><td>' + esc(r.domain) + '</td><td class="num">' + r.frequency + '</td><td class="num">' + r.pctResponses + '%</td></tr>';
+    }).join('');
+    var domainsHtml = '<div class="no-scroll-table"><table class="data-table">' +
+      '<thead><tr><th>Domain</th><th class="num">Frequency</th><th class="num">% of responses</th></tr></thead>' +
+      '<tbody>' + domainRows + '</tbody></table></div>';
+
+    var urlRows = bf.topUrls.map(function(r){
+      return '<tr><td class="num">' + r.rank + tieFlag(r) + '</td><td>' + esc(r.url) + '</td><td class="num">' + r.frequency + '</td><td class="num">' + r.pctResponses + '%</td></tr>';
+    }).join('');
+    var urlsHtml = '<div class="no-scroll-table"><table class="data-table">' +
+      '<thead><tr><th class="num">Rank</th><th>Normalized URL</th><th class="num">Frequency</th><th class="num">% of responses</th></tr></thead>' +
+      '<tbody>' + urlRows + '</tbody></table></div>';
+
+    var grid = document.getElementById('brand-focus-grid');
+    grid.innerHTML =
+      sectionCard({title: 'Top 15 descriptor phrases', sub: 'Ranked by raw frequency across all 120 responses.', extractionKey: 'brandDescriptors', bodyHtml: descriptorHtml, noteHtml: bf.reachNote, fullWidth: true}) +
+      sectionCard({title: 'Top 10 figures', sub: 'Ranked by frequency; tied ranks share a number.', extractionKey: 'brandFigures', bodyHtml: figuresHtml, noteHtml: 'Excluded from ranking (URL-slug only, not response body): ' + excludedHtml}) +
+      sectionCard({title: 'Source domains', sub: 'Subdomains rolled up to their root domain.', extractionKey: 'brandDomains', bodyHtml: domainsHtml}) +
+      sectionCard({title: 'Top 10 specific URLs', sub: 'Normalized, deduped across query variants.', extractionKey: 'brandUrls', bodyHtml: urlsHtml, noteHtml: bf.urlNote, fullWidth: true});
+  }
+
+  function renderMarketFocus(){
+    var mf = ANALYSIS.marketFocus;
+    var vis = mf.visibilityRate;
+    var rank = mf.averageRanking;
+
+    var statGrid = document.getElementById('market-stat-grid');
+    statGrid.innerHTML =
+      '<div class="stat-tile"><div class="stat-value">' + vis.pct + '%</div>' +
+      '<div class="stat-label">Visibility / presence rate</div>' +
+      '<div class="stat-denom">' + vis.numerator + ' of ' + vis.denominator + ' market-focus responses mention Button</div></div>' +
+      '<div class="stat-tile"><div class="stat-value">' + rank.median.toFixed(1) + '</div>' +
+      '<div class="stat-label">Median ranking position</div>' +
+      '<div class="stat-denom">Mean ' + rank.mean.toFixed(2) + ' · out of ' + rank.rankedDenominator + ' ranked appearances</div>' +
+      '<div class="stat-caption">' + rank.pctTop1 + '% land at #1 (' + rank.top1Count + ' of ' + rank.top1Denominator + '). ' + rank.meanVsMedianNote + '</div></div>';
+
+    var compRows = mf.competitorMentions.map(function(r){
+      var isButton = r.entity === 'Button';
+      return '<tr' + (isButton ? ' class="highlight-row"' : '') + '><td>' + esc(r.entity) + '</td>' +
+        '<td class="num">' + r.responses + '</td><td class="num">' + r.pctTotal + '%</td></tr>';
+    }).join('');
+    var compHtml = '<div class="no-scroll-table"><table class="data-table">' +
+      '<thead><tr><th>Entity</th><th class="num">Responses mentioning</th><th class="num">% of total market queries</th></tr></thead>' +
+      '<tbody>' + compRows + '</tbody></table></div>';
+
+    document.getElementById('market-competitor-section').innerHTML =
+      sectionCard({title: 'Competitor mentions', sub: 'Out of 120 total market-focus queries. Button’s row highlighted.', extractionKey: 'marketCompetitors', bodyHtml: compHtml, noteHtml: mf.competitorNote + ' ' + rank.rankedDenominatorNote, fullWidth: true});
+
+    var descRows = mf.descriptorPhrases.map(function(r){
+      return '<tr><td class="num">' + r.rank + '</td><td>' + esc(r.phrase) + '</td><td class="num">' + r.count + '</td><td class="num">' + r.pctOf57 + '%</td></tr>';
+    }).join('');
+    var descHtml = '<div class="no-scroll-table"><table class="data-table">' +
+      '<thead><tr><th class="num">Rank</th><th>Descriptor (brand-specific, market context)</th><th class="num">Count</th><th class="num">% of responses where Button appeared</th></tr></thead>' +
+      '<tbody>' + descRows + '</tbody></table></div>';
+
+    var domRows = mf.sourceDomains.map(function(r){
+      return '<tr><td>' + esc(r.domain) + '</td><td class="num">' + r.frequency + '</td><td class="num">' + r.pctTotal + '%</td></tr>';
+    }).join('');
+    var domHtml = '<div class="no-scroll-table"><table class="data-table">' +
+      '<thead><tr><th>Domain</th><th class="num">Frequency</th><th class="num">% of total responses</th></tr></thead>' +
+      '<tbody>' + domRows + '</tbody></table></div>';
+
+    var grid = document.getElementById('market-focus-grid');
+    grid.innerHTML =
+      sectionCard({title: 'Top ' + mf.descriptorPhrases.length + ' descriptor phrases', sub: 'Brand-specific, in market/comparative context.', extractionKey: 'marketDescriptors', bodyHtml: descHtml, noteHtml: mf.descriptorNote}) +
+      sectionCard({title: 'Source domains', sub: 'Across all 120 market-focus responses.', extractionKey: 'marketDomains', bodyHtml: domHtml});
+  }
+
+  document.getElementById('btn-back-5').addEventListener('click', function(){ showScreen(4); });
+  document.getElementById('btn-continue-5').addEventListener('click', function(){ showScreen(6); });
+  document.getElementById('btn-back-6').addEventListener('click', function(){ showScreen(5); });
+
+  renderBrandFocus();
+  renderMarketFocus();
+  showScreen(1);
+})();
+</script>
+</body>
+</html>
